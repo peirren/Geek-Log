@@ -1,0 +1,38 @@
+---
+author: "Randy"
+---
+
+<style type="text/css">
+    
+    body {
+        margin: 5% 12.5% 0% 12.5%;
+    }
+
+    .info {
+        background-color: #00bcd4;
+        padding: 30 30 30 30;
+    }
+
+    .container {
+        background-color: #eee;
+        padding: 30 30 30 30;
+    }
+</style>
+
+<body>
+<div class="info">
+    <h1> {{ page.title }} </h1>
+    <div>
+    作者：<label>{{ layout.author }} </label>,
+    建立時間：<label>{{ page.date }} </label>
+    </div>
+</div>
+
+<div class="container">
+  <h2>內文開始</h2>
+
+{{ content }}
+
+</div>
+
+</body>

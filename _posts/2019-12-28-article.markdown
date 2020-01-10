@@ -1,0 +1,31 @@
+---
+layout: "article"
+title: "Jekyll的變數運用(variable) "
+date:   2019-12-28 00:55:12 +0800
+categories: review
+author: "Randy"
+---
+
+
+
+
+(1) Layouts > article: 建立了一個名為 `article` 的Layout
+
+(2) 本篇文章存放於`_post` ， 並在標頭呼叫
+
+
+`layout: "article" `
+
+
+
+(3) 這項筆記來自：Variables | Jekyll - Static Site Generator | Tutorial 13
+
+<a href="https://learn.cloudcannon.com/jekyll-cheat-sheet/">
+    Jekyll Cheat Sheet
+</a>
+
+<hr>
+更多 <a href="https://jekyllrb.com/docs/variables/">變數參考</a>
+
+
+上一篇文章： {{ page.previous.url }}

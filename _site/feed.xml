@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T19:54:28+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">我的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Liquid學習</title><link href="http://localhost:4000/review/2020/01/03/Liquid.html" rel="alternate" type="text/html" title="Liquid學習" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/03/Liquid</id><content type="html" xml:base="http://localhost:4000/review/2020/01/03/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
+
+&lt;p&gt;用404頁面來做測試
+看懂 theme.liquid的內容與架構&lt;/p&gt;
+
+&lt;p&gt;完成404測試，&lt;code class=&quot;highlighter-rouge&quot;&gt;成功&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;疑問&lt;/code&gt;
+當一活動頁面，是否為 setting.json 改寫
+https://www.igift.tw/pages/christmas-gift&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在本機端 架設 Docker&lt;/li&gt;
+  &lt;li&gt;在Nas 架設 Docker&lt;/li&gt;
+  &lt;li&gt;用Github 服務架設 Jekyll Blog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">{ % include xxx.html % }</summary></entry><entry><title type="html">Jekyll的變數運用(variable)</title><link href="http://localhost:4000/review/2019/12/28/article.html" rel="alternate" type="text/html" title="Jekyll的變數運用(variable) " /><published>2019-12-28T00:55:12+08:00</published><updated>2019-12-28T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/28/article</id><content type="html" xml:base="http://localhost:4000/review/2019/12/28/article.html">&lt;p&gt;(1) Layouts &amp;gt; article: 建立了一個名為 &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; 的Layout&lt;/p&gt;
+
+&lt;p&gt;(2) 本篇文章存放於&lt;code class=&quot;highlighter-rouge&quot;&gt;_post&lt;/code&gt; ， 並在標頭呼叫&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout: &quot;article&quot; &lt;/code&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(3) 這項筆記來自：Variables&lt;/td&gt;
+      &lt;td&gt;Jekyll - Static Site Generator&lt;/td&gt;
+      &lt;td&gt;Tutorial 13&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.cloudcannon.com/jekyll-cheat-sheet/&quot;&gt;
+    Jekyll Cheat Sheet
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;上一篇文章： /review/2019/12/27/Learning-Jekyll-Part-2.html&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">(1) Layouts &amp;gt; article: 建立了一個名為 article 的Layout</summary></entry><entry><title type="html">Jekyll的包含運用(Includes)</title><link href="http://localhost:4000/review/2019/12/28/Includes.html" rel="alternate" type="text/html" title="Jekyll的包含運用(Includes) " /><published>2019-12-28T00:55:12+08:00</published><updated>2019-12-28T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/28/Includes</id><content type="html" xml:base="http://localhost:4000/review/2019/12/28/Includes.html">&lt;p&gt;2020年觀光股當中，有兩檔營收、獲利有機會達雙位數成長，一是2019年有眾多不利因素使其獲利明顯衰退的旅行社龍頭雄獅(2731)，2020年隨著不利因素淡化營運將明顯回溫；二是2019年在東南亞持續擴張市占率帶動獲利顯著成長的手搖飲業者六角(2732)，即便基期已高，但2020年在店數規模持續擴大帶動下，獲利表現仍有望再創新猷。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;建立 &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; 資料夾&lt;/li&gt;
+  &lt;li&gt;創建 &lt;code class=&quot;highlighter-rouge&quot;&gt;header.html&lt;/code&gt; 範本&lt;/li&gt;
+  &lt;li&gt;語法(syntax)是 &lt;code class=&quot;highlighter-rouge&quot;&gt;{ 包含 xxx.html}&lt;/code&gt;，呼叫特定檔案。&lt;/li&gt;
+  &lt;li&gt;原作者的做法是 Wrapper &amp;gt; header &amp;amp; content&lt;/li&gt;
+  &lt;li&gt;header.html 中 style=”coloer; “&lt;/li&gt;
+  &lt;li&gt;color = “blue”&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{ site.title }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">2020年觀光股當中，有兩檔營收、獲利有機會達雙位數成長，一是2019年有眾多不利因素使其獲利明顯衰退的旅行社龍頭雄獅(2731)，2020年隨著不利因素淡化營運將明顯回溫；二是2019年在東南亞持續擴張市占率帶動獲利顯著成長的手搖飲業者六角(2732)，即便基期已高，但2020年在店數規模持續擴大帶動下，獲利表現仍有望再創新猷。</summary></entry><entry><title type="html">Learning Jekyll, Part2,</title><link href="http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2.html" rel="alternate" type="text/html" title="Learning Jekyll, Part2," /><published>2019-12-27T00:55:12+08:00</published><updated>2019-12-27T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2</id><content type="html" xml:base="http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2.html">&lt;h1&gt; 安裝前準備確認 &lt;/h1&gt;
+&lt;p&gt;Learning Jekyll, Part2,&lt;/p&gt;
+
+&lt;p&gt;1
+終端機需要指令&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">安裝前準備確認 Learning Jekyll, Part2,</summary></entry><entry><title type="html">Learning Jekyll, Part1</title><link href="http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1.html" rel="alternate" type="text/html" title="Learning Jekyll, Part1" /><published>2019-12-26T00:55:12+08:00</published><updated>2019-12-26T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1</id><content type="html" xml:base="http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1.html">&lt;h3 id=&quot;安裝前準備確認&quot;&gt;安裝前準備確認&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;ruby -v (至少高於2.4)&lt;/li&gt;
+  &lt;li&gt;gem -v (至少高於2.6.13)&lt;/li&gt;
+  &lt;li&gt;gem install jekyll bundler (啟用Gem安裝Jekyll)&lt;/li&gt;
+  &lt;li&gt;jekyll -v (我的是 4.0)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;終端機需要指令&quot;&gt;終端機需要指令&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;cd/ folder&lt;/li&gt;
+  &lt;li&gt;jekyll new document name (創建jekyll資料夾)&lt;/li&gt;
+  &lt;li&gt;bundle exec jekyll serve (啟動jekyll)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Randys-MacBook-Pro:~ Randy$ jekyll new jekyll_folder
+Running bundle install in /Users/Randy/jekyll_folder…  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;~畫面預覽~&lt;/p&gt;
+
+&lt;p&gt;[image:AB0A1B73-4288-4748-9161-8B0045E870D4-286-0000061D86AE4D70/螢幕快照 2020-01-04 上午12.57.20.png]&lt;/p&gt;
+
+&lt;p&gt;重要文件有：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;_posts 存放文章的地方，文件用markdown語法寫成
+    &lt;ul&gt;
+      &lt;li&gt;layout: post/title/date/categories&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;site
+    &lt;ul&gt;
+      &lt;li&gt;about&lt;/li&gt;
+      &lt;li&gt;assets&lt;/li&gt;
+      &lt;li&gt;jekyll&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;tutorial-7-draft&quot;&gt;Tutorial 7 Draft&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;draft，可以創建一個資料夾，用於存放文章草稿。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tutorial-8-creating-pages&quot;&gt;Tutorial 8 Creating Pages&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jekyll的世界只有兩種，POST/PAGE&lt;/li&gt;
+  &lt;li&gt;創建一個文件，以.md為結尾，例如：example.md&lt;/li&gt;
+  &lt;li&gt;layout: “page” ，一樣是以json格式起頭&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tutorial-9permalinks&quot;&gt;Tutorial 9:Permalinks&lt;/h3&gt;
+&lt;p&gt;一定要三槓(Dash)
+—
+layout: post
+title: “Learning Jekyll Part1.markdown”
+date:   2020-01-03 00:47:12 +0800
+categories: jekyll update
+permalink: /:catagories/:year/:day/:title.html
+—
+ 永久連結，可以改變格式&lt;/p&gt;
+
+&lt;h3 id=&quot;tutorial-11-front-matter-defaults&quot;&gt;Tutorial 11: Front Matter Defaults&lt;/h3&gt;
+&lt;p&gt;把文章預設成某種格式 (layout:post)&lt;/p&gt;
+
+&lt;p&gt;config.yml
+default:
+scope:
+path:
+values:&lt;/p&gt;
+
+&lt;h3 id=&quot;tutorial-12-layouts&quot;&gt;Tutorial 12: Layouts&lt;/h3&gt;
+&lt;p&gt;Creat a layout folder&lt;/p&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/usage/&quot;&gt;Command Line Usage&lt;/a&gt; 指令用法&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/configuration/&quot;&gt;Configuration&lt;/a&gt;  調教&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">安裝前準備確認 ruby -v (至少高於2.4) gem -v (至少高於2.6.13) gem install jekyll bundler (啟用Gem安裝Jekyll) jekyll -v (我的是 4.0)</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/12/25/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-12-25T00:00:01+08:00</published><updated>2019-12-25T00:00:01+08:00</updated><id>http://localhost:4000/jekyll/update/2019/12/25/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/12/25/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Standard Layout, 標準畫面</title><link href="http://localhost:4000/jekyll/update/2019/01/01/Say-hello-to-Jekyll.html" rel="alternate" type="text/html" title="Standard Layout, 標準畫面" /><published>2019-01-01T00:47:12+08:00</published><updated>2019-01-01T00:47:12+08:00</updated><id>http://localhost:4000/jekyll/update/2019/01/01/Say-hello-to-Jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/01/01/Say-hello-to-Jekyll.html">&lt;h1 id=&quot;standard-layout&quot;&gt;Standard Layout&lt;/h1&gt;
+&lt;h2 id=&quot;用兩種layout-包一起&quot;&gt;用兩種Layout 包一起&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;standard&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;wrapper&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">Standard Layout 用兩種Layout 包一起</summary></entry></feed>

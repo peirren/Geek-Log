@@ -1,0 +1,29 @@
+---
+layout: "article"
+title: "Liquid學習"
+categories: review
+author: "Randy"
+---
+
+ { % ``` include xxx.html ```  % }
+
+用404頁面來做測試
+看懂 theme.liquid的內容與架構
+
+
+完成404測試，`成功`
+
+
+`疑問`
+當一活動頁面，是否為 setting.json 改寫
+https://www.igift.tw/pages/christmas-gift
+<hr>
+更多 <a href="https://jekyllrb.com/docs/variables/">變數參考</a>
+
+- 在本機端 架設 Docker
+- 在Nas 架設 Docker
+- 用Github 服務架設 Jekyll Blog
+
+
+## TBD QUESTION
+- Mastering markdown language 熟悉Markdown的用法

@@ -7,6 +7,7 @@ author: "Randy"
  { % ``` include xxx.html ```  % }
 
 
+` Gemfile > url: "___" ` 必填
 
 ```
 gemfil "jekyll", "~> 3.6.0" 

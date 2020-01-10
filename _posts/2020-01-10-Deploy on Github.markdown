@@ -3,6 +3,7 @@ layout: post
 title: "Deploy on Github - 部署Jekyll於Github"
 categories: review
 author: "Randy"
+tag: english
 ---
 
  
@@ -16,6 +17,15 @@ author: "Randy"
 
 Folder include, adding a new file: ga_script, pretending some mock-up, nav bar or something functional feature.
 資料夾_includes >> 新增 ga_script 預先放程式碼，可以之後放GA的追蹤碼。
+
+
+## 修改 config.yml 檔案
+baseurl 與 url 的差別
+
+
+## 圖片顯示不出來 VVV
+[Imgur](https://imgur.com/j7Qi1HM.jpg)
+
 
 
 ### 階層格式

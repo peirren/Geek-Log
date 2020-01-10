@@ -1,0 +1,67 @@
+I"�<h2 id="修改layout">修改Layout</h2>
+<p>想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
+同樣一樣有Template, Page的概念，與WordPress雷同。</p>
+
+<p>用 Wrapper 去包含程式碼，在用posts去製作全部的版型</p>
+
+<p>Folder include, adding a new file: ga_script, pretending some mock-up, nav bar or something functional feature.
+資料夾_includes » 新增 ga_script 預先放程式碼，可以之後放GA的追蹤碼。</p>
+
+<h2 id="修改-configyml-檔案">修改 config.yml 檔案</h2>
+<p>baseurl 與 url 的差別</p>
+
+<p><img src="/images/image001.png" alt="My image" /></p>
+
+<h3 id="階層格式">階層格式</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Posts</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Wrapper</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>CSS style</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>資料夾</td>
+      <td>檔案名稱</td>
+    </tr>
+    <tr>
+      <td>_layosts</td>
+      <td>post.html</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="highlighter-rouge"> Gemfile &gt; url: "___" </code> 必填</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gemfil "jekyll", "~&gt; 3.6.0" 
+gemfil "minima", "~&gt; 2.0"
+
+</code></pre></div></div>
+
+<p>###Ref</p>
+
+<p>-<a href="https://www.youtube.com/watch?v=fqFjuX4VZmU">Hosting on Github Pages</a>
+-<a href="http://jekyllthemes.org/">Jekyll Themee 佈景主題</a>
+-<a href="http://xareelee.github.io/tech_note/2015/07/23/%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog.html#why_github_pages_and_jekyll">有點雜亂的中文解說</a></p>
+
+<h2 id="tbd-question">TBD QUESTION</h2>
+<ul>
+  <li>Mastering markdown language 熟悉Markdown的用法</li>
+</ul>
+:ET

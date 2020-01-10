@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T21:57:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/10/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T22:13:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/10/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
 &lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
 同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
 
@@ -6,6 +6,12 @@
 
 &lt;p&gt;Folder include, adding a new file: ga_script, pretending some mock-up, nav bar or something functional feature.
 資料夾_includes » 新增 ga_script 預先放程式碼，可以之後放GA的追蹤碼。&lt;/p&gt;
+
+&lt;h2 id=&quot;修改-configyml-檔案&quot;&gt;修改 config.yml 檔案&lt;/h2&gt;
+&lt;p&gt;baseurl 與 url 的差別&lt;/p&gt;
+
+&lt;h2 id=&quot;圖片顯示不出來-vvv&quot;&gt;圖片顯示不出來 VVV&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/j7Qi1HM.jpg&quot;&gt;Imgur&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;階層格式&quot;&gt;階層格式&lt;/h3&gt;
 
@@ -58,7 +64,7 @@ gemfil &quot;minima&quot;, &quot;~&amp;gt; 2.0&quot;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">測試Liquid語法 on SHOPLINE</title><link href="http://localhost:4000/review/2020/01/03/Liquid.html" rel="alternate" type="text/html" title="測試Liquid語法 on SHOPLINE" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/03/Liquid</id><content type="html" xml:base="http://localhost:4000/review/2020/01/03/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">測試Liquid語法 on SHOPLINE</title><link href="http://localhost:4000/review/2020/01/03/Liquid.html" rel="alternate" type="text/html" title="測試Liquid語法 on SHOPLINE" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/03/Liquid</id><content type="html" xml:base="http://localhost:4000/review/2020/01/03/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
 
 &lt;p&gt;用404頁面來做測試
 看懂 theme.liquid的內容與架構&lt;/p&gt;

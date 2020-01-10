@@ -1,0 +1,17 @@
+I"<p>{ % <code class="highlighter-rouge">include xxx.html</code>  % }</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gemfil "jekyll", "~&gt; 3.6.0" 
+gemfil "minima", "~&gt; 2.0"
+
+</code></pre></div></div>
+
+<p>###Ref</p>
+
+<p>-<a href="https://www.youtube.com/watch?v=fqFjuX4VZmU">Hosting on Github Pages</a>
+-<a href="http://jekyllthemes.org/">Jekyll Themee 佈景主題</a></p>
+
+<h2 id="tbd-question">TBD QUESTION</h2>
+<ul>
+  <li>Mastering markdown language 熟悉Markdown的用法</li>
+</ul>
+:ET

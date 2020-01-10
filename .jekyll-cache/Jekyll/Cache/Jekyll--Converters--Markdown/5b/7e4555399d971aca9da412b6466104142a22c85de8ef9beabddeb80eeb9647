@@ -1,0 +1,81 @@
+I"�<h3 id="安裝前準備確認">安裝前準備確認</h3>
+<ul>
+  <li>ruby -v (至少高於2.4)</li>
+  <li>gem -v (至少高於2.6.13)</li>
+  <li>gem install jekyll bundler (啟用Gem安裝Jekyll)</li>
+  <li>jekyll -v (我的是 4.0)</li>
+</ul>
+
+<h2 id="終端機需要指令">終端機需要指令</h2>
+<ul>
+  <li>cd/ folder</li>
+  <li>jekyll new document name (創建jekyll資料夾)</li>
+  <li>bundle exec jekyll serve (啟動jekyll)</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Randys-MacBook-Pro:~ Randy$ jekyll new jekyll_folder
+Running bundle install in /Users/Randy/jekyll_folder…  
+</code></pre></div></div>
+<p>~畫面預覽~</p>
+
+<p>[image:AB0A1B73-4288-4748-9161-8B0045E870D4-286-0000061D86AE4D70/螢幕快照 2020-01-04 上午12.57.20.png]</p>
+
+<p>重要文件有：</p>
+<ul>
+  <li>_posts 存放文章的地方，文件用markdown語法寫成
+    <ul>
+      <li>layout: post/title/date/categories</li>
+    </ul>
+  </li>
+  <li>site
+    <ul>
+      <li>about</li>
+      <li>assets</li>
+      <li>jekyll</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="tutorial-7-draft">Tutorial 7 Draft</h3>
+<ul>
+  <li>draft，可以創建一個資料夾，用於存放文章草稿。</li>
+</ul>
+
+<h3 id="tutorial-8-creating-pages">Tutorial 8 Creating Pages</h3>
+<ul>
+  <li>Jekyll的世界只有兩種，POST/PAGE</li>
+  <li>創建一個文件，以.md為結尾，例如：example.md</li>
+  <li>layout: “page” ，一樣是以json格式起頭</li>
+</ul>
+
+<h3 id="tutorial-9permalinks">Tutorial 9:Permalinks</h3>
+<p>一定要三槓(Dash)
+—
+layout: post
+title: “Learning Jekyll Part1.markdown”
+date:   2020-01-03 00:47:12 +0800
+categories: jekyll update
+permalink: /:catagories/:year/:day/:title.html
+—
+ 永久連結，可以改變格式</p>
+
+<h3 id="tutorial-11-front-matter-defaults">Tutorial 11: Front Matter Defaults</h3>
+<p>把文章預設成某種格式 (layout:post)</p>
+
+<p>config.yml
+default:
+scope:
+path:
+values:</p>
+
+<h3 id="tutorial-12-layouts">Tutorial 12: Layouts</h3>
+<p>Creat a layout folder</p>
+
+<h1 id="reference">Reference</h1>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/usage/">Command Line Usage</a> 指令用法</li>
+  <li><a href="https://jekyllrb.com/docs/configuration/">Configuration</a>  調教</li>
+</ul>
+:ET

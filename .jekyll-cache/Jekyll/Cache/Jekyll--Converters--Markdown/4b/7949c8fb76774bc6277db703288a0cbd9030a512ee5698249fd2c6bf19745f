@@ -1,0 +1,16 @@
+I"�<p>2020年觀光股當中，有兩檔營收、獲利有機會達雙位數成長，一是2019年有眾多不利因素使其獲利明顯衰退的旅行社龍頭雄獅(2731)，2020年隨著不利因素淡化營運將明顯回溫；二是2019年在東南亞持續擴張市占率帶動獲利顯著成長的手搖飲業者六角(2732)，即便基期已高，但2020年在店數規模持續擴大帶動下，獲利表現仍有望再創新猷。</p>
+
+<ul>
+  <li>建立 <code class="highlighter-rouge">_includes</code> 資料夾</li>
+  <li>創建 <code class="highlighter-rouge">header.html</code> 範本</li>
+  <li>語法(syntax)是 <code class="highlighter-rouge">{ 包含 xxx.html}</code>，呼叫特定檔案。</li>
+  <li>原作者的做法是 Wrapper &gt; header &amp; content</li>
+  <li>header.html 中 style=”coloer; “</li>
+  <li>color = “blue”</li>
+  <li><code class="highlighter-rouge">{ site.title }</code></li>
+</ul>
+
+<hr />
+
+<p>更多 <a href="https://jekyllrb.com/docs/variables/">變數參考</a></p>
+:ET

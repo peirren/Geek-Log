@@ -1,0 +1,20 @@
+I"%<h1 id="standard-layout">Standard Layout</h1>
+<h2 id="用兩種layout-包一起">用兩種Layout 包一起</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>standard</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>wrapper</td>
+    </tr>
+  </tbody>
+</table>
+:ET

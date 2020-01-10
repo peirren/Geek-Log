@@ -1,0 +1,4 @@
+I"<h2 id="修改layout">修改Layout</h2>
+<p>想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
+同樣一樣有Template, Page的概念，與WordPress雷同。</p>
+:ET

@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T20:41:46+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">我的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/10/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T21:37:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/10/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
+&lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
+同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
+
+&lt;p&gt;用 Wrapper 去包含程式碼，在用posts去製作全部的版型&lt;/p&gt;
+
+&lt;p&gt;Folder include, adding a new file: ga_script, pretending some mock-up, nav bar or something functional feature.
+資料夾_includes » 新增 ga_script 預先放程式碼，可以之後放GA的追蹤碼。&lt;/p&gt;
+
+&lt;h3 id=&quot;階層格式&quot;&gt;階層格式&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Posts&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Wrapper&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;CSS style&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;資料夾&lt;/td&gt;
+      &lt;td&gt;檔案名稱&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layosts&lt;/td&gt;
+      &lt;td&gt;post.html&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; Gemfile &amp;gt; url: &quot;___&quot; &lt;/code&gt; 必填&lt;/p&gt;
 
@@ -10,12 +52,13 @@ gemfil &quot;minima&quot;, &quot;~&amp;gt; 2.0&quot;
 &lt;p&gt;###Ref&lt;/p&gt;
 
 &lt;p&gt;-&lt;a href=&quot;https://www.youtube.com/watch?v=fqFjuX4VZmU&quot;&gt;Hosting on Github Pages&lt;/a&gt;
--&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;
+-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;
+-&lt;a href=&quot;http://xareelee.github.io/tech_note/2015/07/23/%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog.html#why_github_pages_and_jekyll&quot;&gt;有點雜亂的中文解說&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">{ % include xxx.html % }</summary></entry><entry><title type="html">Liquid學習</title><link href="http://localhost:4000/review/2020/01/03/Liquid.html" rel="alternate" type="text/html" title="Liquid學習" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/03/Liquid</id><content type="html" xml:base="http://localhost:4000/review/2020/01/03/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">測試Liquid語法 on SHOPLINE</title><link href="http://localhost:4000/review/2020/01/03/Liquid.html" rel="alternate" type="text/html" title="測試Liquid語法 on SHOPLINE" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/03/Liquid</id><content type="html" xml:base="http://localhost:4000/review/2020/01/03/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
 
 &lt;p&gt;用404頁面來做測試
 看懂 theme.liquid的內容與架構&lt;/p&gt;
@@ -138,7 +181,7 @@ Running bundle install in /Users/Randy/jekyll_folder…
 layout: post
 title: “Learning Jekyll Part1.markdown”
 date:   2020-01-03 00:47:12 +0800
-categories: jekyll update
+categories: update
 permalink: /:catagories/:year/:day/:title.html
 —
  永久連結，可以改變格式&lt;/p&gt;
@@ -159,7 +202,7 @@ values:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/usage/&quot;&gt;Command Line Usage&lt;/a&gt; 指令用法&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/configuration/&quot;&gt;Configuration&lt;/a&gt;  調教&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">安裝前準備確認 ruby -v (至少高於2.4) gem -v (至少高於2.6.13) gem install jekyll bundler (啟用Gem安裝Jekyll) jekyll -v (我的是 4.0)</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/12/25/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-12-25T00:00:01+08:00</published><updated>2019-12-25T00:00:01+08:00</updated><id>http://localhost:4000/jekyll/update/2019/12/25/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/12/25/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">安裝前準備確認 ruby -v (至少高於2.4) gem -v (至少高於2.6.13) gem install jekyll bundler (啟用Gem安裝Jekyll) jekyll -v (我的是 4.0)</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/update/2019/12/25/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-12-25T00:00:01+08:00</published><updated>2019-12-25T00:00:01+08:00</updated><id>http://localhost:4000/update/2019/12/25/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/update/2019/12/25/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
@@ -175,7 +218,11 @@ values:&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Standard Layout, 標準畫面</title><link href="http://localhost:4000/jekyll/update/2019/01/01/Say-hello-to-Jekyll.html" rel="alternate" type="text/html" title="Standard Layout, 標準畫面" /><published>2019-01-01T00:47:12+08:00</published><updated>2019-01-01T00:47:12+08:00</updated><id>http://localhost:4000/jekyll/update/2019/01/01/Say-hello-to-Jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/01/01/Say-hello-to-Jekyll.html">&lt;h1 id=&quot;standard-layout&quot;&gt;Standard Layout&lt;/h1&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Post-style 樣板文章</title><link href="http://localhost:4000/my-jekyll-setting/2019/01/15/Post-style.html" rel="alternate" type="text/html" title="Post-style 樣板文章" /><published>2019-01-15T00:47:12+08:00</published><updated>2019-01-15T00:47:12+08:00</updated><id>http://localhost:4000/my-jekyll-setting/2019/01/15/Post-style</id><content type="html" xml:base="http://localhost:4000/my-jekyll-setting/2019/01/15/Post-style.html">&lt;h1 id=&quot;本文layout是-post-style&quot;&gt;本文Layout是 post-style&lt;/h1&gt;
+
+&lt;p&gt;測試文字 測試文字 測試文字  測試文字 測試文字 測試文字&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字</summary></entry><entry><title type="html">Standard Layout, 標準畫面</title><link href="http://localhost:4000/update/2019/01/01/Say-hello-to-Jekyll.html" rel="alternate" type="text/html" title="Standard Layout, 標準畫面" /><published>2019-01-01T00:47:12+08:00</published><updated>2019-01-01T00:47:12+08:00</updated><id>http://localhost:4000/update/2019/01/01/Say-hello-to-Jekyll</id><content type="html" xml:base="http://localhost:4000/update/2019/01/01/Say-hello-to-Jekyll.html">&lt;h1 id=&quot;standard-layout&quot;&gt;Standard Layout&lt;/h1&gt;
 &lt;h2 id=&quot;用兩種layout-包一起&quot;&gt;用兩種Layout 包一起&lt;/h2&gt;
 
 &lt;table&gt;

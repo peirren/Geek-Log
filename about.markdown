@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 開發日誌使用手冊
 permalink: /about/
 ---
 

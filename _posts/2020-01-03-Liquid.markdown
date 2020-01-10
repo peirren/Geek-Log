@@ -1,6 +1,6 @@
 ---
 layout: "article"
-title: "Liquid學習"
+title: "測試Liquid語法 on SHOPLINE"
 categories: review
 author: "Randy"
 ---

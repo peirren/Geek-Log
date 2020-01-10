@@ -52,7 +52,7 @@ Running bundle install in /Users/Randy/jekyll_folder…
 layout: post
 title: "Learning Jekyll Part1.markdown"
 date:   2020-01-03 00:47:12 +0800
-categories: jekyll update
+categories: update
 permalink: /:catagories/:year/:day/:title.html
 ---
  永久連結，可以改變格式

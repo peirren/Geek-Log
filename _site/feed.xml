@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T21:37:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/10/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-10T21:57:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/review/2020/01/10/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/review/2020/01/10/Deploy-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
 &lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
 同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
 
@@ -81,21 +81,7 @@ https://www.igift.tw/pages/christmas-gift&lt;/p&gt;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">{ % include xxx.html % }</summary></entry><entry><title type="html">Jekyll的包含運用(Includes)</title><link href="http://localhost:4000/review/2019/12/28/Includes.html" rel="alternate" type="text/html" title="Jekyll的包含運用(Includes) " /><published>2019-12-28T00:55:12+08:00</published><updated>2019-12-28T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/28/Includes</id><content type="html" xml:base="http://localhost:4000/review/2019/12/28/Includes.html">&lt;p&gt;2020年觀光股當中，有兩檔營收、獲利有機會達雙位數成長，一是2019年有眾多不利因素使其獲利明顯衰退的旅行社龍頭雄獅(2731)，2020年隨著不利因素淡化營運將明顯回溫；二是2019年在東南亞持續擴張市占率帶動獲利顯著成長的手搖飲業者六角(2732)，即便基期已高，但2020年在店數規模持續擴大帶動下，獲利表現仍有望再創新猷。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;建立 &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; 資料夾&lt;/li&gt;
-  &lt;li&gt;創建 &lt;code class=&quot;highlighter-rouge&quot;&gt;header.html&lt;/code&gt; 範本&lt;/li&gt;
-  &lt;li&gt;語法(syntax)是 &lt;code class=&quot;highlighter-rouge&quot;&gt;{ 包含 xxx.html}&lt;/code&gt;，呼叫特定檔案。&lt;/li&gt;
-  &lt;li&gt;原作者的做法是 Wrapper &amp;gt; header &amp;amp; content&lt;/li&gt;
-  &lt;li&gt;header.html 中 style=”coloer; “&lt;/li&gt;
-  &lt;li&gt;color = “blue”&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{ site.title }&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">2020年觀光股當中，有兩檔營收、獲利有機會達雙位數成長，一是2019年有眾多不利因素使其獲利明顯衰退的旅行社龍頭雄獅(2731)，2020年隨著不利因素淡化營運將明顯回溫；二是2019年在東南亞持續擴張市占率帶動獲利顯著成長的手搖飲業者六角(2732)，即便基期已高，但2020年在店數規模持續擴大帶動下，獲利表現仍有望再創新猷。</summary></entry><entry><title type="html">Jekyll的變數運用(variable)</title><link href="http://localhost:4000/review/2019/12/28/article.html" rel="alternate" type="text/html" title="Jekyll的變數運用(variable) " /><published>2019-12-28T00:55:12+08:00</published><updated>2019-12-28T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/28/article</id><content type="html" xml:base="http://localhost:4000/review/2019/12/28/article.html">&lt;p&gt;(1) Layouts &amp;gt; article: 建立了一個名為 &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; 的Layout&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">{ % include xxx.html % }</summary></entry><entry><title type="html">Jekyll的變數運用(variable)</title><link href="http://localhost:4000/review/2019/12/28/article.html" rel="alternate" type="text/html" title="Jekyll的變數運用(variable) " /><published>2019-12-28T00:55:12+08:00</published><updated>2019-12-28T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/28/article</id><content type="html" xml:base="http://localhost:4000/review/2019/12/28/article.html">&lt;p&gt;(1) Layouts &amp;gt; article: 建立了一個名為 &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; 的Layout&lt;/p&gt;
 
 &lt;p&gt;(2) 本篇文章存放於&lt;code class=&quot;highlighter-rouge&quot;&gt;_post&lt;/code&gt; ， 並在標頭呼叫&lt;/p&gt;
 
@@ -119,11 +105,52 @@ https://www.igift.tw/pages/christmas-gift&lt;/p&gt;
 
 &lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;上一篇文章： /review/2019/12/27/Learning-Jekyll-Part-2.html&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">(1) Layouts &amp;gt; article: 建立了一個名為 article 的Layout</summary></entry><entry><title type="html">Learning Jekyll, Part2,</title><link href="http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2.html" rel="alternate" type="text/html" title="Learning Jekyll, Part2," /><published>2019-12-27T00:55:12+08:00</published><updated>2019-12-27T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2</id><content type="html" xml:base="http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2.html">&lt;h1&gt; 安裝前準備確認 &lt;/h1&gt;
-&lt;p&gt;Learning Jekyll, Part2,&lt;/p&gt;
+&lt;p&gt;上一篇文章： /review/2019/12/27/Learning-Jekyll-Part-2.html&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">(1) Layouts &amp;gt; article: 建立了一個名為 article 的Layout</summary></entry><entry><title type="html">Learning Jekyll, Part2, Jekyll 資料夾格式</title><link href="http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2.html" rel="alternate" type="text/html" title="Learning Jekyll, Part2, Jekyll 資料夾格式" /><published>2019-12-27T00:55:12+08:00</published><updated>2019-12-27T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2</id><content type="html" xml:base="http://localhost:4000/review/2019/12/27/Learning-Jekyll-Part-2.html">&lt;h2 id=&quot;directory-structure---jekyll-資料夾格式&quot;&gt;Directory Structure - Jekyll 資料夾格式&lt;/h2&gt;
 
-&lt;p&gt;1
-終端機需要指令&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">安裝前準備確認 Learning Jekyll, Part2,</summary></entry><entry><title type="html">Learning Jekyll, Part1</title><link href="http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1.html" rel="alternate" type="text/html" title="Learning Jekyll, Part1" /><published>2019-12-26T00:55:12+08:00</published><updated>2019-12-26T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1</id><content type="html" xml:base="http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1.html">&lt;h3 id=&quot;安裝前準備確認&quot;&gt;安裝前準備確認&lt;/h3&gt;
+&lt;p&gt;基本的靜態 Jekyll 網站應該長得像是下面這樣⋯⋯
+A basic Jekyll site usually looks something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
+├── _config.yml
+├── _data
+|   └── members.yml
+├── _drafts
+|   ├── begin-with-the-crazy-ideas.md
+|   └── on-simplicity-in-technology.md
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
+|   └── 2009-04-26-barcamp-boston-4-roundup.md
+├── _sass
+|   ├── _base.scss
+|   └── _layout.scss
+├── _site
+├── .jekyll-metadata
+└── index.html # can also be an 'index.md' with valid front matter
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;an-overview-of-what-each-of-these-does&quot;&gt;An overview of what each of these does:&lt;/h2&gt;
+&lt;h4 id=&quot;每一個檔案的概覽如下&quot;&gt;每一個檔案的概覽如下：&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;config.yml&lt;/td&gt;
+      &lt;td&gt;Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; 是設定檔案資料，存放於yml檔案的指令在這裡都將會被執行唷！&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;includes&lt;/td&gt;
+      &lt;td&gt;These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. The liquid tag &lt;code class=&quot;highlighter-rouge&quot;&gt;{ % include file.ext % }&lt;/code&gt; can be used to include the partial in _includes/file.ext.&lt;/td&gt;
+      &lt;td&gt;透過語法 { include} 呼叫include資料夾內的檔案！&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Randy</name></author><summary type="html">Directory Structure - Jekyll 資料夾格式</summary></entry><entry><title type="html">Learning Jekyll, Part1</title><link href="http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1.html" rel="alternate" type="text/html" title="Learning Jekyll, Part1" /><published>2019-12-26T00:55:12+08:00</published><updated>2019-12-26T00:55:12+08:00</updated><id>http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1</id><content type="html" xml:base="http://localhost:4000/review/2019/12/26/Learning-Jekyll-Part-1.html">&lt;h3 id=&quot;安裝前準備確認&quot;&gt;安裝前準備確認&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;ruby -v (至少高於2.4)&lt;/li&gt;
   &lt;li&gt;gem -v (至少高於2.6.13)&lt;/li&gt;

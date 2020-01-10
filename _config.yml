@@ -22,8 +22,8 @@ title: Randy 的開發日誌
 email: peir.ren@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "Geek-Log" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "Geek-Log" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "@peirren"
 github_username:  "@peirren"
 

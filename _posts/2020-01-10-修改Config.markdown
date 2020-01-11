@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Jekyll - 修改Config.yml的設定"
+date:   2019-01-10 13:30:00 +0800
+categories: Jekyll
+---
+
+
+# 研究方法
+到 ![Jekyll Theme](http://jekyllthemes.org/) 尋找合適的主題，將下載佈景主題資料夾後研究它設定檔案。
+
+
+`paginate` 指定分頁數量
+`plugins:` 要求外掛進來，可能需要預先裝好
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+`include: ["_pages"]`
+`permalink: /posts/:title/` 指定文章的永久連結
+
+
+|inculdes|analytics.html|tracking script|
+|還可以放入其他 Ex:Head, Footer, disqus(問答區)|
+
+
+
+## 網站基礎設定 (Site settings)
+
+`title:` Someone's Jekyll blog
+`description:` 你可以在這裡介紹這個部落格，會被顯示在Google搜尋頁面中，也是Meta description
+`keyword:` 描述這個網站的關鍵字
+---
+
+`url:` '' # your host
+如果你的Jekyll網站架設在伺服器時，就不需要子域名，請將這一個留空。
+但是如果你使用的是 GitHub Pages，架設你的Jekyll網站，請將在這邊留下你指定的子域名，這個必須跟GitHub中的Setting頁面一致。
+
+
+# 如果你在使用 GitHub Pages, 请将 baseurl 设置为你的网址的子域名
+# for example, if your site is "kaeyleo.github.io", then this url should leave blank.
+# 例如，当你的域名是 "kaeyleo.github.io"  时，这个 url 需要留空
+# but if your created a repo named "myblog", and the site is "kaeyleo.github.io/myblog", change baseurl to '/myblog'
+# 但是，如果你创建了一个叫 "myblog" 的网站，此时网址会变成 "kaeyleo.github.io/myblog" ，这时再将 baseurl 设置为 '/myblog'
+baseurl: ''
+
+
+
+
+# 修改Layout
+想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
+同樣一樣有Template, Page的概念，與WordPress雷同。
+
+用 Wrapper 去包含程式碼，在用posts去製作全部的版型
+
+
+###Ref
+
+-[Hosting on Github Pages](https://www.youtube.com/watch?v=fqFjuX4VZmU)
+-[Jekyll Themee 佈景主題](http://jekyllthemes.org/)
+-[有點雜亂的中文解說](http://xareelee.github.io/tech_note/2015/07/23/%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog.html#why_github_pages_and_jekyll)
+
+
+## TBD QUESTION
+- Mastering markdown language 熟悉Markdown的用法

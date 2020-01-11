@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deploy on Github - 部署Jekyll於Github"
+title: "Deploy Jekyll on Github - 部署Jekyll於Github"
 categories: review
 author: "Randy"
 tag: english

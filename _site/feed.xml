@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-11T15:47:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Deploy on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/Deploy-on-Github.html" rel="alternate" type="text/html" title="Deploy on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/Deploy%20on%20Github</id><content type="html" xml:base="http://localhost:4000/Deploy-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-11T16:10:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Markdown - 語法練習篇</title><link href="http://localhost:4000/language-markdown.html" rel="alternate" type="text/html" title="Markdown - 語法練習篇" /><published>2020-01-10T15:30:00+08:00</published><updated>2020-01-10T15:30:00+08:00</updated><id>http://localhost:4000/language-markdown</id><content type="html" xml:base="http://localhost:4000/language-markdown.html">&lt;h1 id=&quot;本篇文章動機&quot;&gt;本篇文章動機&lt;/h1&gt;
+&lt;p&gt;到 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。&lt;/p&gt;
+
+&lt;h3 id=&quot;reference-resource&quot;&gt;Reference&amp;amp; Resource&lt;/h3&gt;
+&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="markdown" /><summary type="html">本篇文章動機 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry><entry><title type="html">Jekyll - 修改Config.yml的設定</title><link href="http://localhost:4000/%E4%BF%AE%E6%94%B9Config.html" rel="alternate" type="text/html" title="Jekyll - 修改Config.yml的設定" /><published>2020-01-10T13:30:00+08:00</published><updated>2020-01-10T13:30:00+08:00</updated><id>http://localhost:4000/%E4%BF%AE%E6%94%B9Config</id><content type="html" xml:base="http://localhost:4000/%E4%BF%AE%E6%94%B9Config.html">&lt;h1 id=&quot;研究方法&quot;&gt;研究方法&lt;/h1&gt;
+&lt;p&gt;到 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate&lt;/code&gt; 指定分頁數量；
+&lt;code class=&quot;highlighter-rouge&quot;&gt;plugins:&lt;/code&gt; 要求外掛進來，可能需要預先裝好&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;jekyll-feed&lt;/li&gt;
+  &lt;li&gt;jekyll-sitemap&lt;/li&gt;
+  &lt;li&gt;jekyll-paginate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;include: [&quot;_pages&quot;]&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /posts/:title/&lt;/code&gt; 指定文章的永久連結&lt;/p&gt;
+
+&lt;p&gt;|inculdes|analytics.html|tracking script|
+還可以放入其他 Ex:Head, Footer, disqus(問答區)&lt;/p&gt;
+
+&lt;h2 id=&quot;網站基礎設定-site-settings&quot;&gt;網站基礎設定 (Site settings)&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title:&lt;/code&gt; Someone’s Jekyll blog
+&lt;code class=&quot;highlighter-rouge&quot;&gt;description:&lt;/code&gt; 你可以在這裡介紹這個部落格，會被顯示在Google搜尋頁面中，也是Meta description
+&lt;code class=&quot;highlighter-rouge&quot;&gt;keyword:&lt;/code&gt; 描述這個網站的關鍵字
+—&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;url:&lt;/code&gt; ‘’ # your host
+如果你的Jekyll網站架設在伺服器時，就不需要子域名，請將這一個留空。
+但是如果你使用的是 GitHub Pages，架設你的Jekyll網站，請將在這邊留下你指定的子域名，這個必須跟GitHub中的Setting頁面一致。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt;
+如果你使用的是 GitHub Pages，請將 Baseurl 設定為你網域的子域名。但如果你創造了一個名叫 “myblog”的 repo，網址將會變成 “yourgithubid.github.io/myblog”，請將 baseurl 稱改為 ‘/myblog’&lt;/p&gt;
+
+&lt;h1 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h1&gt;
+&lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
+同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
+
+&lt;p&gt;用 Wrapper 去包含程式碼，在用posts去製作全部的版型&lt;/p&gt;
+
+&lt;h3 id=&quot;reference-resource&quot;&gt;Reference&amp;amp; Resource&lt;/h3&gt;
+&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="update" /><summary type="html">研究方法 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry><entry><title type="html">Deploy Jekyll on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/Deploy-Jekyll-on-Github.html" rel="alternate" type="text/html" title="Deploy Jekyll on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/Deploy%20Jekyll%20on%20Github</id><content type="html" xml:base="http://localhost:4000/Deploy-Jekyll-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
 &lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
 同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
 
@@ -255,69 +297,7 @@ values:&lt;/p&gt;
 
 &lt;p&gt;測試文字 測試文字 測試文字  測試文字 測試文字 測試文字&lt;/p&gt;
 
-&lt;p&gt;#&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字</summary></entry><entry><title type="html">Jekyll - 修改Config.yml的設定</title><link href="http://localhost:4000/%E4%BF%AE%E6%94%B9Config.html" rel="alternate" type="text/html" title="Jekyll - 修改Config.yml的設定" /><published>2019-01-10T13:30:00+08:00</published><updated>2019-01-10T13:30:00+08:00</updated><id>http://localhost:4000/%E4%BF%AE%E6%94%B9Config</id><content type="html" xml:base="http://localhost:4000/%E4%BF%AE%E6%94%B9Config.html">&lt;h1 id=&quot;研究方法&quot;&gt;研究方法&lt;/h1&gt;
-&lt;p&gt;到 &lt;img src=&quot;http://jekyllthemes.org/&quot; alt=&quot;Jekyll Theme&quot; /&gt; 尋找合適的主題，將下載佈景主題資料夾後研究它設定檔案。&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate&lt;/code&gt; 指定分頁數量
-&lt;code class=&quot;highlighter-rouge&quot;&gt;plugins:&lt;/code&gt; 要求外掛進來，可能需要預先裝好&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;jekyll-feed&lt;/li&gt;
-  &lt;li&gt;jekyll-sitemap&lt;/li&gt;
-  &lt;li&gt;jekyll-paginate&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;include: [&quot;_pages&quot;]&lt;/code&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /posts/:title/&lt;/code&gt; 指定文章的永久連結&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;inculdes&lt;/td&gt;
-      &lt;td&gt;analytics.html&lt;/td&gt;
-      &lt;td&gt;tracking script&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;還可以放入其他 Ex:Head, Footer, disqus(問答區)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;網站基礎設定-site-settings&quot;&gt;網站基礎設定 (Site settings)&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title:&lt;/code&gt; Someone’s Jekyll blog
-&lt;code class=&quot;highlighter-rouge&quot;&gt;description:&lt;/code&gt; 你可以在這裡介紹這個部落格，會被顯示在Google搜尋頁面中，也是Meta description
-&lt;code class=&quot;highlighter-rouge&quot;&gt;keyword:&lt;/code&gt; 描述這個網站的關鍵字
-—&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;url:&lt;/code&gt; ‘’ # your host
-如果你的Jekyll網站架設在伺服器時，就不需要子域名，請將這一個留空。
-但是如果你使用的是 GitHub Pages，架設你的Jekyll網站，請將在這邊留下你指定的子域名，這個必須跟GitHub中的Setting頁面一致。&lt;/p&gt;
-
-&lt;h1 id=&quot;如果你在使用-github-pages-请将-baseurl-设置为你的网址的子域名&quot;&gt;如果你在使用 GitHub Pages, 请将 baseurl 设置为你的网址的子域名&lt;/h1&gt;
-&lt;h1 id=&quot;for-example-if-your-site-is-kaeyleogithubio-then-this-url-should-leave-blank&quot;&gt;for example, if your site is “kaeyleo.github.io”, then this url should leave blank.&lt;/h1&gt;
-&lt;h1 id=&quot;例如当你的域名是-kaeyleogithubio--时这个-url-需要留空&quot;&gt;例如，当你的域名是 “kaeyleo.github.io”  时，这个 url 需要留空&lt;/h1&gt;
-&lt;h1 id=&quot;but-if-your-created-a-repo-named-myblog-and-the-site-is-kaeyleogithubiomyblog-change-baseurl-to-myblog&quot;&gt;but if your created a repo named “myblog”, and the site is “kaeyleo.github.io/myblog”, change baseurl to ‘/myblog’&lt;/h1&gt;
-&lt;h1 id=&quot;但是如果你创建了一个叫-myblog-的网站此时网址会变成-kaeyleogithubiomyblog-这时再将-baseurl-设置为-myblog&quot;&gt;但是，如果你创建了一个叫 “myblog” 的网站，此时网址会变成 “kaeyleo.github.io/myblog” ，这时再将 baseurl 设置为 ‘/myblog’&lt;/h1&gt;
-&lt;p&gt;baseurl: ‘’&lt;/p&gt;
-
-&lt;h1 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h1&gt;
-&lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
-同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
-
-&lt;p&gt;用 Wrapper 去包含程式碼，在用posts去製作全部的版型&lt;/p&gt;
-
-&lt;p&gt;###Ref&lt;/p&gt;
-
-&lt;p&gt;-&lt;a href=&quot;https://www.youtube.com/watch?v=fqFjuX4VZmU&quot;&gt;Hosting on Github Pages&lt;/a&gt;
--&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;
--&lt;a href=&quot;http://xareelee.github.io/tech_note/2015/07/23/%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog.html#why_github_pages_and_jekyll&quot;&gt;有點雜亂的中文解說&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="update" /><summary type="html">研究方法 到 尋找合適的主題，將下載佈景主題資料夾後研究它設定檔案。</summary></entry><entry><title type="html">Standard Layout, 標準畫面</title><link href="http://localhost:4000/Say-hello-to-Jekyll.html" rel="alternate" type="text/html" title="Standard Layout, 標準畫面" /><published>2019-01-01T00:47:12+08:00</published><updated>2019-01-01T00:47:12+08:00</updated><id>http://localhost:4000/Say-hello-to-Jekyll</id><content type="html" xml:base="http://localhost:4000/Say-hello-to-Jekyll.html">&lt;h1 id=&quot;standard-layout&quot;&gt;Standard Layout&lt;/h1&gt;
+&lt;p&gt;#&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字</summary></entry><entry><title type="html">Standard Layout, 標準畫面</title><link href="http://localhost:4000/Say-hello-to-Jekyll.html" rel="alternate" type="text/html" title="Standard Layout, 標準畫面" /><published>2019-01-01T00:47:12+08:00</published><updated>2019-01-01T00:47:12+08:00</updated><id>http://localhost:4000/Say-hello-to-Jekyll</id><content type="html" xml:base="http://localhost:4000/Say-hello-to-Jekyll.html">&lt;h1 id=&quot;standard-layout&quot;&gt;Standard Layout&lt;/h1&gt;
 &lt;h2 id=&quot;用兩種layout-包一起&quot;&gt;用兩種Layout 包一起&lt;/h2&gt;
 
 &lt;table&gt;

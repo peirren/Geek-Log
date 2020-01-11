@@ -1,4 +1,4 @@
-I"�<p>(1) Layouts &gt; article: 建立了一個名為 <code class="highlighter-rouge">article</code> 的Layout</p>
+I"�<p>(1) Layouts &gt; article: 建立了一個名為 <code class="highlighter-rouge">article</code> 的Layout</p>
 
 <p>(2) 本篇文章存放於<code class="highlighter-rouge">_post</code> ， 並在標頭呼叫</p>
 
@@ -22,5 +22,5 @@
 
 <p>更多 <a href="https://jekyllrb.com/docs/variables/">變數參考</a></p>
 
-<p>上一篇文章： /review/2019/12/27/Learning-Jekyll-Part-2.html</p>
+<p>上一篇文章： /Learning-Jekyll-Part-2.html</p>
 :ET

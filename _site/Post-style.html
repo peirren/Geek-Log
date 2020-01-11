@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Jekyll的變數運用(variable) | Randy 的開發日誌</title>
+<title>Post-style 樣板文章 | Randy 的開發日誌</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Jekyll的變數運用(variable)" />
+<meta property="og:title" content="Post-style 樣板文章" />
 <meta name="author" content="Randy" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="(1) Layouts &gt; article: 建立了一個名為 article 的Layout" />
-<meta property="og:description" content="(1) Layouts &gt; article: 建立了一個名為 article 的Layout" />
-<link rel="canonical" href="http://localhost:4000/review/2019/12/28/article.html" />
-<meta property="og:url" content="http://localhost:4000/review/2019/12/28/article.html" />
+<meta name="description" content="本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字" />
+<meta property="og:description" content="本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字" />
+<link rel="canonical" href="http://localhost:4000/Post-style.html" />
+<meta property="og:url" content="http://localhost:4000/Post-style.html" />
 <meta property="og:site_name" content="Randy 的開發日誌" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-28T00:55:12+08:00" />
+<meta property="article:published_time" content="2019-01-15T00:47:12+08:00" />
 <script type="application/ld+json">
-{"description":"(1) Layouts &gt; article: 建立了一個名為 article 的Layout","author":{"@type":"Person","name":"Randy"},"@type":"BlogPosting","url":"http://localhost:4000/review/2019/12/28/article.html","headline":"Jekyll的變數運用(variable)","dateModified":"2019-12-28T00:55:12+08:00","datePublished":"2019-12-28T00:55:12+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/review/2019/12/28/article.html"},"@context":"https://schema.org"}</script>
+{"description":"本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字","author":{"@type":"Person","name":"Randy"},"@type":"BlogPosting","url":"http://localhost:4000/Post-style.html","headline":"Post-style 樣板文章","dateModified":"2019-01-15T00:47:12+08:00","datePublished":"2019-01-15T00:47:12+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Post-style.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Randy 的開發日誌" /></head>
 <body><header class="site-header" role="banner">
@@ -39,18 +39,25 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Jekyll的變數運用(variable) </h1>
+    <h1 class="post-title p-name" itemprop="name headline">Post-style 樣板文章</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2019-12-28T00:55:12+08:00" itemprop="datePublished">Dec 28, 2019
+      <time class="dt-published" datetime="2019-01-15T00:47:12+08:00" itemprop="datePublished">Jan 15, 2019
       </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Randy</span></span></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <style type="text/css">
+    <!-- 本頁面預先讀取了 Jekyll post 原本的設定，用在作些微的樣式表修改 -->
+
+
+<script type="text/javascript">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  </script>
+
+<style type="text/css">
     
     body {
-        margin: 5% 12.5% 0% 12.5%;
-    }
+        margin: 0% 12.5% 0% 12.5%;
+}
 
     .info {
         background-color: #00bcd4;
@@ -63,49 +70,22 @@
     }
 </style>
 
-<body>
-<div class="info">
-    <h1> Jekyll的變數運用(variable)  </h1>
-    <div>
-    作者：<label> </label>,
-    建立時間：<label>2019-12-28 00:55:12 +0800 </label>
-    </div>
-</div>
-
-<div class="container">
-  <h2>內文開始</h2>
-
-<p>(1) Layouts &gt; article: 建立了一個名為 <code class="highlighter-rouge">article</code> 的Layout</p>
-
-<p>(2) 本篇文章存放於<code class="highlighter-rouge">_post</code> ， 並在標頭呼叫</p>
-
-<p><code class="highlighter-rouge">layout: "article" </code></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>(3) 這項筆記來自：Variables</td>
-      <td>Jekyll - Static Site Generator</td>
-      <td>Tutorial 13</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><a href="https://learn.cloudcannon.com/jekyll-cheat-sheet/">
-    Jekyll Cheat Sheet
-</a></p>
-
-<hr />
-
-<p>更多 <a href="https://jekyllrb.com/docs/variables/">變數參考</a></p>
-
-<p>上一篇文章： /review/2019/12/27/Learning-Jekyll-Part-2.html</p>
+<!-- 功能性腳本 -->
+<p style="font-size: 8px"> 之後要放入JS代碼的東東，請暫時忽略它 Y(.^ .)Y</p>	
+<!-- 功能性腳本 -->
 
 
-</div>
+<!-- 讀取 _posts 內的內容 -->
+<h1 id="本文layout是-post-style">本文Layout是 post-style</h1>
+
+<p>測試文字 測試文字 測試文字  測試文字 測試文字 測試文字</p>
+
+<p>#</p>
+
+<!-- 讀取 _posts 內的內容 -->
 
 </body>
-  </div><a class="u-url" href="/review/2019/12/28/article.html" hidden></a>
+  </div><a class="u-url" href="/Post-style.html" hidden></a>
 </article>
 
       </div>

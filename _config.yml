@@ -21,7 +21,7 @@
 title: Randy 的開發日誌
 email: peir.ren@gmail.com
 description: '這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得'
-baseurl: '' # the subpath of your site, e.g. /blog
+baseurl: '/Geek-Log' # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "@peir.ren"
 github_username:  "@peirren"

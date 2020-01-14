@@ -6,7 +6,7 @@ categories: Draft
 tag: facebook 
 ---
 
-##
+## Faceboook ads廣告圖片尺寸介紹
 <span>Tips:拆解成最小可執行的動作與目標</span>
 1. Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080
 2. 多元多目標，曝光度差，數位行銷人的想法與溝通能力很重要

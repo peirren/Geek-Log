@@ -20,7 +20,8 @@ permalink: /about/
 * Eng: 當我想要練習用全英文寫作的時候
 * Markdown: 語法練習
 * jQuery: 語法練習
-
+* facebook: 社群行銷與Facebook廣告
+* "Not Compeleted" : 未完成的文件
 
 
 ---

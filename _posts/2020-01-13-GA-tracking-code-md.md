@@ -3,7 +3,7 @@ layout: post
 title:  "Google analytics tracking code between two domain"
 date:   2020-01-15 00:00:00 +0800
 categories: Draft
-teg: "Google analytics"
+teg: "Google analytics" "Not Compeleted"
 ---
 
 #修改追蹤程式碼以設定跨網域追蹤

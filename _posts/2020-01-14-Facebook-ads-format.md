@@ -56,3 +56,14 @@ Recommended ratio is 1:1.
 Max image size of 30MB.
 Recommended image formats are JPG and PNG.
 Images with 20% text or more could increase chances of failed delivery.
+
+
+- - - 
+
+圖像的最佳規格
+上傳現有的最高解析度圖像（最低 500 像素；沒有解析度上限）。
+建議的檔案類型：.jpg 或 .png
+建議的長寬比：
+動態和插播影片版位建議使用正方形（1:1）
+限時動態版位建議使用全螢幕直向（9:16）
+若要將廣告投遞最佳化，請使用文字比例低的圖像。

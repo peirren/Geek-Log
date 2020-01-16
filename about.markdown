@@ -23,8 +23,18 @@ permalink: /about/
 * facebook: 社群行銷與Facebook廣告
 * "Not Compeleted" : 未完成的文件
 
+### Practice
+Link to in-site page. [Jekyll update](/Geek-Log/update/)
+
+
+
+{% include reference.html %}
+[Jekyll theme](https://jekyllthemes.io/)
 
 ---
+
+
+
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

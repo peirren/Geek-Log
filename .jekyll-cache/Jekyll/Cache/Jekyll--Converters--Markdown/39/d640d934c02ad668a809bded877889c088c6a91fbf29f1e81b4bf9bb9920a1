@@ -1,0 +1,24 @@
+I"�<h1 id="terminal-command">Terminal command</h1>
+
+<ul>
+  <li>創資料夾 Ex：新資料夾 =&gt; mkdir 新資料夾</li>
+  <li>
+    <p>刪資料夾 Ex: 刪除新資料夾 rmdir 新資料夾
+rm = remove</p>
+  </li>
+  <li>用finder開啟當前目錄 <code class="highlighter-rouge">open .</code></li>
+  <li>顯示現在所處目錄內容 <code class="highlighter-rouge">ls</code></li>
+  <li>顯示現在所處目錄<code class="highlighter-rouge">pwd</code></li>
+</ul>
+
+<h2 id="ethernet">eThernet</h2>
+<ul>
+  <li>查網卡介面狀態 <code class="highlighter-rouge">ifconfig</code></li>
+  <li>查無線網卡狀態 <code class="highlighter-rouge">iwconfig</code></li>
+</ul>
+
+<h3 id="參考資料-reference">參考資料 Reference</h3>
+<li></li>
+<li></li>
+<li></li>
+:ET

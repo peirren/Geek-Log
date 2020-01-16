@@ -3,6 +3,7 @@ layout: "article"
 title: "測試Liquid語法 on SHOPLINE"
 categories: review
 author: "Randy"
+tag: Not Compeleted
 ---
 
  { % ``` include xxx.html ```  % }

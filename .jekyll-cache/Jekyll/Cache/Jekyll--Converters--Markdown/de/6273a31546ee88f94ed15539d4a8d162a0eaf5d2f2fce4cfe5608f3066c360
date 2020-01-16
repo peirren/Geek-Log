@@ -1,0 +1,15 @@
+I"�<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />認識Jekyll資料結構</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />創建模板</li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Hosting on Github</p>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />創建Jekyll學習資源</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />插入圖片圖床</li>
+</ul>
+
+<hr />
+
+<h3 id="目前進度">目前進度</h3>
+
+:ET

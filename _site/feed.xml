@@ -1,8 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-11T16:10:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Markdown - 語法練習篇</title><link href="http://localhost:4000/language-markdown.html" rel="alternate" type="text/html" title="Markdown - 語法練習篇" /><published>2020-01-10T15:30:00+08:00</published><updated>2020-01-10T15:30:00+08:00</updated><id>http://localhost:4000/language-markdown</id><content type="html" xml:base="http://localhost:4000/language-markdown.html">&lt;h1 id=&quot;本篇文章動機&quot;&gt;本篇文章動機&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-16T21:36:27+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-16T21:36:27+08:00</published><updated>2020-01-16T21:36:27+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
+如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在GA帳戶中設定資源：建議新建一項資源，在所有要共同追蹤的網域中，安裝同一組&lt;code class=&quot;highlighter-rouge&quot;&gt;程式碼&lt;/code&gt;與&lt;code class=&quot;highlighter-rouge&quot;&gt;Tracking ID&lt;/code&gt;，
+1.1. 修改主要網域的追蹤程式碼。
+在程式碼片段中找出 create 這一行。如果網站是 example-1.com，這一行看起來會像這樣：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;對下列程式碼進行調整 (紅色粗體文字是需要變更的部分)：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ga('create', 'UA-XXXXXXX-Y', 'example-1.com');
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;ga(‘create’, ‘UA-XXXXXXX-Y’, &lt;code class=&quot;highlighter-rouge&quot;&gt;'auto', {'allowLinker': true});&lt;/code&gt;
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('require', 'linker');&lt;/code&gt;
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('linker:autoLink', ['example-2.com'] );&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;別忘了將範例追蹤 ID (UA-XXXXXX-Y) 換成您專用的 ID
+範例次要網域 &lt;code class=&quot;highlighter-rouge&quot;&gt;(example-2.com)&lt;/code&gt; 必須換成次要網域名稱&lt;/p&gt;
+
+&lt;p&gt;三個以上的網域追蹤，請另外參考&lt;a href=&quot;Google文件&quot;&gt;https://support.google.com/analytics/answer/1034342?hl=zh-Hant&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;建立報表資料添加篩選器&quot;&gt;建立報表資料&amp;amp;添加篩選器&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/about/contactUs.html
+/about/contactUs.html
+/products/buy.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;以上三個路近，可能存在在兩個網域底下，GA不會顯示唷！&lt;/p&gt;
+
+&lt;p&gt;為了讓報表顯示網域名稱，必須建立報表&lt;code class=&quot;highlighter-rouge&quot;&gt;資料檢視的複本&lt;/code&gt; (其中包含您所有網域的資料)，然後在這個新資料檢視中&lt;code class=&quot;highlighter-rouge&quot;&gt;添加進階篩選器&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;這樣就會在GA中顯示真實的網域名稱囉！&lt;/p&gt;
+
+&lt;h2 id=&quot;資料檢視篩選器&quot;&gt;資料檢視篩選器&lt;/h2&gt;
+&lt;p&gt;跨網域追蹤設定完畢後，請按照本例設定資料檢視篩選器，以便在報表中顯示網域名稱。對於部分欄位，您必須選取下拉式選單中的項目。至於其他欄位，您必須輸入下列字元：&lt;/p&gt;
+
+&lt;p&gt;篩選器類型：自訂篩選器 &amp;gt; 進階
+欄位 A –&amp;gt; 擷取 A：主機名稱 = (.&lt;em&gt;)
+欄位 B –&amp;gt; 擷取 B：要求 URI = (.&lt;/em&gt;)
+輸出至 –&amp;gt; 建構函式：要求 URI = $A1$B1&lt;/p&gt;
+
+&lt;h3 id=&quot;參照連結網址排除清單&quot;&gt;參照連結網址排除清單&lt;/h3&gt;
+&lt;p&gt;前述過程只是讓 A 網域到 B 網域，都共用一個GA檢視資源。這樣還不夠唷，必須還要還要製作&lt;code class=&quot;highlighter-rouge&quot;&gt;排除清單&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h4 id=&quot;檢查跨網域追蹤&quot;&gt;檢查跨網域追蹤&lt;/h4&gt;
+&lt;p&gt;最後再檢查一下資料囉&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
+&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
+  &lt;li&gt;勞工保險&lt;/li&gt;
+  &lt;li&gt;勞工退休金 （雇主提撥/自提）&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;健保 （僱員/眷屬）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;勞保加、退保申報單&lt;/li&gt;
+  &lt;li&gt;健保加、退保申報單
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;常用必存資料夾&quot;&gt;常用&amp;amp;必存資料夾&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;勞保&lt;/code&gt; 投保單位 被保險人名冊&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;勞保&lt;/code&gt; 勞工單位 退休金名冊&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;健保&lt;/code&gt; 投保人/投保金額；自付額/單位負擔&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;存放位置&quot;&gt;存放位置&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;實體分三冊&lt;/li&gt;
+  &lt;li&gt;虛擬 » Nas &amp;gt; 公司jp6r0u4&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">勞工保險 勞工退休金 （雇主提撥/自提） 健保 （僱員/眷屬）</summary></entry><entry><title type="html">工作日誌-2020-01-15</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="工作日誌-2020-01-15" /><published>2020-01-15T10:30:00+08:00</published><updated>2020-01-15T10:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;p&gt;需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。&lt;/p&gt;
+
+&lt;h2 id=&quot;會計開立作業&quot;&gt;會計開立作業&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;AR賬表功能:客戶累積金額/發票代號/入款金流的方向&lt;/li&gt;
+  &lt;li&gt;台全珍豬的備註&lt;em&gt;不是銷貨費用&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;TBD&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;2020/01/31, 日初已付款, 但不開發票。&lt;/li&gt;
+  &lt;li&gt;如果需要直接寄出電子發票的Email，必須選歸戶(會員載具/自然人憑證)；紙本發票不能歸戶，只能列印 （已回覆）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;官網和對帳務工作&quot;&gt;官網和對帳務工作：&lt;/h2&gt;
+&lt;p&gt;每月10日前，狀態，&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;已完成/已付款&lt;/li&gt;
+  &lt;li&gt;已取消/已退款&lt;/li&gt;
+  &lt;li&gt;確認中/運送中&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;檔案管理服務案件&quot;&gt;檔案管理/服務案件&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;服務檔案管理分類成：帳務或非帳務的，非帳務的就是行銷的部分。&lt;/li&gt;
+  &lt;li&gt;客戶發票/客戶分析報表分開&lt;/li&gt;
+  &lt;li&gt;服務費明細請見 » 01 公司文件 &amp;gt; 客戶發票&lt;/li&gt;
+  &lt;li&gt;SEED，Google 明細兼發票
+** 其他客戶的合約更新：台全/日初&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;marcom的定義與工作&quot;&gt;Marcom的定義與工作&lt;/h2&gt;
+&lt;p&gt;劃分不明確，但工作流程可以歸納為選題、企劃、製作、投放、分析
+#&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;純粹從 Marketing 端思考，但很多時候必須靠慮業務的需求，業務的敏銳度比行銷有時效果來得更快&lt;/li&gt;
+  &lt;li&gt;Google 帳戶開設、資源、資料檢視&lt;/li&gt;
+  &lt;li&gt;簡單的技術排錯，安裝、Tag assistant的應用，甚至是 Basic Tag&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;常見分析要求&quot;&gt;常見分析要求&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;一般&lt;/code&gt; 來源與流量的管理預報告&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;行銷&lt;/code&gt; 趨勢的洞察與行動，不能只是看到，還要能提出相對應得見解。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;業務&lt;/code&gt; 銷量的評估與預測&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;總務工作&quot;&gt;總務工作&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;涵蓋會計、財務、人資、審計&lt;/li&gt;
+  &lt;li&gt;損益表結算，損益表工作劃分&lt;/li&gt;
+  &lt;li&gt;會計科目的定義與審核&lt;/li&gt;
+  &lt;li&gt;字軌匯入、電子發票串接、開立&lt;/li&gt;
+  &lt;li&gt;薪資單，扣繳&lt;/li&gt;
+  &lt;li&gt;勞健保計算&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;shopline---zotabox-之間關聯&quot;&gt;Shopline - Zotabox 之間關聯&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Zotabox - Headbar 設定模式&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/. main page&lt;/td&gt;
+      &lt;td&gt;首頁&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/ category&lt;/td&gt;
+      &lt;td&gt;分類頁面&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/ producyt&lt;/td&gt;
+      &lt;td&gt;商品頁面&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/ pages&lt;/td&gt;
+      &lt;td&gt;普通單頁 e.g 品牌介紹 /aboutus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/ group-sale&lt;/td&gt;
+      &lt;td&gt;一頁購物&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;.&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/cart&lt;/td&gt;
+      &lt;td&gt;購物，選付款方式與送貨方式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/checkout&lt;/td&gt;
+      &lt;td&gt;訂購人姓名與收件人姓名&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/order/xxxx&lt;/td&gt;
+      &lt;td&gt;完成購物 (這個有點不確定)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/checkout&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。</summary></entry><entry><title type="html">Faceboook ads廣告圖片尺寸介紹</title><link href="http://localhost:4000/Geek-Log/Facebook-ads-format.html" rel="alternate" type="text/html" title="Faceboook ads廣告圖片尺寸介紹" /><published>2020-01-14T18:30:00+08:00</published><updated>2020-01-14T18:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Facebook-ads-format</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Facebook-ads-format.html">&lt;h2 id=&quot;faceboook-ads廣告圖片尺寸介紹&quot;&gt;Faceboook ads廣告圖片尺寸介紹&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;Tips:拆解成最小可執行的動作與目標&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080&lt;/li&gt;
+  &lt;li&gt;多元多目標，曝光度差，數位行銷人的想法與溝通能力很重要&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;動態消息&quot;&gt;動態消息&lt;/h3&gt;
+&lt;p&gt;Feed ad image dimensions and guidelines&lt;/p&gt;
+
+&lt;p&gt;推薦尺寸
+最小尺寸
+推薦比例
+圖像比例：超過20%很高的機會被下架而不能投遞廣告，投手或設計師們一定要有備案。有許多技巧可以避面被征測到。&lt;/p&gt;
+
+&lt;p&gt;文字：125 字元｜標題：25字元
+連結描述：30字元&lt;/p&gt;
+
+&lt;p&gt;Recommended image size: 1200 x 628 pixels.
+Minimum width and height: 600 pixels.
+Recommended aspect ratio is between 9:16 to 16:9, but crops to 1.91:1 with a link.
+Recommended image formats are JPG and PNG.
+Images with 20% text or more could increase chances of failed delivery.
+Feed ad character limits&lt;/p&gt;
+
+&lt;p&gt;Text: 125 characters.
+Headline: 25 characters.
+Link description: 30 characters.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;臉書輪播或稱滑塊&quot;&gt;臉書輪播（或稱滑塊)&lt;/h2&gt;
+&lt;p&gt;####Facebook Carousel ads
+Facebook Carousel Ads are a perfect way to showcase your brand with multiple images or videos. For retailers, it’s great to show various colors, sizes and other key details to convince users to buy. This format is available for both video and image for all Carousel ad placements. Additionally, Facebook Carousel Ads are available on six different ad types:&lt;/p&gt;
+
+&lt;p&gt;Facebook Feed (Image and Video)
+Facebook Right Column
+Facebook Instant Articles
+Facebook Marketplace
+Facebook Audience Network Native, Banner and Interstitial
+Messenger Inbox
+Luckily, there’s only a few differences between each ad type within Carousel for image and video ads. See the specs here:&lt;/p&gt;
+
+&lt;p&gt;Carousel ad image dimensions and guidelines&lt;/p&gt;
+
+&lt;p&gt;Recommended image size: at least 1080 x 1080 pixels
+Minimum width and height of 600 pixels (minimum 254 x 133 pixels for Messenger Home Carousel Ads).
+Minimum 2 cards and max of 10 cards per Carousel Ad.
+Recommended ratio is 1:1.
+Max image size of 30MB.
+Recommended image formats are JPG and PNG.
+Images with 20% text or more could increase chances of failed delivery.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;圖像的最佳規格
+上傳現有的最高解析度圖像（最低 500 像素；沒有解析度上限）。
+建議的檔案類型：.jpg 或 .png
+建議的長寬比：
+動態和插播影片版位建議使用正方形（1:1）
+限時動態版位建議使用全螢幕直向（9:16）
+若要將廣告投遞最佳化，請使用文字比例低的圖像。&lt;/p&gt;</content><author><name></name></author><category term="facebook" /><summary type="html">Faceboook ads廣告圖片尺寸介紹 Tips:拆解成最小可執行的動作與目標 Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080 多元多目標，曝光度差，數位行銷人的想法與溝通能力很重要</summary></entry><entry><title type="html">工作日誌 2020-01-13</title><link href="http://localhost:4000/Geek-Log/Practing-Markdown-Language.html" rel="alternate" type="text/html" title="工作日誌 2020-01-13" /><published>2020-01-13T13:30:00+08:00</published><updated>2020-01-13T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Practing-Markdown-Language</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Practing-Markdown-Language.html">&lt;ol&gt;
+  &lt;li&gt;新增Markdown的Template&lt;/li&gt;
+  &lt;li&gt;新增WordPress文章一篇，Snippet的應用技巧&lt;/li&gt;
+  &lt;li&gt;整理Nas：相簿、切一個Randy24的Develop enviroment.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="diary" /><summary type="html">新增Markdown的Template 新增WordPress文章一篇，Snippet的應用技巧 整理Nas：相簿、切一個Randy24的Develop enviroment.</summary></entry><entry><title type="html">Markdown - 語法練習篇</title><link href="http://localhost:4000/Geek-Log/language-markdown.html" rel="alternate" type="text/html" title="Markdown - 語法練習篇" /><published>2020-01-10T15:30:00+08:00</published><updated>2020-01-10T15:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/language-markdown</id><content type="html" xml:base="http://localhost:4000/Geek-Log/language-markdown.html">&lt;h1 id=&quot;本篇文章動機&quot;&gt;本篇文章動機&lt;/h1&gt;
 &lt;p&gt;到 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。&lt;/p&gt;
 
 &lt;h3 id=&quot;reference-resource&quot;&gt;Reference&amp;amp; Resource&lt;/h3&gt;
-&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="markdown" /><summary type="html">本篇文章動機 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry><entry><title type="html">Jekyll - 修改Config.yml的設定</title><link href="http://localhost:4000/%E4%BF%AE%E6%94%B9Config.html" rel="alternate" type="text/html" title="Jekyll - 修改Config.yml的設定" /><published>2020-01-10T13:30:00+08:00</published><updated>2020-01-10T13:30:00+08:00</updated><id>http://localhost:4000/%E4%BF%AE%E6%94%B9Config</id><content type="html" xml:base="http://localhost:4000/%E4%BF%AE%E6%94%B9Config.html">&lt;h1 id=&quot;研究方法&quot;&gt;研究方法&lt;/h1&gt;
+&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="markdown" /><summary type="html">本篇文章動機 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry><entry><title type="html">Jekyll - 修改Config.yml的設定</title><link href="http://localhost:4000/Geek-Log/%E4%BF%AE%E6%94%B9Config.html" rel="alternate" type="text/html" title="Jekyll - 修改Config.yml的設定" /><published>2020-01-10T13:30:00+08:00</published><updated>2020-01-10T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/%E4%BF%AE%E6%94%B9Config</id><content type="html" xml:base="http://localhost:4000/Geek-Log/%E4%BF%AE%E6%94%B9Config.html">&lt;h1 id=&quot;研究方法&quot;&gt;研究方法&lt;/h1&gt;
 &lt;p&gt;到 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate&lt;/code&gt; 指定分頁數量；
@@ -40,7 +283,7 @@
 &lt;p&gt;用 Wrapper 去包含程式碼，在用posts去製作全部的版型&lt;/p&gt;
 
 &lt;h3 id=&quot;reference-resource&quot;&gt;Reference&amp;amp; Resource&lt;/h3&gt;
-&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="update" /><summary type="html">研究方法 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry><entry><title type="html">Deploy Jekyll on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/Deploy-Jekyll-on-Github.html" rel="alternate" type="text/html" title="Deploy Jekyll on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/Deploy%20Jekyll%20on%20Github</id><content type="html" xml:base="http://localhost:4000/Deploy-Jekyll-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
+&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="update" /><summary type="html">研究方法 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry><entry><title type="html">Deploy Jekyll on Github - 部署Jekyll於Github</title><link href="http://localhost:4000/Geek-Log/Deploy-Jekyll-on-Github.html" rel="alternate" type="text/html" title="Deploy Jekyll on Github - 部署Jekyll於Github" /><published>2020-01-10T00:00:00+08:00</published><updated>2020-01-10T00:00:00+08:00</updated><id>http://localhost:4000/Geek-Log/Deploy%20Jekyll%20on%20Github</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Deploy-Jekyll-on-Github.html">&lt;h2 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h2&gt;
 &lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
 同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
 
@@ -106,7 +349,26 @@ gemfil &quot;minima&quot;, &quot;~&amp;gt; 2.0&quot;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">測試Liquid語法 on SHOPLINE</title><link href="http://localhost:4000/Liquid.html" rel="alternate" type="text/html" title="測試Liquid語法 on SHOPLINE" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/Liquid</id><content type="html" xml:base="http://localhost:4000/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">Mac Common Termianl command</title><link href="http://localhost:4000/Geek-Log/Terminal-command.html" rel="alternate" type="text/html" title="Mac Common Termianl command" /><published>2020-01-05T13:30:00+08:00</published><updated>2020-01-05T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Terminal-command</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Terminal-command.html">&lt;h1 id=&quot;terminal-command&quot;&gt;Terminal command&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;創資料夾 Ex：新資料夾 =&amp;gt; mkdir 新資料夾&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;刪資料夾 Ex: 刪除新資料夾 rmdir 新資料夾
+rm = remove&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;用finder開啟當前目錄 &lt;code class=&quot;highlighter-rouge&quot;&gt;open .&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;顯示現在所處目錄內容 &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;顯示現在所處目錄&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ethernet&quot;&gt;eThernet&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;查網卡介面狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;查無線網卡狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;iwconfig&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;參考資料-reference&quot;&gt;參考資料 Reference&lt;/h3&gt;</content><author><name></name></author><category term="Not Compeleted" /><summary type="html">Terminal command</summary></entry><entry><title type="html">測試Liquid語法 on SHOPLINE</title><link href="http://localhost:4000/Geek-Log/Liquid.html" rel="alternate" type="text/html" title="測試Liquid語法 on SHOPLINE" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/Geek-Log/Liquid</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
 
 &lt;p&gt;用404頁面來做測試
 看懂 theme.liquid的內容與架構&lt;/p&gt;
@@ -129,190 +391,4 @@ https://www.igift.tw/pages/christmas-gift&lt;/p&gt;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><summary type="html">{ % include xxx.html % }</summary></entry><entry><title type="html">Jekyll的變數運用(variable)</title><link href="http://localhost:4000/article.html" rel="alternate" type="text/html" title="Jekyll的變數運用(variable) " /><published>2019-12-28T00:55:12+08:00</published><updated>2019-12-28T00:55:12+08:00</updated><id>http://localhost:4000/article</id><content type="html" xml:base="http://localhost:4000/article.html">&lt;p&gt;(1) Layouts &amp;gt; article: 建立了一個名為 &lt;code class=&quot;highlighter-rouge&quot;&gt;article&lt;/code&gt; 的Layout&lt;/p&gt;
-
-&lt;p&gt;(2) 本篇文章存放於&lt;code class=&quot;highlighter-rouge&quot;&gt;_post&lt;/code&gt; ， 並在標頭呼叫&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout: &quot;article&quot; &lt;/code&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;(3) 這項筆記來自：Variables&lt;/td&gt;
-      &lt;td&gt;Jekyll - Static Site Generator&lt;/td&gt;
-      &lt;td&gt;Tutorial 13&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://learn.cloudcannon.com/jekyll-cheat-sheet/&quot;&gt;
-    Jekyll Cheat Sheet
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;上一篇文章： /Learning-Jekyll-Part-2.html&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">(1) Layouts &amp;gt; article: 建立了一個名為 article 的Layout</summary></entry><entry><title type="html">Learning Jekyll, Part2, Jekyll 資料夾格式</title><link href="http://localhost:4000/Learning-Jekyll-Part-2.html" rel="alternate" type="text/html" title="Learning Jekyll, Part2, Jekyll 資料夾格式" /><published>2019-12-27T00:55:12+08:00</published><updated>2019-12-27T00:55:12+08:00</updated><id>http://localhost:4000/Learning-Jekyll-Part-2</id><content type="html" xml:base="http://localhost:4000/Learning-Jekyll-Part-2.html">&lt;h2 id=&quot;directory-structure---jekyll-資料夾格式&quot;&gt;Directory Structure - Jekyll 資料夾格式&lt;/h2&gt;
-
-&lt;p&gt;基本的靜態 Jekyll 網站應該長得像是下面這樣⋯⋯
-A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html # can also be an 'index.md' with valid front matter
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;an-overview-of-what-each-of-these-does&quot;&gt;An overview of what each of these does:&lt;/h2&gt;
-&lt;h4 id=&quot;每一個檔案的概覽如下&quot;&gt;每一個檔案的概覽如下：&lt;/h4&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;config.yml&lt;/td&gt;
-      &lt;td&gt;Stores configuration data. Many of these options can be specified from the command line executable but it’s easier to specify them here so you don’t have to remember them.&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; 是設定檔案資料，存放於yml檔案的指令在這裡都將會被執行唷！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;includes&lt;/td&gt;
-      &lt;td&gt;These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. The liquid tag &lt;code class=&quot;highlighter-rouge&quot;&gt;{ % include file.ext % }&lt;/code&gt; can be used to include the partial in _includes/file.ext.&lt;/td&gt;
-      &lt;td&gt;透過語法 { include} 呼叫include資料夾內的檔案！&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Randy</name></author><summary type="html">Directory Structure - Jekyll 資料夾格式</summary></entry><entry><title type="html">Learning Jekyll, Part1</title><link href="http://localhost:4000/Learning-Jekyll-Part-1.html" rel="alternate" type="text/html" title="Learning Jekyll, Part1" /><published>2019-12-26T00:55:12+08:00</published><updated>2019-12-26T00:55:12+08:00</updated><id>http://localhost:4000/Learning-Jekyll-Part-1</id><content type="html" xml:base="http://localhost:4000/Learning-Jekyll-Part-1.html">&lt;h3 id=&quot;安裝前準備確認&quot;&gt;安裝前準備確認&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;ruby -v (至少高於2.4)&lt;/li&gt;
-  &lt;li&gt;gem -v (至少高於2.6.13)&lt;/li&gt;
-  &lt;li&gt;gem install jekyll bundler (啟用Gem安裝Jekyll)&lt;/li&gt;
-  &lt;li&gt;jekyll -v (我的是 4.0)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;終端機需要指令&quot;&gt;終端機需要指令&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;cd/ folder&lt;/li&gt;
-  &lt;li&gt;jekyll new document name (創建jekyll資料夾)&lt;/li&gt;
-  &lt;li&gt;bundle exec jekyll serve (啟動jekyll)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Randys-MacBook-Pro:~ Randy$ jekyll new jekyll_folder
-Running bundle install in /Users/Randy/jekyll_folder…  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;~畫面預覽~&lt;/p&gt;
-
-&lt;p&gt;[image:AB0A1B73-4288-4748-9161-8B0045E870D4-286-0000061D86AE4D70/螢幕快照 2020-01-04 上午12.57.20.png]&lt;/p&gt;
-
-&lt;p&gt;重要文件有：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;_posts 存放文章的地方，文件用markdown語法寫成
-    &lt;ul&gt;
-      &lt;li&gt;layout: post/title/date/categories&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;site
-    &lt;ul&gt;
-      &lt;li&gt;about&lt;/li&gt;
-      &lt;li&gt;assets&lt;/li&gt;
-      &lt;li&gt;jekyll&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;tutorial-7-draft&quot;&gt;Tutorial 7 Draft&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;draft，可以創建一個資料夾，用於存放文章草稿。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;tutorial-8-creating-pages&quot;&gt;Tutorial 8 Creating Pages&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Jekyll的世界只有兩種，POST/PAGE&lt;/li&gt;
-  &lt;li&gt;創建一個文件，以.md為結尾，例如：example.md&lt;/li&gt;
-  &lt;li&gt;layout: “page” ，一樣是以json格式起頭&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;tutorial-9permalinks&quot;&gt;Tutorial 9:Permalinks&lt;/h3&gt;
-&lt;p&gt;一定要三槓(Dash)
-—
-layout: post
-title: “Learning Jekyll Part1.markdown”
-date:   2020-01-03 00:47:12 +0800
-categories: update
-permalink: /:catagories/:year/:day/:title.html
-—
- 永久連結，可以改變格式&lt;/p&gt;
-
-&lt;h3 id=&quot;tutorial-11-front-matter-defaults&quot;&gt;Tutorial 11: Front Matter Defaults&lt;/h3&gt;
-&lt;p&gt;把文章預設成某種格式 (layout:post)&lt;/p&gt;
-
-&lt;p&gt;config.yml
-default:
-scope:
-path:
-values:&lt;/p&gt;
-
-&lt;h3 id=&quot;tutorial-12-layouts&quot;&gt;Tutorial 12: Layouts&lt;/h3&gt;
-&lt;p&gt;Creat a layout folder&lt;/p&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/usage/&quot;&gt;Command Line Usage&lt;/a&gt; 指令用法&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/configuration/&quot;&gt;Configuration&lt;/a&gt;  調教&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">安裝前準備確認 ruby -v (至少高於2.4) gem -v (至少高於2.6.13) gem install jekyll bundler (啟用Gem安裝Jekyll) jekyll -v (我的是 4.0)</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-12-25T00:00:01+08:00</published><updated>2019-12-25T00:00:01+08:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Post-style 樣板文章</title><link href="http://localhost:4000/Post-style.html" rel="alternate" type="text/html" title="Post-style 樣板文章" /><published>2019-01-15T00:47:12+08:00</published><updated>2019-01-15T00:47:12+08:00</updated><id>http://localhost:4000/Post-style</id><content type="html" xml:base="http://localhost:4000/Post-style.html">&lt;h1 id=&quot;本文layout是-post-style&quot;&gt;本文Layout是 post-style&lt;/h1&gt;
-
-&lt;p&gt;測試文字 測試文字 測試文字  測試文字 測試文字 測試文字&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;</content><author><name>Randy</name></author><summary type="html">本文Layout是 post-style 測試文字 測試文字 測試文字 測試文字 測試文字 測試文字</summary></entry><entry><title type="html">Standard Layout, 標準畫面</title><link href="http://localhost:4000/Say-hello-to-Jekyll.html" rel="alternate" type="text/html" title="Standard Layout, 標準畫面" /><published>2019-01-01T00:47:12+08:00</published><updated>2019-01-01T00:47:12+08:00</updated><id>http://localhost:4000/Say-hello-to-Jekyll</id><content type="html" xml:base="http://localhost:4000/Say-hello-to-Jekyll.html">&lt;h1 id=&quot;standard-layout&quot;&gt;Standard Layout&lt;/h1&gt;
-&lt;h2 id=&quot;用兩種layout-包一起&quot;&gt;用兩種Layout 包一起&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;standard&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;wrapper&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">Standard Layout 用兩種Layout 包一起</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Randy</name></author><category term="Not Compeleted" /><summary type="html">{ % include xxx.html % }</summary></entry></feed>

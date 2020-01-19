@@ -71,6 +71,10 @@ values:
 Creat a layout folder
 
 
+Locoal host path is `http://127.0.0.1:4000/Geek-Log/`
+
+ctr + c => Close the Jekyll server.
+
 
 # Reference
 - [Command Line Usage](https://jekyllrb.com/docs/usage/) 指令用法

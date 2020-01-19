@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-16T21:36:27+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-16T21:36:27+08:00</published><updated>2020-01-16T21:36:27+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-19T13:21:19+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-19T13:21:19+08:00</published><updated>2020-01-19T13:21:19+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
 
 &lt;ol&gt;
@@ -49,7 +49,66 @@
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
-&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
+&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">2020-01-19-Diary</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="2020-01-19-Diary" /><published>2020-01-19T12:30:00+08:00</published><updated>2020-01-19T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;p&gt;#WordPrss 籌辦流程&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;社團公告&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;7天&lt;/code&gt;前發成功報名活動信件&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1天&lt;/code&gt;前發成功記得來唷&lt;/li&gt;
+  &lt;li&gt;設定Google日曆，提醒參與者&lt;/li&gt;
+  &lt;li&gt;感謝通知&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;##籌備道具&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;議程&amp;amp;Opening talk&lt;/li&gt;
+  &lt;li&gt;群組Line@小卡&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##[社團發完公告]&lt;/p&gt;
+
+&lt;p&gt;【新莊/一月】 WordPress 小聚 #3
+以WORDPRESS為名的寫作小聚｜台北新莊場
+主題：內容經營，如何堅持寫作？
+對你來說當一個站長、寫文的動力是什麼？
+對我來說，經營WordPress是一種自我挑戰，同時參與開源社群會讓人更有動力，所以別悶在家裡敲電腦了！出來聊聊吧！
+雖說寫文章是一種很好的自我修煉，過程中不但理性且容易聚焦，可惜就是有點不容易堅持，所以這次的主題延續網站經營，讓聚會前半段希望你能分享自身的經驗與選題方式，後半段鼓勵大家分享自己堅持的方法與技巧。
+你喜歡寫作嗎？你想要提升寫文的效率嗎？歡迎來暢談！&lt;/p&gt;
+
+&lt;p&gt;時間：1/21 (二) 19:00 ~ 21:00
+店家名稱：路易．莎咖啡 (新莊新月橋店)
+店家地點：242新北市新莊區新泰路2-21號
+怎麼走：捷運新莊站 2號出口，走路8-10分鐘
+報名上限：10人 最少2人
+有興趣報名的朋友&lt;strong&gt;請先留言 +1 後填表單&lt;/strong&gt;，謝謝
+活動表單 https://www.surveycake.com/s/wGX2r&lt;/p&gt;
+
+&lt;p&gt;##[報名信件通知]&lt;/p&gt;
+
+&lt;p&gt;[報名成功] WordPress 小聚新莊場 #x
+你已報名成功這場的小聚囉 #3
+社群因為有你的參與會更加蓬勃發展!
+活動資訊：
+活動時間：1/21 (二) 19:00 ~ 21:00
+店家名稱：路易．莎咖啡(新莊新月橋店) 
+店家地點：242新北市新莊區新泰路2-21號
+怎麼走：捷運新莊站 2號出口，走路8-10分鐘
+店家沒有場地費的問題，自行付低消方式進行  （35元）&lt;/p&gt;
+
+&lt;h2 id=&quot;明天有wordpress小聚唷-xxx-咖啡廳唷&quot;&gt;明天有WordPress小聚唷 @XXX 咖啡廳唷&lt;/h2&gt;
+
+&lt;p&gt;Hi, 期待各位的到來
+以 WordPress 為名的寫作小聚｜台北新莊場
+主題：內容經營，如何堅持寫作？
+對你來說當一個站長、寫文的動力是什麼？&lt;/p&gt;
+
+&lt;p&gt;對我來說，經營 WordPress 是一種自我挑戰，同時參與開源社群會讓人更有動力，所以別悶在家裡敲電腦了！出來聊聊吧！&lt;/p&gt;
+
+&lt;p&gt;雖說寫文章是一種很好的自我修煉，過程中不但理性且容易聚焦，可惜就是有點不容易堅持，所以這次的主題延續網站經營，讓聚會前半段希望你能分享自身的經驗與選題方式，後半段鼓勵大家分享自己堅持的方法與技巧。&lt;/p&gt;
+
+&lt;p&gt;你喜歡寫作嗎？你想要提升寫文的效率嗎？歡迎來暢談！&lt;/p&gt;
+
+&lt;p&gt;新莊場小聚 主辦人 Randy
+聯絡電話：0966-024-058&lt;/p&gt;</content><author><name></name></author><category term="WordPress" /><summary type="html">#WordPrss 籌辦流程 社團公告 7天前發成功報名活動信件 1天前發成功記得來唷 設定Google日曆，提醒參與者 感謝通知</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
   &lt;li&gt;勞工保險&lt;/li&gt;
   &lt;li&gt;勞工退休金 （雇主提撥/自提）&lt;/li&gt;
   &lt;li&gt;
@@ -71,7 +130,16 @@
 &lt;ul&gt;
   &lt;li&gt;實體分三冊&lt;/li&gt;
   &lt;li&gt;虛擬 » Nas &amp;gt; 公司jp6r0u4&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">勞工保險 勞工退休金 （雇主提撥/自提） 健保 （僱員/眷屬）</summary></entry><entry><title type="html">工作日誌-2020-01-15</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="工作日誌-2020-01-15" /><published>2020-01-15T10:30:00+08:00</published><updated>2020-01-15T10:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;p&gt;需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">勞工保險 勞工退休金 （雇主提撥/自提） 健保 （僱員/眷屬）</summary></entry><entry><title type="html">Zotabox - Display option</title><link href="http://localhost:4000/Geek-Log/zotaobx.html" rel="alternate" type="text/html" title="Zotabox - Display option" /><published>2020-01-15T13:30:00+08:00</published><updated>2020-01-15T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/zotaobx</id><content type="html" xml:base="http://localhost:4000/Geek-Log/zotaobx.html">&lt;p&gt;#Header Bar
+&lt;a href=&quot;https://imgur.com/DrwGp61&quot;&gt;Imgur&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;where to display&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;group-sale&lt;/li&gt;
+  &lt;li&gt;cart&lt;/li&gt;
+  &lt;li&gt;check-out&lt;/li&gt;
+  &lt;li&gt;order&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">#Header Bar Imgur</summary></entry><entry><title type="html">工作日誌-2020-01-15</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="工作日誌-2020-01-15" /><published>2020-01-15T10:30:00+08:00</published><updated>2020-01-15T10:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;p&gt;需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。&lt;/p&gt;
 
 &lt;h2 id=&quot;會計開立作業&quot;&gt;會計開立作業&lt;/h2&gt;
 &lt;ul&gt;
@@ -173,7 +241,7 @@
       &lt;td&gt;完成購物 (這個有點不確定)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;/checkout&lt;/td&gt;
+      &lt;td&gt;https://www.homiya.co/orders/5e212b3a21e7110031207cba/confirm?authorization_token=T9YCgqOH6tNZ8l3CrbM3-A&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -349,46 +417,4 @@ gemfil &quot;minima&quot;, &quot;~&amp;gt; 2.0&quot;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">Mac Common Termianl command</title><link href="http://localhost:4000/Geek-Log/Terminal-command.html" rel="alternate" type="text/html" title="Mac Common Termianl command" /><published>2020-01-05T13:30:00+08:00</published><updated>2020-01-05T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Terminal-command</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Terminal-command.html">&lt;h1 id=&quot;terminal-command&quot;&gt;Terminal command&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;創資料夾 Ex：新資料夾 =&amp;gt; mkdir 新資料夾&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;刪資料夾 Ex: 刪除新資料夾 rmdir 新資料夾
-rm = remove&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;用finder開啟當前目錄 &lt;code class=&quot;highlighter-rouge&quot;&gt;open .&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;顯示現在所處目錄內容 &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;顯示現在所處目錄&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ethernet&quot;&gt;eThernet&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;查網卡介面狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;查無線網卡狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;iwconfig&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;參考資料-reference&quot;&gt;參考資料 Reference&lt;/h3&gt;</content><author><name></name></author><category term="Not Compeleted" /><summary type="html">Terminal command</summary></entry><entry><title type="html">測試Liquid語法 on SHOPLINE</title><link href="http://localhost:4000/Geek-Log/Liquid.html" rel="alternate" type="text/html" title="測試Liquid語法 on SHOPLINE" /><published>2020-01-03T00:00:00+08:00</published><updated>2020-01-03T00:00:00+08:00</updated><id>http://localhost:4000/Geek-Log/Liquid</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Liquid.html">&lt;p&gt;{ % &lt;code class=&quot;highlighter-rouge&quot;&gt;include xxx.html&lt;/code&gt;  % }&lt;/p&gt;
-
-&lt;p&gt;用404頁面來做測試
-看懂 theme.liquid的內容與架構&lt;/p&gt;
-
-&lt;p&gt;完成404測試，&lt;code class=&quot;highlighter-rouge&quot;&gt;成功&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;疑問&lt;/code&gt;
-當一活動頁面，是否為 setting.json 改寫
-https://www.igift.tw/pages/christmas-gift&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;更多 &lt;a href=&quot;https://jekyllrb.com/docs/variables/&quot;&gt;變數參考&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;在本機端 架設 Docker&lt;/li&gt;
-  &lt;li&gt;在Nas 架設 Docker&lt;/li&gt;
-  &lt;li&gt;用Github 服務架設 Jekyll Blog&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><category term="Not Compeleted" /><summary type="html">{ % include xxx.html % }</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry></feed>

@@ -16,10 +16,15 @@ rm = remove
 * 顯示現在所處目錄內容 `ls` 
 * 顯示現在所處目錄`pwd`
 
-
+###cd
+```cd ~/documents/geek-log```
 
 ## eThernet
 - 查網卡介面狀態 `ifconfig`
 - 查無線網卡狀態 `iwconfig`
+
+
+
+
 
 {% include reference.html %}

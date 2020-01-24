@@ -1,63 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-19T13:36:13+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">WordPrrss 籌辦流程</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="WordPrrss 籌辦流程" /><published>2020-01-19T12:30:00+08:00</published><updated>2020-01-19T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;wordprrss-籌辦流程筆記&quot;&gt;WordPrrss 籌辦流程筆記&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-24T15:26:22+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-24T15:26:22+08:00</published><updated>2020-01-24T15:26:22+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
+如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;社團公告&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;7天&lt;/code&gt;前發成功報名活動信件&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1天&lt;/code&gt;前發成功記得來唷&lt;/li&gt;
-  &lt;li&gt;設定Google日曆，提醒參與者&lt;/li&gt;
-  &lt;li&gt;感謝通知&lt;/li&gt;
+  &lt;li&gt;在GA帳戶中設定資源：建議新建一項資源，在所有要共同追蹤的網域中，安裝同一組&lt;code class=&quot;highlighter-rouge&quot;&gt;程式碼&lt;/code&gt;與&lt;code class=&quot;highlighter-rouge&quot;&gt;Tracking ID&lt;/code&gt;，
+1.1. 修改主要網域的追蹤程式碼。
+在程式碼片段中找出 create 這一行。如果網站是 example-1.com，這一行看起來會像這樣：&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;##籌備道具&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;議程&amp;amp;Opening talk&lt;/li&gt;
-  &lt;li&gt;群組Line@小卡&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;對下列程式碼進行調整 (紅色粗體文字是需要變更的部分)：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ga('create', 'UA-XXXXXXX-Y', 'example-1.com');
 
-&lt;p&gt;##[社團發完公告]&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;ga(‘create’, ‘UA-XXXXXXX-Y’, &lt;code class=&quot;highlighter-rouge&quot;&gt;'auto', {'allowLinker': true});&lt;/code&gt;
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('require', 'linker');&lt;/code&gt;
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('linker:autoLink', ['example-2.com'] );&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;【新莊/一月】 WordPress 小聚 #3
-以WORDPRESS為名的寫作小聚｜台北新莊場
-主題：內容經營，如何堅持寫作？
-對你來說當一個站長、寫文的動力是什麼？
-對我來說，經營WordPress是一種自我挑戰，同時參與開源社群會讓人更有動力，所以別悶在家裡敲電腦了！出來聊聊吧！
-雖說寫文章是一種很好的自我修煉，過程中不但理性且容易聚焦，可惜就是有點不容易堅持，所以這次的主題延續網站經營，讓聚會前半段希望你能分享自身的經驗與選題方式，後半段鼓勵大家分享自己堅持的方法與技巧。
-你喜歡寫作嗎？你想要提升寫文的效率嗎？歡迎來暢談！&lt;/p&gt;
+&lt;p&gt;別忘了將範例追蹤 ID (UA-XXXXXX-Y) 換成您專用的 ID
+範例次要網域 &lt;code class=&quot;highlighter-rouge&quot;&gt;(example-2.com)&lt;/code&gt; 必須換成次要網域名稱&lt;/p&gt;
 
-&lt;p&gt;時間：1/21 (二) 19:00 ~ 21:00
-店家名稱：路易．莎咖啡 (新莊新月橋店)
-店家地點：242新北市新莊區新泰路2-21號
-怎麼走：捷運新莊站 2號出口，走路8-10分鐘
-報名上限：10人 最少2人
-有興趣報名的朋友&lt;strong&gt;請先留言 +1 後填表單&lt;/strong&gt;，謝謝
-活動表單 https://www.surveycake.com/s/wGX2r&lt;/p&gt;
+&lt;p&gt;三個以上的網域追蹤，請另外參考&lt;a href=&quot;Google文件&quot;&gt;https://support.google.com/analytics/answer/1034342?hl=zh-Hant&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;##[報名信件通知]&lt;/p&gt;
+&lt;h1 id=&quot;建立報表資料添加篩選器&quot;&gt;建立報表資料&amp;amp;添加篩選器&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/about/contactUs.html
+/about/contactUs.html
+/products/buy.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;[報名成功] WordPress 小聚新莊場 #x
-你已報名成功這場的小聚囉 #3
-社群因為有你的參與會更加蓬勃發展!
-活動資訊：
-活動時間：1/21 (二) 19:00 ~ 21:00
-店家名稱：路易．莎咖啡(新莊新月橋店) 
-店家地點：242新北市新莊區新泰路2-21號
-怎麼走：捷運新莊站 2號出口，走路8-10分鐘
-店家沒有場地費的問題，自行付低消方式進行  （35元）&lt;/p&gt;
+&lt;p&gt;以上三個路近，可能存在在兩個網域底下，GA不會顯示唷！&lt;/p&gt;
 
-&lt;h2 id=&quot;明天有wordpress小聚唷-xxx-咖啡廳唷&quot;&gt;明天有WordPress小聚唷 @XXX 咖啡廳唷&lt;/h2&gt;
+&lt;p&gt;為了讓報表顯示網域名稱，必須建立報表&lt;code class=&quot;highlighter-rouge&quot;&gt;資料檢視的複本&lt;/code&gt; (其中包含您所有網域的資料)，然後在這個新資料檢視中&lt;code class=&quot;highlighter-rouge&quot;&gt;添加進階篩選器&lt;/code&gt;。&lt;/p&gt;
 
-&lt;p&gt;Hi, 期待各位的到來
-以 WordPress 為名的寫作小聚｜台北新莊場
-主題：內容經營，如何堅持寫作？
-對你來說當一個站長、寫文的動力是什麼？&lt;/p&gt;
+&lt;p&gt;這樣就會在GA中顯示真實的網域名稱囉！&lt;/p&gt;
 
-&lt;p&gt;對我來說，經營 WordPress 是一種自我挑戰，同時參與開源社群會讓人更有動力，所以別悶在家裡敲電腦了！出來聊聊吧！&lt;/p&gt;
+&lt;h2 id=&quot;資料檢視篩選器&quot;&gt;資料檢視篩選器&lt;/h2&gt;
+&lt;p&gt;跨網域追蹤設定完畢後，請按照本例設定資料檢視篩選器，以便在報表中顯示網域名稱。對於部分欄位，您必須選取下拉式選單中的項目。至於其他欄位，您必須輸入下列字元：&lt;/p&gt;
 
-&lt;p&gt;雖說寫文章是一種很好的自我修煉，過程中不但理性且容易聚焦，可惜就是有點不容易堅持，所以這次的主題延續網站經營，讓聚會前半段希望你能分享自身的經驗與選題方式，後半段鼓勵大家分享自己堅持的方法與技巧。&lt;/p&gt;
+&lt;p&gt;篩選器類型：自訂篩選器 &amp;gt; 進階
+欄位 A –&amp;gt; 擷取 A：主機名稱 = (.&lt;em&gt;)
+欄位 B –&amp;gt; 擷取 B：要求 URI = (.&lt;/em&gt;)
+輸出至 –&amp;gt; 建構函式：要求 URI = $A1$B1&lt;/p&gt;
 
-&lt;p&gt;你喜歡寫作嗎？你想要提升寫文的效率嗎？歡迎來暢談！&lt;/p&gt;
+&lt;h3 id=&quot;參照連結網址排除清單&quot;&gt;參照連結網址排除清單&lt;/h3&gt;
+&lt;p&gt;前述過程只是讓 A 網域到 B 網域，都共用一個GA檢視資源。這樣還不夠唷，必須還要還要製作&lt;code class=&quot;highlighter-rouge&quot;&gt;排除清單&lt;/code&gt;。&lt;/p&gt;
 
-&lt;p&gt;新莊場小聚 主辦人 Randy
-聯絡電話：0966-024-058&lt;/p&gt;</content><author><name></name></author><category term="WordPress" /><summary type="html">WordPrrss 籌辦流程筆記 社團公告 7天前發成功報名活動信件 1天前發成功記得來唷 設定Google日曆，提醒參與者 感謝通知</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
+&lt;h4 id=&quot;檢查跨網域追蹤&quot;&gt;檢查跨網域追蹤&lt;/h4&gt;
+&lt;p&gt;最後再檢查一下資料囉&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
+&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
   &lt;li&gt;勞工保險&lt;/li&gt;
   &lt;li&gt;勞工退休金 （雇主提撥/自提）&lt;/li&gt;
   &lt;li&gt;
@@ -194,58 +186,7 @@
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。</summary></entry><entry><title type="html">Google analytics tracking code between two domain</title><link href="http://localhost:4000/Geek-Log/GA-tracking-code.html" rel="alternate" type="text/html" title="Google analytics tracking code between two domain" /><published>2020-01-15T00:00:00+08:00</published><updated>2020-01-15T00:00:00+08:00</updated><id>http://localhost:4000/Geek-Log/GA-tracking-code</id><content type="html" xml:base="http://localhost:4000/Geek-Log/GA-tracking-code.html">&lt;h1 id=&quot;修改追蹤程式碼以設定跨網域追蹤&quot;&gt;修改追蹤程式碼以設定跨網域追蹤&lt;/h1&gt;
-&lt;p&gt;如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在GA帳戶中設定資源：建議新建一項資源，在所有要共同追蹤的網域中，安裝同一組&lt;code class=&quot;highlighter-rouge&quot;&gt;程式碼&lt;/code&gt;與&lt;code class=&quot;highlighter-rouge&quot;&gt;Tracking ID&lt;/code&gt;，
-1.1. 修改主要網域的追蹤程式碼。
-在程式碼片段中找出 create 這一行。如果網站是 example-1.com，這一行看起來會像這樣：&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;對下列程式碼進行調整 (紅色粗體文字是需要變更的部分)：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ga('create', 'UA-XXXXXXX-Y', 'example-1.com');
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;ga(‘create’, ‘UA-XXXXXXX-Y’, &lt;code class=&quot;highlighter-rouge&quot;&gt;'auto', {'allowLinker': true});&lt;/code&gt;
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('require', 'linker');&lt;/code&gt;
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('linker:autoLink', ['example-2.com'] );&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;別忘了將範例追蹤 ID (UA-XXXXXX-Y) 換成您專用的 ID
-範例次要網域 &lt;code class=&quot;highlighter-rouge&quot;&gt;(example-2.com)&lt;/code&gt; 必須換成次要網域名稱&lt;/p&gt;
-
-&lt;p&gt;三個以上的網域追蹤，請另外參考&lt;a href=&quot;Google文件&quot;&gt;https://support.google.com/analytics/answer/1034342?hl=zh-Hant&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;建立報表資料添加篩選器&quot;&gt;建立報表資料&amp;amp;添加篩選器&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/about/contactUs.html
-/about/contactUs.html
-/products/buy.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;以上三個路近，可能存在在兩個網域底下，GA不會顯示唷！&lt;/p&gt;
-
-&lt;p&gt;為了讓報表顯示網域名稱，必須建立報表&lt;code class=&quot;highlighter-rouge&quot;&gt;資料檢視的複本&lt;/code&gt; (其中包含您所有網域的資料)，然後在這個新資料檢視中&lt;code class=&quot;highlighter-rouge&quot;&gt;添加進階篩選器&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;這樣就會在GA中顯示真實的網域名稱囉！&lt;/p&gt;
-
-&lt;h2 id=&quot;資料檢視篩選器&quot;&gt;資料檢視篩選器&lt;/h2&gt;
-&lt;p&gt;跨網域追蹤設定完畢後，請按照本例設定資料檢視篩選器，以便在報表中顯示網域名稱。對於部分欄位，您必須選取下拉式選單中的項目。至於其他欄位，您必須輸入下列字元：&lt;/p&gt;
-
-&lt;p&gt;篩選器類型：自訂篩選器 &amp;gt; 進階
-欄位 A –&amp;gt; 擷取 A：主機名稱 = (.&lt;em&gt;)
-欄位 B –&amp;gt; 擷取 B：要求 URI = (.&lt;/em&gt;)
-輸出至 –&amp;gt; 建構函式：要求 URI = $A1$B1&lt;/p&gt;
-
-&lt;h3 id=&quot;參照連結網址排除清單&quot;&gt;參照連結網址排除清單&lt;/h3&gt;
-&lt;p&gt;前述過程只是讓 A 網域到 B 網域，都共用一個GA檢視資源。這樣還不夠唷，必須還要還要製作&lt;code class=&quot;highlighter-rouge&quot;&gt;排除清單&lt;/code&gt;。&lt;/p&gt;
-
-&lt;h4 id=&quot;檢查跨網域追蹤&quot;&gt;檢查跨網域追蹤&lt;/h4&gt;
-&lt;p&gt;最後再檢查一下資料囉&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
-&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author><category term="GoogleAnalytics NotCompeleted" /><summary type="html">修改追蹤程式碼以設定跨網域追蹤 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。</summary></entry><entry><title type="html">Faceboook ads廣告圖片尺寸介紹</title><link href="http://localhost:4000/Geek-Log/Facebook-ads-format.html" rel="alternate" type="text/html" title="Faceboook ads廣告圖片尺寸介紹" /><published>2020-01-14T18:30:00+08:00</published><updated>2020-01-14T18:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Facebook-ads-format</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Facebook-ads-format.html">&lt;h2 id=&quot;faceboook-ads廣告圖片尺寸介紹&quot;&gt;Faceboook ads廣告圖片尺寸介紹&lt;/h2&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。</summary></entry><entry><title type="html">Faceboook ads廣告圖片尺寸介紹</title><link href="http://localhost:4000/Geek-Log/Facebook-ads-format.html" rel="alternate" type="text/html" title="Faceboook ads廣告圖片尺寸介紹" /><published>2020-01-14T18:30:00+08:00</published><updated>2020-01-14T18:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Facebook-ads-format</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Facebook-ads-format.html">&lt;h2 id=&quot;faceboook-ads廣告圖片尺寸介紹&quot;&gt;Faceboook ads廣告圖片尺寸介紹&lt;/h2&gt;
 &lt;p&gt;&lt;span&gt;Tips:拆解成最小可執行的動作與目標&lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080&lt;/li&gt;
@@ -417,4 +358,26 @@ gemfil &quot;minima&quot;, &quot;~&amp;gt; 2.0&quot;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">Mac Common Termianl command</title><link href="http://localhost:4000/Geek-Log/Terminal-command.html" rel="alternate" type="text/html" title="Mac Common Termianl command" /><published>2020-01-05T13:30:00+08:00</published><updated>2020-01-05T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Terminal-command</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Terminal-command.html">&lt;h1 id=&quot;terminal-command&quot;&gt;Terminal command&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;創資料夾 Ex：新資料夾 =&amp;gt; mkdir 新資料夾&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;刪資料夾 Ex: 刪除新資料夾 rmdir 新資料夾
+rm = remove&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;用finder開啟當前目錄 &lt;code class=&quot;highlighter-rouge&quot;&gt;open .&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;顯示現在所處目錄內容 &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;顯示現在所處目錄&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;###cd
+&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~/documents/geek-log&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ethernet&quot;&gt;eThernet&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;查網卡介面狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;查無線網卡狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;iwconfig&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;參考資料-reference&quot;&gt;參考資料 Reference&lt;/h3&gt;</content><author><name></name></author><category term="Not Compeleted" /><summary type="html">Terminal command</summary></entry></feed>

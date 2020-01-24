@@ -1,4 +1,4 @@
-I"�<h1 id="terminal-command">Terminal command</h1>
+I"+<h1 id="terminal-command">Terminal command</h1>
 
 <ul>
   <li>創資料夾 Ex：新資料夾 =&gt; mkdir 新資料夾</li>
@@ -10,6 +10,9 @@ rm = remove</p>
   <li>顯示現在所處目錄內容 <code class="highlighter-rouge">ls</code></li>
   <li>顯示現在所處目錄<code class="highlighter-rouge">pwd</code></li>
 </ul>
+
+<p>###cd
+<code class="highlighter-rouge">cd ~/documents/geek-log</code></p>
 
 <h2 id="ethernet">eThernet</h2>
 <ul>

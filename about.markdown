@@ -4,9 +4,6 @@ title: 開發日誌使用手冊
 permalink: /about/
 ---
 
-
-
-
 ## 文章分類的用法 Categories
 * post: 最新文章
 * doc: 技術文件

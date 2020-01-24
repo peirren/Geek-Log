@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Google analytics tracking code between two domain | Randy 的開發日誌</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Google analytics tracking code between two domain" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="修改追蹤程式碼以設定跨網域追蹤 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。" />
+<meta property="og:description" content="修改追蹤程式碼以設定跨網域追蹤 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。" />
+<link rel="canonical" href="http://localhost:4000/Geek-Log/GA-tracking-code.html" />
+<meta property="og:url" content="http://localhost:4000/Geek-Log/GA-tracking-code.html" />
+<meta property="og:site_name" content="Randy 的開發日誌" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-15T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"修改追蹤程式碼以設定跨網域追蹤 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。","@type":"BlogPosting","url":"http://localhost:4000/Geek-Log/GA-tracking-code.html","headline":"Google analytics tracking code between two domain","dateModified":"2020-01-15T00:00:00+08:00","datePublished":"2020-01-15T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Geek-Log/GA-tracking-code.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Geek-Log/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/Geek-Log/feed.xml" title="Randy 的開發日誌" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Geek-Log/">Randy 的開發日誌</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">使用手冊</a><a class="page-link" href="/Geek-Log/markdown/">Markdown</a><a class="page-link" href="/Geek-Log/intro/">Jekyll</a><a class="page-link" href="/Geek-Log/update/">Update</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="修改追蹤程式碼以設定跨網域追蹤">修改追蹤程式碼以設定跨網域追蹤</h1>
+<p>如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。</p>
+
+<ol>
+  <li>在GA帳戶中設定資源：建議新建一項資源，在所有要共同追蹤的網域中，安裝同一組<code class="highlighter-rouge">程式碼</code>與<code class="highlighter-rouge">Tracking ID</code>，
+1.1. 修改主要網域的追蹤程式碼。
+在程式碼片段中找出 create 這一行。如果網站是 example-1.com，這一行看起來會像這樣：</li>
+</ol>
+
+<p>對下列程式碼進行調整 (紅色粗體文字是需要變更的部分)：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ga('create', 'UA-XXXXXXX-Y', 'example-1.com');
+
+</code></pre></div></div>
+<p>ga(‘create’, ‘UA-XXXXXXX-Y’, <code class="highlighter-rouge">'auto', {'allowLinker': true});</code>
+  <code class="highlighter-rouge">ga('require', 'linker');</code>
+  <code class="highlighter-rouge">ga('linker:autoLink', ['example-2.com'] );</code></p>
+
+<p>別忘了將範例追蹤 ID (UA-XXXXXX-Y) 換成您專用的 ID
+範例次要網域 <code class="highlighter-rouge">(example-2.com)</code> 必須換成次要網域名稱</p>
+
+<p>三個以上的網域追蹤，請另外參考<a href="Google文件">https://support.google.com/analytics/answer/1034342?hl=zh-Hant</a></p>
+
+<h1 id="建立報表資料添加篩選器">建立報表資料&amp;添加篩選器</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/about/contactUs.html
+/about/contactUs.html
+/products/buy.html
+</code></pre></div></div>
+
+<p>以上三個路近，可能存在在兩個網域底下，GA不會顯示唷！</p>
+
+<p>為了讓報表顯示網域名稱，必須建立報表<code class="highlighter-rouge">資料檢視的複本</code> (其中包含您所有網域的資料)，然後在這個新資料檢視中<code class="highlighter-rouge">添加進階篩選器</code>。</p>
+
+<p>這樣就會在GA中顯示真實的網域名稱囉！</p>
+
+<h2 id="資料檢視篩選器">資料檢視篩選器</h2>
+<p>跨網域追蹤設定完畢後，請按照本例設定資料檢視篩選器，以便在報表中顯示網域名稱。對於部分欄位，您必須選取下拉式選單中的項目。至於其他欄位，您必須輸入下列字元：</p>
+
+<p>篩選器類型：自訂篩選器 &gt; 進階
+欄位 A –&gt; 擷取 A：主機名稱 = (.<em>)
+欄位 B –&gt; 擷取 B：要求 URI = (.</em>)
+輸出至 –&gt; 建構函式：要求 URI = $A1$B1</p>
+
+<h3 id="參照連結網址排除清單">參照連結網址排除清單</h3>
+<p>前述過程只是讓 A 網域到 B 網域，都共用一個GA檢視資源。這樣還不夠唷，必須還要還要製作<code class="highlighter-rouge">排除清單</code>。</p>
+
+<h4 id="檢查跨網域追蹤">檢查跨網域追蹤</h4>
+<p>最後再檢查一下資料囉</p>
+
+<hr />
+
+<h4 id="相關資源">相關資源</h4>
+<p>[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]</p>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Geek-Log/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Randy 的開發日誌</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Randy 的開發日誌</li><li><a class="u-email" href="mailto:peir.ren@gmail.com">peir.ren@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/%40peirren"><svg class="svg-icon"><use xlink:href="/Geek-Log/assets/minima-social-icons.svg#github"></use></svg> <span class="username">@peirren</span></a></li><li><a href="https://www.twitter.com/%40peir.ren"><svg class="svg-icon"><use xlink:href="/Geek-Log/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">@peir.ren</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

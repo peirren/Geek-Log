@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="練習Markdown語法" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="圖片放在主機內" />
-<meta property="og:description" content="圖片放在主機內" />
+<meta name="description" content="這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得" />
+<meta property="og:description" content="這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得" />
 <link rel="canonical" href="http://localhost:4000/Geek-Log/practice.html" />
 <meta property="og:url" content="http://localhost:4000/Geek-Log/practice.html" />
 <meta property="og:site_name" content="Randy 的開發日誌" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-24T13:30:00+08:00" />
 <script type="application/ld+json">
-{"description":"圖片放在主機內","@type":"BlogPosting","url":"http://localhost:4000/Geek-Log/practice.html","headline":"練習Markdown語法","dateModified":"2020-01-24T13:30:00+08:00","datePublished":"2020-01-24T13:30:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Geek-Log/practice.html"},"@context":"https://schema.org"}</script>
+{"description":"這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得","@type":"BlogPosting","url":"http://localhost:4000/Geek-Log/practice.html","headline":"練習Markdown語法","dateModified":"2020-01-24T13:30:00+08:00","datePublished":"2020-01-24T13:30:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Geek-Log/practice.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Geek-Log/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/Geek-Log/feed.xml" title="Randy 的開發日誌" /></head>
 <body><header class="site-header" role="banner">
@@ -30,12 +30,32 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">開發日誌使用手冊</a><a class="page-link" href="/Geek-Log/markdown/">本站Markdown用法範例與語法練習</a><a class="page-link" href="/Geek-Log/intro/">認識Jekyll</a><a class="page-link" href="/Geek-Log/update/">Jekyll update</a></div>
+        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">使用手冊</a><a class="page-link" href="/Geek-Log/markdown/">Markdown</a><a class="page-link" href="/Geek-Log/intro/">Jekyll</a><a class="page-link" href="/Geek-Log/update/">Update</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p>圖片放在主機內</p>
+        <p><img src="https://imgur.com/iK6HGtt.gif" /></p>
+
+<p>目前如果這個網站需要靜態只能<a href="https://imgur.com/iK6HGtt.gif">透過Imgur圖床</a>而不能放在伺服器端。
+想要練習更多取用靜態檔案(Static file)的方法？請看<a href="https://www.youtube.com/watch?v=knWjmVlVpso&amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;index=18">這集Youtube</a></p>
+
+<h2 id="今日工作">今日工作</h2>
+<ul>
+  <li>貼圖片上去</li>
+  <li>{ % for % } 語法：列出靜態檔案</li>
+  <li>練習 Markdown語法與連結，<a href="/Geek-Log/markdown/">更多用法</a></li>
+</ul>
+
+<h2 id="為什麼要學習-markdown-語法">為什麼要學習 Markdown 語法？</h2>
+<p>第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。</p>
+
+<h3 id="疑問">疑問</h3>
+<p>-[] H1 的格式怪怪的</p>
+
+<p>======</p>
+
+<p>圖片放在主機內</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;br&gt;
 
@@ -48,9 +68,12 @@
 
 <p><img src="" alt="file.name" /></p>
 
-<p>真實圖片
- <img src="" />
- <img src="" /></p>
+<p>真實圖片</p>
+<ol>
+  <li><img src="" /></li>
+  <li><img src="" /></li>
+  <li></li>
+</ol>
 
 <h3 id="原始代碼">原始代碼</h3>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
@@ -96,26 +119,6 @@ A static file is a file that does not contain any front matter. These include im
   </tbody>
 </table>
 
-<p><a href="https://imgur.com/iK6HGtt.gif">圖片放在Imgur</a></p>
-
-<p><a href="https://www.youtube.com/watch?v=knWjmVlVpso&amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;index=18">Youtube tutorial</a></p>
-
-<h2 id="今日工作">今日工作</h2>
-<ul>
-  <li>練習 Markdown語法與連結，<a href="/Geek-Log/markdown/">更多用法</a></li>
-  <li>貼圖片上去</li>
-  <li>{ % for % } 語法：列出Sever上所有靜態檔案 Static file.</li>
-</ul>
-
-<p>(成果)(https://yahoo.com.us)[132]</p>
-
-<p><a href="Geek-Log/about/">成果</a> has no title attribute.</p>
-
-<h2 id="為什麼要學習-markdown-語法">為什麼要學習 Markdown 語法？</h2>
-<p>第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。</p>
-
-<h3 id="疑問">疑問</h3>
-<p>[] H1 的格式怪怪的</p>
 
       </div>
     </main><footer class="site-footer h-card">

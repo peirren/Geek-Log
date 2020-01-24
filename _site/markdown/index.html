@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>本站Markdown用法範例與語法練習 | Randy 的開發日誌</title>
+<title>Markdown | Randy 的開發日誌</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="本站Markdown用法範例與語法練習" />
+<meta property="og:title" content="Markdown" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得" />
 <meta property="og:description" content="這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得" />
@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://localhost:4000/Geek-Log/markdown/" />
 <meta property="og:site_name" content="Randy 的開發日誌" />
 <script type="application/ld+json">
-{"description":"這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得","@type":"WebPage","url":"http://localhost:4000/Geek-Log/markdown/","headline":"本站Markdown用法範例與語法練習","@context":"https://schema.org"}</script>
+{"description":"這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得","@type":"WebPage","url":"http://localhost:4000/Geek-Log/markdown/","headline":"Markdown","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Geek-Log/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/Geek-Log/feed.xml" title="Randy 的開發日誌" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">開發日誌使用手冊</a><a class="page-link" href="/Geek-Log/markdown/">本站Markdown用法範例與語法練習</a><a class="page-link" href="/Geek-Log/intro/">認識Jekyll</a><a class="page-link" href="/Geek-Log/update/">Jekyll update</a></div>
+        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">使用手冊</a><a class="page-link" href="/Geek-Log/markdown/">Markdown</a><a class="page-link" href="/Geek-Log/intro/">Jekyll</a><a class="page-link" href="/Geek-Log/update/">Update</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -36,16 +36,20 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">本站Markdown用法範例與語法練習</h1>
+    <h1 class="post-title">Markdown</h1>
   </header>
 
   <div class="post-content">
-    <h1 id="標題1">標題1</h1>
-<h2 id="標題2">標題2</h2>
-<h3 id="標題3">標題3</h3>
-<h4 id="標題4">標題4</h4>
+    <p>本站Markdown用法範例與語法練習</p>
+<hr />
 
-<p>========</p>
+<h1 id="我是標題1">我是標題1</h1>
+<h2 id="我是標題2">我是標題2</h2>
+<h3 id="我是標題3">我是標題3</h3>
+<h4 id="我是標題4">我是標題4</h4>
+<p>最多可以到標題6</p>
+
+<hr />
 
 <ol>
   <li>如何使用 Markdown 貼圖片呢？
@@ -53,6 +57,55 @@
 1.2. 站外</li>
   <li></li>
 </ol>
+
+<h3 id="如何強調行內文字呢粗體與斜體">如何強調行內文字呢？粗體與斜體</h3>
+
+<p>Markdown使用星號（*）和底線（_）作為標記強調字詞的符號，被＊或_包圍的字詞會被轉成用<code class="highlighter-rouge">&lt;em&gt;</code>標籤包圍，用兩個＊或＿包起來的話，則會被轉成 <code class="highlighter-rouge">&lt;strong&gt;</code></p>
+
+<p>Markdown是一種 <em>輕量級標記式</em> 語言，創始人為約翰·格魯伯（英語：<em>John Gruber</em>）。它允許人們「使用易讀易寫的純文字格式編寫文件，然後轉換成有效的XHTML（或者HTML）文件」。這種語言吸收了很多在電子郵件中已有的純文字標記的特性。</p>
+
+<p>由於Markdown的輕量化、易讀易寫特性，並且對於圖片，圖表、數學式都有支援，目前許多網站都廣泛使用 Markdown 來撰寫說明文件或是用於論壇上發表訊息。例如：GitHub、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。甚至Markdown能被使用來撰寫電子書。</p>
+
+<p>創造分隔線，有兩種寫法：
+<code class="highlighter-rouge">* * *</code> or <code class="highlighter-rouge">***</code></p>
+<hr />
+
+<p><br />
+<br /></p>
+
+<h3 id="引言-quote">引言 (Quote)</h3>
+
+<p>如果想要摘要、標記、回覆、引述一個文章段落，就可以使用『引言』，語法都是在每行文字前面加上<code class="highlighter-rouge"> &gt; : </code></p>
+
+<blockquote>
+  <p>:不要努力成為一個成功者，要努力成為一個有價值的人。</p>
+</blockquote>
+
+<p>分行、跳行也是可以唷</p>
+
+<blockquote>
+  <p>: 愛因斯坦名言：</p>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>: 我不知道第三次世界大戰會用哪些武器，但第四次世界大戰中人們肯定用的是木棍和石塊。</p>
+  </blockquote>
+</blockquote>
+
+<h3 id="123">123</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />待辦清單</li>
+</ul>
+
+<div style="padding-top: 20px; border-top: 2px; border-color: black;">
+	<h3>
+	參考資料 Reference
+	</h3>
+</div>
+
+<p>外部連結：<a href="https://markdown.tw/">參考文件</a></p>
 
   </div>
 

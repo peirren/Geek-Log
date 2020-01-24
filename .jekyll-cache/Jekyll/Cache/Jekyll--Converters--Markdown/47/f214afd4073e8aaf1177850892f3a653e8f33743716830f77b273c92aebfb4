@@ -1,0 +1,29 @@
+I"W<h1 id="標題1">標題1</h1>
+<h2 id="標題2">標題2</h2>
+<h3 id="標題3">標題3</h3>
+<h4 id="標題4">標題4</h4>
+
+<p>========</p>
+
+<ol>
+  <li>如何使用 Markdown 貼圖片呢？
+1.1. 站內
+1.2. 站外</li>
+  <li></li>
+</ol>
+
+<p>創造分隔線，有兩種寫法：
+<code class="highlighter-rouge">* * *</code> or <code class="highlighter-rouge">***</code></p>
+<hr />
+
+<ol>
+  <li>引言 (Quote)</li>
+</ol>
+
+<p>如果想要摘要、標記、回覆、引述一個文章段落，就可以使用『引言』，語法都是在每行文字前面加上<code class="highlighter-rouge"> &gt; : </code></p>
+
+<blockquote>
+  <p>:區塊引言，如果你很熟悉如何在email信件中引言，你就知道怎麼在Markdown文件中建立一個區塊引言，那會看起來像是你強迫斷行，然後在每行的最前面加上&gt;：</p>
+</blockquote>
+
+:ET

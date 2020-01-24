@@ -3,6 +3,24 @@ layout: default
 title: "練習Markdown語法"
 date:   2020-01-24 13:30:00 +0800
 ---
+<img src="https://imgur.com/iK6HGtt.gif">
+
+目前如果這個網站需要靜態只能[透過Imgur圖床](https://imgur.com/iK6HGtt.gif)而不能放在伺服器端。
+想要練習更多取用靜態檔案(Static file)的方法？請看[這集Youtube](https://www.youtube.com/watch?v=knWjmVlVpso&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=18)
+
+## 今日工作
+- 貼圖片上去
+- { % for % } 語法：列出靜態檔案 
+- 練習 Markdown語法與連結，[更多用法](/Geek-Log/markdown/)
+
+## 為什麼要學習 Markdown 語法？
+第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。
+
+### 疑問
+-[] H1 的格式怪怪的
+
+======
+
 
 圖片放在主機內
 
@@ -14,9 +32,10 @@ date:   2020-01-24 13:30:00 +0800
 <img src="{{file.path}}" alt="file.name">
 
 真實圖片
- <img src="{{/assets/img/practiceMarkdown.gif}}">
- <img src="{{/assets/img/s9OfhzA.jpg}}">
- 
+ 1. <img src="{{https://peirren.github.io/Geek-Log/assets/img/practiceMarkdown.gif}}">
+ 2. <img src="{{/assets/img/s9OfhzA.jpg}}">
+ 3. 
+
 ### 原始代碼
 ```
 
@@ -56,24 +75,3 @@ They’re accessible in Liquid via site.static_files and contain the following m
 |VARIABLE|DESCRIPTION|
 |file.path|The relative path to the file, e.g. /assets/img/image.jpg|
 
-[圖片放在Imgur](https://imgur.com/iK6HGtt.gif)
-
-[Youtube tutorial](https://www.youtube.com/watch?v=knWjmVlVpso&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=18)
-
-## 今日工作
-- 練習 Markdown語法與連結，[更多用法](/Geek-Log/markdown/)
-- 貼圖片上去
-- { % for % } 語法：列出Sever上所有靜態檔案 Static file.
-
-
-(成果)(https://yahoo.com.us)[132]
-
-[成果](Geek-Log/about/) has no title attribute.
-
-## 為什麼要學習 Markdown 語法？
-第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。
-
-
-
-### 疑問
-[] H1 的格式怪怪的

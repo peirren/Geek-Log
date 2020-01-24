@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 認識Jekyll
+title: Jekyll
 permalink: /intro/
 ---
 

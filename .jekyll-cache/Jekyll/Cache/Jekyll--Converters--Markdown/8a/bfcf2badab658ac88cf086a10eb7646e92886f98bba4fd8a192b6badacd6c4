@@ -1,0 +1,43 @@
+I"x<h1 id="標題1">標題1</h1>
+<h2 id="標題2">標題2</h2>
+<h3 id="標題3">標題3</h3>
+<h4 id="標題4">標題4</h4>
+
+<p>========</p>
+
+<ol>
+  <li>如何使用 Markdown 貼圖片呢？
+1.1. 站內
+1.2. 站外</li>
+  <li></li>
+</ol>
+
+<p>創造分隔線，有兩種寫法：
+<code class="highlighter-rouge">* * *</code> or <code class="highlighter-rouge">***</code></p>
+<hr />
+
+<ol>
+  <li>引言 (Quote)</li>
+</ol>
+
+<p>如果想要摘要、標記、回覆、引述一個文章段落，就可以使用『引言』，語法都是在每行文字前面加上<code class="highlighter-rouge"> &gt; : </code></p>
+
+<blockquote>
+  <p>:不要努力成為一個成功者，要努力成為一個有價值的人。</p>
+</blockquote>
+
+<p>分行、跳行也是可以唷</p>
+
+<blockquote>
+  <p>: 愛因斯坦名言：</p>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>: 我不知道第三次世界大戰會用哪些武器，但第四次世界大戰中人們肯定用的是木棍和石塊。</p>
+  </blockquote>
+</blockquote>
+
+<h3 id="參考資料-reference">參考資料 Reference</h3>
+<p>外部連結：<a href="https://markdown.tw/">參考文件</a></p>
+:ET

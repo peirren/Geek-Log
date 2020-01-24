@@ -1,0 +1,58 @@
+I"S	<h1 id="我是標題1">我是標題1</h1>
+<h2 id="我是標題2">我是標題2</h2>
+<h3 id="我是標題3">我是標題3</h3>
+<h4 id="我是標題4">我是標題4</h4>
+<p>最多可以到標題6</p>
+
+<hr />
+
+<ol>
+  <li>如何使用 Markdown 貼圖片呢？
+1.1. 站內
+1.2. 站外</li>
+  <li></li>
+</ol>
+
+<h3 id="如何強調行內文字呢粗體與斜體">如何強調行內文字呢？粗體與斜體</h3>
+
+<p>Markdown使用星號（ * ）和底線（_）作為標記強調字詞的符號，被<em>或_包圍的字詞會被轉成用<code class="highlighter-rouge">&lt;em&gt;</code>標籤包圍，用兩個</em>或_包起來的話，則會被轉成 <code class="highlighter-rouge">&lt;strong&gt;</code></p>
+
+<p>Markdown是一種 <em>輕量級標記式</em> 語言，創始人為約翰·格魯伯（英語：<em>John Gruber</em>）。它允許人們「使用易讀易寫的純文字格式編寫文件，然後轉換成有效的XHTML（或者HTML）文件」。這種語言吸收了很多在電子郵件中已有的純文字標記的特性。</p>
+
+<p>由於Markdown的輕量化、易讀易寫特性，並且對於圖片，圖表、數學式都有支援，目前許多網站都廣泛使用 Markdown 來撰寫說明文件或是用於論壇上發表訊息。例如：GitHub、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。甚至Markdown能被使用來撰寫電子書。</p>
+
+<p>創造分隔線，有兩種寫法：
+<code class="highlighter-rouge">* * *</code> or <code class="highlighter-rouge">***</code></p>
+<hr />
+
+<p><br />
+<br /></p>
+
+<h3 id="引言-quote">引言 (Quote)</h3>
+
+<p>如果想要摘要、標記、回覆、引述一個文章段落，就可以使用『引言』，語法都是在每行文字前面加上<code class="highlighter-rouge"> &gt; : </code></p>
+
+<blockquote>
+  <p>:不要努力成為一個成功者，要努力成為一個有價值的人。</p>
+</blockquote>
+
+<p>分行、跳行也是可以唷</p>
+
+<blockquote>
+  <p>: 愛因斯坦名言：</p>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>: 我不知道第三次世界大戰會用哪些武器，但第四次世界大戰中人們肯定用的是木棍和石塊。</p>
+  </blockquote>
+</blockquote>
+
+<div style="padding-top: 20px; border-top: 2px; border-color: black;">
+	<h3>
+	參考資料 Reference
+	</h3>
+</div>
+
+<p>外部連結：<a href="https://markdown.tw/">參考文件</a></p>
+:ET

@@ -1,0 +1,81 @@
+I";	<p>圖片放在主機內</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;br&gt;
+
+
+ &lt;br&gt;
+
+
+ &lt;br&gt;
+</code></pre></div></div>
+
+<p><img src="" alt="file.name" /></p>
+
+<p>真實圖片
+ <img src="" /></p>
+
+<h3 id="原始代碼">原始代碼</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{ % for file in site.static_files % }
+	{ {file.path} } 
+{ % endfor % }
+
+## %前後皆有空格
+</code></pre></div></div>
+<p>^^^^ for  列出所有檔案路徑(path)</p>
+
+<ol>
+  <li>到 config.yml 寫一串代碼，告訴伺服器需要圖片
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults:
+  - scope:
+   path: "assets/img"
+ values:
+   image: true
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>語法
+{ % for file in site.static_file % }
+/assets/img/practiceMarkdown.gif</p>
+
+<h2 id="放置靜態檔案">放置靜態檔案</h2>
+<p>###Static Files
+A static file is a file that does not contain any front matter. These include images, PDFs, and other un-rendered content.</p>
+
+<p>They’re accessible in Liquid via site.static_files and contain the following metadata:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>VARIABLE</td>
+      <td>DESCRIPTION</td>
+    </tr>
+    <tr>
+      <td>file.path</td>
+      <td>The relative path to the file, e.g. /assets/img/image.jpg</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://imgur.com/iK6HGtt.gif">圖片放在Imgur</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=knWjmVlVpso&amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;index=18">Youtube tutorial</a></p>
+
+<h2 id="今日工作">今日工作</h2>
+<ul>
+  <li>練習 Markdown語法與連結，<a href="/Geek-Log/markdown/">更多用法</a></li>
+  <li>貼圖片上去</li>
+  <li>{ % for % } 語法：列出Sever上所有靜態檔案 Static file.</li>
+</ul>
+
+<p>(成果)(https://yahoo.com.us)[132]</p>
+
+<p><a href="Geek-Log/about/">成果</a> has no title attribute.</p>
+
+<h2 id="為什麼要學習-markdown-語法">為什麼要學習 Markdown 語法？</h2>
+<p>第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。</p>
+
+<h3 id="疑問">疑問</h3>
+<p>[] H1 的格式怪怪的</p>
+:ET

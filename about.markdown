@@ -20,11 +20,11 @@ permalink: /about/
 * jQuery: 語法練習
 * facebook: 社群行銷與Facebook廣告
 * Not Compeleted: 未完成的文件
-
-
 [] 區分大小寫？
+<hr>
 
-
+## 本站Markdown用法
+[連結點我](/Geek-Log/markdown/)
 
 
 ### Practice

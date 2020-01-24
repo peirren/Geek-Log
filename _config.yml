@@ -44,6 +44,16 @@ nav:
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: /:title.html
 
+## 靜態檔案放置路徑
+### 200124 試放看看
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-24T15:50:32+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-24T15:50:32+08:00</published><updated>2020-01-24T15:50:32+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-24T16:38:16+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-24T16:38:16+08:00</published><updated>2020-01-24T16:38:16+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
 
 &lt;ol&gt;
@@ -49,17 +49,87 @@
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
-&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;h2 id=&quot;今日工作&quot;&gt;今日工作&lt;/h2&gt;
+&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;圖片放在主機內&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;br&amp;gt;
+
+
+ &amp;lt;br&amp;gt;
+
+
+ &amp;lt;br&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;file.name&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;真實圖片
+ &lt;img src=&quot;&quot; /&gt;
+ &lt;img src=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;原始代碼&quot;&gt;原始代碼&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+{ % for file in site.static_files % }
+	{ {file.path} }
+{ % endfor % }
+
+## %前後皆有空格
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;^^^^ for  列出所有檔案路徑(path)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;到 config.yml 寫一串代碼，告訴伺服器需要圖片
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults:
+  - scope:
+   path: &quot;assets/img&quot;
+ values:
+   image: true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;語法
+{ % for file in site.static_file % }
+/assets/img/practiceMarkdown.gif&lt;/p&gt;
+
+&lt;h2 id=&quot;放置靜態檔案&quot;&gt;放置靜態檔案&lt;/h2&gt;
+&lt;p&gt;###Static Files
+A static file is a file that does not contain any front matter. These include images, PDFs, and other un-rendered content.&lt;/p&gt;
+
+&lt;p&gt;They’re accessible in Liquid via site.static_files and contain the following metadata:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;VARIABLE&lt;/td&gt;
+      &lt;td&gt;DESCRIPTION&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;file.path&lt;/td&gt;
+      &lt;td&gt;The relative path to the file, e.g. /assets/img/image.jpg&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/iK6HGtt.gif&quot;&gt;圖片放在Imgur&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=knWjmVlVpso&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;amp;index=18&quot;&gt;Youtube tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;今日工作&quot;&gt;今日工作&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;練習 Markdown語法與連結
-– 貼圖片上去&lt;/li&gt;
+  &lt;li&gt;練習 Markdown語法與連結，&lt;a href=&quot;/Geek-Log/markdown/&quot;&gt;更多用法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;貼圖片上去&lt;/li&gt;
+  &lt;li&gt;{ % for % } 語法：列出Sever上所有靜態檔案 Static file.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;(成果)(https://yahoo.com.us)[132]&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;Geek-Log/about/&quot;&gt;成果&lt;/a&gt; has no title attribute.&lt;/p&gt;
 
-&lt;p&gt;[] H1 的格式怪怪的&lt;/p&gt;</content><author><name></name></author><summary type="html">今日工作 練習 Markdown語法與連結 – 貼圖片上去</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
+&lt;h2 id=&quot;為什麼要學習-markdown-語法&quot;&gt;為什麼要學習 Markdown 語法？&lt;/h2&gt;
+&lt;p&gt;第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;疑問&quot;&gt;疑問&lt;/h3&gt;
+&lt;p&gt;[] H1 的格式怪怪的&lt;/p&gt;</content><author><name></name></author><summary type="html">圖片放在主機內</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
   &lt;li&gt;勞工保險&lt;/li&gt;
   &lt;li&gt;勞工退休金 （雇主提撥/自提）&lt;/li&gt;
   &lt;li&gt;

@@ -4,15 +4,76 @@ title: "練習Markdown語法"
 date:   2020-01-24 13:30:00 +0800
 ---
 
+圖片放在主機內
+
+{% for file in site.static_files %}
+	{{if file.path}} <br>
+	{{endif	}}
+{% endfor%}
+
+<img src="{{file.path}}" alt="file.name">
+
+真實圖片
+ <img src="{{/assets/img/practiceMarkdown.gif}}">
+ <img src="{{/assets/img/s9OfhzA.jpg}}">
+ 
+### 原始代碼
+```
+
+{ % for file in site.static_files % }
+	{ {file.path} }
+{ % endfor % }
+
+## %前後皆有空格
+```
+^^^^ for  列出所有檔案路徑(path)
+
+
+
+3. 到 config.yml 寫一串代碼，告訴伺服器需要圖片
+```
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+```
+
+
+
+ {{/assets/img/practiceMarkdown.gif}}
+
+語法
+{ % for file in site.static_file % }
+/assets/img/practiceMarkdown.gif
+
+## 放置靜態檔案
+###Static Files
+A static file is a file that does not contain any front matter. These include images, PDFs, and other un-rendered content.
+
+They’re accessible in Liquid via site.static_files and contain the following metadata:
+
+|VARIABLE|DESCRIPTION|
+|file.path|The relative path to the file, e.g. /assets/img/image.jpg|
+
+[圖片放在Imgur](https://imgur.com/iK6HGtt.gif)
+
+[Youtube tutorial](https://www.youtube.com/watch?v=knWjmVlVpso&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=18)
 
 ## 今日工作
-- 練習 Markdown語法與連結
--- 貼圖片上去
+- 練習 Markdown語法與連結，[更多用法](/Geek-Log/markdown/)
+- 貼圖片上去
+- { % for % } 語法：列出Sever上所有靜態檔案 Static file.
 
 
 (成果)(https://yahoo.com.us)[132]
 
 [成果](Geek-Log/about/) has no title attribute.
 
+## 為什麼要學習 Markdown 語法？
+第一當然是可以與HTML混用，同時融入Jekyll靜態部落格當中。當然，Markdown也有一點壞處，就是不是那麼直覺，但都要寫code了，算是非常好入門的標記語言吧。
 
+
+
+### 疑問
 [] H1 的格式怪怪的

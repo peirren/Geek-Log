@@ -1,0 +1,18 @@
+---
+layout: default
+title: "練習Markdown語法"
+date:   2020-01-24 13:30:00 +0800
+---
+
+
+## 今日工作
+- 練習 Markdown語法與連結
+-- 貼圖片上去
+
+
+(成果)(https://yahoo.com.us)[132]
+
+[成果](Geek-Log/about/) has no title attribute.
+
+
+[] H1 的格式怪怪的

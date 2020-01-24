@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning Jekyll, Part1"
-date:   2019-12-26 00:55:12 +0800
+date:   2019-01-02 00:55:12 +0800
 categories: review
 ---
 

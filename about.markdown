@@ -9,6 +9,7 @@ permalink: /about/
 * doc: 技術文件
 * note: 筆記
 * draft: 文章草稿
+-[] 區分大小寫？
 
 ---
 
@@ -18,7 +19,13 @@ permalink: /about/
 * Markdown: 語法練習
 * jQuery: 語法練習
 * facebook: 社群行銷與Facebook廣告
-* "Not Compeleted" : 未完成的文件
+* Not Compeleted: 未完成的文件
+
+
+[] 區分大小寫？
+
+
+
 
 ### Practice
 Link to in-site page. [Jekyll update](/Geek-Log/update/)

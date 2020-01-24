@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-24T15:34:22+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-24T15:34:22+08:00</published><updated>2020-01-24T15:34:22+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-24T15:50:32+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-24T15:50:32+08:00</published><updated>2020-01-24T15:50:32+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
 如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
 
 &lt;ol&gt;
@@ -49,15 +49,24 @@
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
-&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
+&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;h2 id=&quot;今日工作&quot;&gt;今日工作&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;練習 Markdown語法與連結
+– 貼圖片上去&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(成果)(https://yahoo.com.us)[132]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;Geek-Log/about/&quot;&gt;成果&lt;/a&gt; has no title attribute.&lt;/p&gt;
+
+&lt;p&gt;[] H1 的格式怪怪的&lt;/p&gt;</content><author><name></name></author><summary type="html">今日工作 練習 Markdown語法與連結 – 貼圖片上去</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
   &lt;li&gt;勞工保險&lt;/li&gt;
   &lt;li&gt;勞工退休金 （雇主提撥/自提）&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;健保 （僱員/眷屬）&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;勞保加、退保申報單&lt;/li&gt;
-  &lt;li&gt;健保加、退保申報單
-*&lt;/li&gt;
+  &lt;li&gt;健保加、退保申報單&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;常用必存資料夾&quot;&gt;常用&amp;amp;必存資料夾&lt;/h2&gt;
@@ -80,9 +89,7 @@
   &lt;li&gt;cart&lt;/li&gt;
   &lt;li&gt;check-out&lt;/li&gt;
   &lt;li&gt;order&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">#Header Bar Imgur</summary></entry><entry><title type="html">工作日誌-2020-01-15</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="工作日誌-2020-01-15" /><published>2020-01-15T10:30:00+08:00</published><updated>2020-01-15T10:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;p&gt;需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。&lt;/p&gt;
-
-&lt;h2 id=&quot;會計開立作業&quot;&gt;會計開立作業&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">#Header Bar Imgur</summary></entry><entry><title type="html">工作日誌-2020-01-15</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="工作日誌-2020-01-15" /><published>2020-01-15T10:30:00+08:00</published><updated>2020-01-15T10:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h2 id=&quot;會計開立作業&quot;&gt;會計開立作業&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;AR賬表功能:客戶累積金額/發票代號/入款金流的方向&lt;/li&gt;
   &lt;li&gt;台全珍豬的備註&lt;em&gt;不是銷貨費用&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;TBD&lt;/code&gt;&lt;/li&gt;
@@ -186,7 +193,7 @@
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">需要定義Jekyll Nav bar的分類與用途，作為真正的開發日誌。</summary></entry><entry><title type="html">Faceboook ads廣告圖片尺寸介紹</title><link href="http://localhost:4000/Geek-Log/Facebook-ads-format.html" rel="alternate" type="text/html" title="Faceboook ads廣告圖片尺寸介紹" /><published>2020-01-14T18:30:00+08:00</published><updated>2020-01-14T18:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Facebook-ads-format</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Facebook-ads-format.html">&lt;h2 id=&quot;faceboook-ads廣告圖片尺寸介紹&quot;&gt;Faceboook ads廣告圖片尺寸介紹&lt;/h2&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">會計開立作業 AR賬表功能:客戶累積金額/發票代號/入款金流的方向 台全珍豬的備註不是銷貨費用 TBD 2020/01/31, 日初已付款, 但不開發票。 如果需要直接寄出電子發票的Email，必須選歸戶(會員載具/自然人憑證)；紙本發票不能歸戶，只能列印 （已回覆）</summary></entry><entry><title type="html">Faceboook ads廣告圖片尺寸介紹</title><link href="http://localhost:4000/Geek-Log/Facebook-ads-format.html" rel="alternate" type="text/html" title="Faceboook ads廣告圖片尺寸介紹" /><published>2020-01-14T18:30:00+08:00</published><updated>2020-01-14T18:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Facebook-ads-format</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Facebook-ads-format.html">&lt;h2 id=&quot;faceboook-ads廣告圖片尺寸介紹&quot;&gt;Faceboook ads廣告圖片尺寸介紹&lt;/h2&gt;
 &lt;p&gt;&lt;span&gt;Tips:拆解成最小可執行的動作與目標&lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080&lt;/li&gt;
@@ -358,26 +365,4 @@ gemfil &quot;minima&quot;, &quot;~&amp;gt; 2.0&quot;
 &lt;h2 id=&quot;tbd-question&quot;&gt;TBD QUESTION&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Mastering markdown language 熟悉Markdown的用法&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry><entry><title type="html">Mac Common Termianl command</title><link href="http://localhost:4000/Geek-Log/Terminal-command.html" rel="alternate" type="text/html" title="Mac Common Termianl command" /><published>2020-01-05T13:30:00+08:00</published><updated>2020-01-05T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Terminal-command</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Terminal-command.html">&lt;h1 id=&quot;terminal-command&quot;&gt;Terminal command&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;創資料夾 Ex：新資料夾 =&amp;gt; mkdir 新資料夾&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;刪資料夾 Ex: 刪除新資料夾 rmdir 新資料夾
-rm = remove&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;用finder開啟當前目錄 &lt;code class=&quot;highlighter-rouge&quot;&gt;open .&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;顯示現在所處目錄內容 &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;顯示現在所處目錄&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;###cd
-&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~/documents/geek-log&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ethernet&quot;&gt;eThernet&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;查網卡介面狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;查無線網卡狀態 &lt;code class=&quot;highlighter-rouge&quot;&gt;iwconfig&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;參考資料-reference&quot;&gt;參考資料 Reference&lt;/h3&gt;</content><author><name></name></author><category term="Not Compeleted" /><summary type="html">Terminal command</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Randy</name></author><category term="english" /><summary type="html">修改Layout 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。 同樣一樣有Template, Page的概念，與WordPress雷同。</summary></entry></feed>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "勞保、勞退、健保資料建檔"
 date:   2020-01-16 16:10:00 +0800
 categories: Diary
@@ -11,7 +11,7 @@ categories: Diary
 
 * 勞保加、退保申報單
 * 健保加、退保申報單
-*
+
 
 ## 常用&必存資料夾
 1. `勞保` 投保單位 被保險人名冊

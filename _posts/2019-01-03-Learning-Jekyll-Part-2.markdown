@@ -1,7 +1,7 @@
 ---
-layout: "post-style"
+layout: post
 title: "Learning Jekyll, Part2, Jekyll 資料夾格式"
-date:   2019-12-27 00:55:12 +0800
+date:   2019-01-03 00:55:12 +0800
 categories: review
 author: "Randy"
 ---

@@ -39,7 +39,9 @@
 }
 
 .englishcontent {
-    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
     font-size: 14px;
     color: #e5fcff;
     background-color: #444444;
@@ -64,13 +66,6 @@ Markdown
 <p>最多可以到標題6</p>
 
 <hr />
-
-<ol>
-  <li>如何使用 Markdown 貼圖片呢？
-1.1. 站內
-1.2. 站外</li>
-  <li></li>
-</ol>
 
 <h3 id="如何強調行內文字呢粗體與斜體">如何強調行內文字呢？粗體與斜體</h3>
 
@@ -107,11 +102,40 @@ Markdown
   </blockquote>
 </blockquote>
 
-<h3 id="123">123</h3>
+<h3 id="checkbox-核准欄位">CheckBox 核准欄位</h3>
+<p>用在確認事情是否完成，語法是兩個中括號 <code class="highlighter-rouge">[]</code> ；若在加入 <em>x</em> 就代表這個項目是被打勾的，它並不會主動紀錄勾選過的內容，所以使用時要確認勾選過的內容是否有增加 ｘ，避免混亂。</p>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />待辦清單</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />安裝GA 追蹤碼</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />創立自己的模板</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />些微修改頁腳的設計</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />調教 Config 檔案</li>
 </ul>
+
+<h3 id="highlisht-程式碼">Highlisht 程式碼</h3>
+<p>清楚標示程式碼有 <strong>三種方法</strong>， 反</p>
+
+<ol>
+  <li>單個 反引號</li>
+  <li>三個 反引號</li>
+  <li>四個空白</li>
+</ol>
+
+<h4 id="特別技巧跳落語法字元">[特別技巧:跳落語法字元]</h4>
+<p>讓Markdown語法的符號顯示在前端網頁上，而不會被視為程式語言文本之一。</p>
+
+<blockquote>
+  <p>用法： <strong>三個反引號</strong> 加上 <strong>程式語言簡寫</strong></p>
+  <blockquote>
+    <p>例如：  ` ` ` md ` ` `</p>
+  </blockquote>
+</blockquote>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ###標題三<span class="sb">
+
+    _斜體字用法，卻又不會變成斜體字_
+</span></code></pre></div></div>
+<p><img src="https://i.imgur.com/RxjBcol.png" /></p>
 
 <div style="padding-top: 20px; border-top: 2px; border-color: black;">
 	<h3>

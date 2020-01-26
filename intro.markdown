@@ -39,11 +39,11 @@ Folder include, adding a new file: ga_script, pretending some mock-up, nav bar o
 |page    | 獨立頁面    | 如果沒有可以新增，並且呼叫default，基本款互相引用。  |
 |psot    | 文章       |   |
 
+##### Layout的說明
+所有的頁面或文章都是 **default** ，因此如果要更動 *page* 時候，必須先在MD文章前面呼叫 `layout: default`。 才開始進行修改。
 
 
-## 修改 config.yml 檔案
-baseurl 與 url 的差別
-<img src="https://imgur.com/j7Qi1HM.jpg">
+
 
 ### Content 內容
 <label class="mylabel">[資料來源官方網站](https://jekyllrb.com/docs/posts/)</label>
@@ -69,6 +69,8 @@ All blog post files must begin with front matter which is typically used to set 
 
 ---
 
+<br>
+
 > ProTip™: Link to other posts
 Use the post_url tag to link to other posts without having to worry about the URLs breaking when the site permalink style changes.
 
@@ -81,13 +83,16 @@ If you want to include a link to a post on your site, the post_url tag will gene
 </div>
 
 ```
-{ % post_url 2010-07-21-name-of-post % }
+    { % post_url 2010-07-21-name-of-post % }
 ```
+
+    { % post_url 2010-07-21-name-of-post % }
+
 <div class="englishcontent">
 If you organize your posts in subdirectories, you need to include subdirectory path to the post:
 </div>
 
-如果妳posts資料夾中還有子資料夾，路徑必須同樣列出，如下：
+如果妳posts資料夾中還有 _子資料夾_ ，路徑必須同樣列出，如下：
 
 `{ % post_url /subdir/2010-07-21-name-of-post % }`
 
@@ -96,12 +101,40 @@ There is no need to include the file extension when using the post_url tag.
 You can also use this tag to create a link to a post in Markdown as follows:
 </div>
 
-創造連結的方法
-`[ Name of Link ] ({ % post_url 2010-07-21-name-of-post %} )`
+*創造連結* 的方法:[馬上來一個]({{% post_url 2019-01-01-welcome-to-jekyll %}})
 
 
-馬上來一個： {{% post_url 2019-01-01-welcome-to-jekyll %}}
+## 呼叫圖片與其他資源
+### [Including images and resources](https://jekyllrb.com/docs/posts/#the-posts-folder)
+At some point, you’ll want to include images, downloads, or other digital assets along with your text content. One common solution is to create a folder in the root of the project directory called something like assets, into which any images, files or other resources are placed. Then, from within any post, they can be linked to using the site’s root as the path for the asset to include. The best way to do this depends on the way your site’s (sub)domain and path are configured, but here are some simple examples in Markdown:
 
+Including an image asset in a post:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 修改 config.yml 檔案
+[疑問]baseurl 與 url 的差別，不是很熟練。
+<img src="https://imgur.com/j7Qi1HM.jpg">
 ```
 
 
@@ -112,35 +145,28 @@ You can also use this tag to create a link to a post in Markdown as follows:
 |     |	Wrapper||
 |     | |CSS style|
 
-
 | 資料夾 | 檔案名稱 |
 _layosts | post.html
 
+` Gemfile > url: "___" ` 必填 `
 
-` Gemfile > url: "___" ` 必填
+```
 
 ```
 gemfil "jekyll", "~> 3.6.0" 
 gemfil "minima", "~> 2.0"
-
 ````
 
-###Ref
 
--[Hosting on Github Pages](https://www.youtube.com/watch?v=fqFjuX4VZmU)
--[Jekyll Themee 佈景主題](http://jekyllthemes.org/)
--[有點雜亂的中文解說](http://xareelee.github.io/tech_note/2015/07/23/%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog.html#why_github_pages_and_jekyll)
+###Ref
+- [Hosting on Github Pages](https://www.youtube.com/watch?v=fqFjuX4VZmU)
+- [Jekyll Themee 佈景主題](http://jekyllthemes.org/)
+- [有點雜亂的中文解說](http://xareelee.github.io/tech_note/2015/07/23/%E4%BD%BF%E7%94%A8-GitHub-Pages-%E5%92%8C-Jekyll-%E4%BE%86%E5%BB%BA%E7%AB%8B-Blog.html#why_github_pages_and_jekyll)
 
 
 ## TBD QUESTION
 - Mastering markdown language 熟悉Markdown的用法
-
-
-
-
-![Help GitHub](https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
+[Help GitHub](https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
 )
-
-![123](https://imgur.com/a/VLJbEbO)(Titlte)
 
 

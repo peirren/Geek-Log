@@ -16,6 +16,9 @@ categories: review
 - 創建jekyll資料夾 -> jekyll new folder_name 
 - 啟動jekyllbundle exec jekyll serve 或者你也可以⋯⋯
 
+[官方英文說明Command Line Usage](https://jekyllrb.com/docs/usage/)
+
+
 ```
 Randys-MacBook-Pro:~ Randy$ jekyll new jekyll_folder
 Running bundle install in /Users/Randy/jekyll_folder…  

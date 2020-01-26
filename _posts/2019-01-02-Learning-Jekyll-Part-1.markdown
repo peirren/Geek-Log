@@ -9,12 +9,12 @@ categories: review
 - ruby -v (至少高於2.4)
 - gem -v (至少高於2.6.13)
 - gem install jekyll bundler (啟用Gem安裝Jekyll)
-- jekyll -v (我的是 4.0)
+- jekyll -v (目前2020是 4.0)
 
-## 終端機需要指令
-- cd/ folder
-- jekyll new document name (創建jekyll資料夾)
-- bundle exec jekyll serve (啟動jekyll)
+## 終端機需要指令⋯⋯
+- 前往要放Jekyllj文件資料夾 cd/ folder
+- 創建jekyll資料夾 -> jekyll new folder_name 
+- 啟動jekyllbundle exec jekyll serve 或者你也可以⋯⋯
 
 ```
 Randys-MacBook-Pro:~ Randy$ jekyll new jekyll_folder
@@ -23,7 +23,6 @@ Running bundle install in /Users/Randy/jekyll_folder…
 ~畫面預覽~
 
 [image:AB0A1B73-4288-4748-9161-8B0045E870D4-286-0000061D86AE4D70/螢幕快照 2020-01-04 上午12.57.20.png]
-
 
 
 重要文件有：

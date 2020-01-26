@@ -1,15 +1,40 @@
 ---
-layout: default
-title: "Markdown - 語法練習篇"
-date:   2020-01-10 15:30:00 +0800
-categories: Jekyll
-tag: markdown 
+layout: post
+title: "Learning Markdown"
+date:   2019-01-02 00:55:12 +0800
+categories: update
 ---
 
 
-# 本篇文章動機
-到 [Jekyll Theme](http://jekyllthemes.org/) 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。
+### Markdown 表格練習
 
-### Reference& Resource
--[Jekyll Themee 佈景主題](http://jekyllthemes.org/)
+| IC | 收入 | 直接銷售 |
+| IC | 收入 | 官網銷售 |
+| IC | 收入 | 通路銷售 |
+| IC | 收入 | 其他收入 |
+
+
+代稱|分類    |主科目        | 代號 |次科目    |科目定義
+---:|--------:|----------:| ----:|------------------------
+IC| 收入     | ＸＸ收入   |  01  |ＸＸ收入  |Dark Age building x 2
+IC| 收入     | ＸＸ收入   |  01  |ＸＸ收入  |Feudal Age building x 2
+IC| 收入     | ＸＸ收入   |  01  |ＸＸ收入  |Feudal Age building x 2
+IC| 收入     | ＸＸ收入   |  01  |ＸＸ收入  |Castle Age building x 2
+IC| 收入     | ＸＸ收入   |  01  |ＸＸ收入  |Castle Age building x 2    
+--------------|:---------:|-----:| ------:|------------------------
+IC| 銷售成本  | 1000      |  02 |         |Castle Age building x 2  
+IC| 銷售成本  | 1000      |  02 |         |Castle Age building x 2
+IC| 銷售成本  | 1000      |  02 |         |Castle Age building x 2  
+--------------|:---------:|-----:| ------:|------------------------
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Dark Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Feudal Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Feudal Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Castle Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Castle Age building x 2  
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Dark Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Feudal Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Feudal Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Castle Age building x 2
+OT| 營業費用  | ＸＸ收入   |  01  |ＸＸ收入  |Castle Age building x 2  
+
 

@@ -1,55 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-24T21:00:51+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy 的開發日誌</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html"></title><link href="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html" rel="alternate" type="text/html" title="" /><published>2020-01-24T21:00:51+08:00</published><updated>2020-01-24T21:00:51+08:00</updated><id>http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md</id><content type="html" xml:base="http://localhost:4000/Geek-Log/2020-01-13-GA-tracking-code-md.html">&lt;p&gt;#修改追蹤程式碼以設定跨網域追蹤
-如要為多個頂層網域設定跨網域追蹤，您必須分別修改每一個網域上的 Analytics (分析) 追蹤程式碼。進行這項程序的人必須具備基本的 HTML 和 JavaScript 知識；如果您不熟悉相關知識，請找開發人員幫忙設定跨網域追蹤。本文中的範例使用通用 Analytics (分析) 追蹤程式碼片段 (analytics.js)。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在GA帳戶中設定資源：建議新建一項資源，在所有要共同追蹤的網域中，安裝同一組&lt;code class=&quot;highlighter-rouge&quot;&gt;程式碼&lt;/code&gt;與&lt;code class=&quot;highlighter-rouge&quot;&gt;Tracking ID&lt;/code&gt;，
-1.1. 修改主要網域的追蹤程式碼。
-在程式碼片段中找出 create 這一行。如果網站是 example-1.com，這一行看起來會像這樣：&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;對下列程式碼進行調整 (紅色粗體文字是需要變更的部分)：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ga('create', 'UA-XXXXXXX-Y', 'example-1.com');
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;ga(‘create’, ‘UA-XXXXXXX-Y’, &lt;code class=&quot;highlighter-rouge&quot;&gt;'auto', {'allowLinker': true});&lt;/code&gt;
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('require', 'linker');&lt;/code&gt;
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;ga('linker:autoLink', ['example-2.com'] );&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;別忘了將範例追蹤 ID (UA-XXXXXX-Y) 換成您專用的 ID
-範例次要網域 &lt;code class=&quot;highlighter-rouge&quot;&gt;(example-2.com)&lt;/code&gt; 必須換成次要網域名稱&lt;/p&gt;
-
-&lt;p&gt;三個以上的網域追蹤，請另外參考&lt;a href=&quot;Google文件&quot;&gt;https://support.google.com/analytics/answer/1034342?hl=zh-Hant&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;建立報表資料添加篩選器&quot;&gt;建立報表資料&amp;amp;添加篩選器&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/about/contactUs.html
-/about/contactUs.html
-/products/buy.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;以上三個路近，可能存在在兩個網域底下，GA不會顯示唷！&lt;/p&gt;
-
-&lt;p&gt;為了讓報表顯示網域名稱，必須建立報表&lt;code class=&quot;highlighter-rouge&quot;&gt;資料檢視的複本&lt;/code&gt; (其中包含您所有網域的資料)，然後在這個新資料檢視中&lt;code class=&quot;highlighter-rouge&quot;&gt;添加進階篩選器&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;這樣就會在GA中顯示真實的網域名稱囉！&lt;/p&gt;
-
-&lt;h2 id=&quot;資料檢視篩選器&quot;&gt;資料檢視篩選器&lt;/h2&gt;
-&lt;p&gt;跨網域追蹤設定完畢後，請按照本例設定資料檢視篩選器，以便在報表中顯示網域名稱。對於部分欄位，您必須選取下拉式選單中的項目。至於其他欄位，您必須輸入下列字元：&lt;/p&gt;
-
-&lt;p&gt;篩選器類型：自訂篩選器 &amp;gt; 進階
-欄位 A –&amp;gt; 擷取 A：主機名稱 = (.&lt;em&gt;)
-欄位 B –&amp;gt; 擷取 B：要求 URI = (.&lt;/em&gt;)
-輸出至 –&amp;gt; 建構函式：要求 URI = $A1$B1&lt;/p&gt;
-
-&lt;h3 id=&quot;參照連結網址排除清單&quot;&gt;參照連結網址排除清單&lt;/h3&gt;
-&lt;p&gt;前述過程只是讓 A 網域到 B 網域，都共用一個GA檢視資源。這樣還不夠唷，必須還要還要製作&lt;code class=&quot;highlighter-rouge&quot;&gt;排除清單&lt;/code&gt;。&lt;/p&gt;
-
-&lt;h4 id=&quot;檢查跨網域追蹤&quot;&gt;檢查跨網域追蹤&lt;/h4&gt;
-&lt;p&gt;最後再檢查一下資料囉&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;相關資源&quot;&gt;相關資源&lt;/h4&gt;
-&lt;p&gt;[https://support.google.com/analytics/answer/1034342?hl=zh-Hant][Google原廠文件]&lt;/p&gt;</content><author><name></name></author></entry><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-26T14:50:31+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;再次遭遇SourceTree與Github 連接問題&lt;/li&gt;
@@ -69,197 +18,7 @@
   &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install missing gems.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;會跑有點久，等他一下&lt;/p&gt;
-
-&lt;h3 id=&quot;markdown-表格練習&quot;&gt;Markdown 表格練習&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;IC&lt;/td&gt;
-      &lt;td&gt;收入&lt;/td&gt;
-      &lt;td&gt;直接銷售&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;IC&lt;/td&gt;
-      &lt;td&gt;收入&lt;/td&gt;
-      &lt;td&gt;官網銷售&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;IC&lt;/td&gt;
-      &lt;td&gt;收入&lt;/td&gt;
-      &lt;td&gt;通路銷售&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;IC&lt;/td&gt;
-      &lt;td&gt;收入&lt;/td&gt;
-      &lt;td&gt;其他收入&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;代稱&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;分類&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;主科目&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;代號&lt;/th&gt;
-      &lt;th&gt;次科目&lt;/th&gt;
-      &lt;th&gt;科目定義&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Dark Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Feudal Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Feudal Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;銷售成本&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;02&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;銷售成本&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;02&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;IC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;銷售成本&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;02&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Dark Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Feudal Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Feudal Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Dark Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Feudal Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Feudal Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;OT&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;營業費用&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;01&lt;/td&gt;
-      &lt;td&gt;ＸＸ收入&lt;/td&gt;
-      &lt;td&gt;Castle Age building x 2&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">新增一個靜態網站的時候，失敗了⋯⋯</summary></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/iK6HGtt.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;會跑有點久，等他一下&lt;/p&gt;</content><author><name></name></author><summary type="html">新增一個靜態網站的時候，失敗了⋯⋯</summary></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/iK6HGtt.gif&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;目前如果這個網站需要靜態只能&lt;a href=&quot;https://imgur.com/iK6HGtt.gif&quot;&gt;透過Imgur圖床&lt;/a&gt;而不能放在伺服器端。
 想要練習更多取用靜態檔案(Static file)的方法？請看&lt;a href=&quot;https://www.youtube.com/watch?v=knWjmVlVpso&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;amp;index=18&quot;&gt;這集Youtube&lt;/a&gt;&lt;/p&gt;
@@ -649,4 +408,42 @@ Images with 20% text or more could increase chances of failed delivery.&lt;/p&gt
   &lt;li&gt;新增Markdown的Template&lt;/li&gt;
   &lt;li&gt;新增WordPress文章一篇，Snippet的應用技巧&lt;/li&gt;
   &lt;li&gt;整理Nas：相簿、切一個Randy24的Develop enviroment.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="diary" /><summary type="html">新增Markdown的Template 新增WordPress文章一篇，Snippet的應用技巧 整理Nas：相簿、切一個Randy24的Develop enviroment.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="diary" /><summary type="html">新增Markdown的Template 新增WordPress文章一篇，Snippet的應用技巧 整理Nas：相簿、切一個Randy24的Develop enviroment.</summary></entry><entry><title type="html">Jekyll - 修改Config.yml的設定</title><link href="http://localhost:4000/Geek-Log/%E4%BF%AE%E6%94%B9Config.html" rel="alternate" type="text/html" title="Jekyll - 修改Config.yml的設定" /><published>2020-01-10T13:30:00+08:00</published><updated>2020-01-10T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/%E4%BF%AE%E6%94%B9Config</id><content type="html" xml:base="http://localhost:4000/Geek-Log/%E4%BF%AE%E6%94%B9Config.html">&lt;h1 id=&quot;研究方法&quot;&gt;研究方法&lt;/h1&gt;
+&lt;p&gt;到 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme&lt;/a&gt; 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate&lt;/code&gt; 指定分頁數量；
+&lt;code class=&quot;highlighter-rouge&quot;&gt;plugins:&lt;/code&gt; 要求外掛進來，可能需要預先裝好&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;jekyll-feed&lt;/li&gt;
+  &lt;li&gt;jekyll-sitemap&lt;/li&gt;
+  &lt;li&gt;jekyll-paginate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;include: [&quot;_pages&quot;]&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /posts/:title/&lt;/code&gt; 指定文章的永久連結&lt;/p&gt;
+
+&lt;p&gt;|inculdes|analytics.html|tracking script|
+還可以放入其他 Ex:Head, Footer, disqus(問答區)&lt;/p&gt;
+
+&lt;h2 id=&quot;網站基礎設定-site-settings&quot;&gt;網站基礎設定 (Site settings)&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title:&lt;/code&gt; Someone’s Jekyll blog
+&lt;code class=&quot;highlighter-rouge&quot;&gt;description:&lt;/code&gt; 你可以在這裡介紹這個部落格，會被顯示在Google搜尋頁面中，也是Meta description
+&lt;code class=&quot;highlighter-rouge&quot;&gt;keyword:&lt;/code&gt; 描述這個網站的關鍵字
+—&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;url:&lt;/code&gt; ‘’ # your host
+如果你的Jekyll網站架設在伺服器時，就不需要子域名，請將這一個留空。
+但是如果你使用的是 GitHub Pages，架設你的Jekyll網站，請將在這邊留下你指定的子域名，這個必須跟GitHub中的Setting頁面一致。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt;
+如果你使用的是 GitHub Pages，請將 Baseurl 設定為你網域的子域名。但如果你創造了一個名叫 “myblog”的 repo，網址將會變成 “yourgithubid.github.io/myblog”，請將 baseurl 稱改為 ‘/myblog’&lt;/p&gt;
+
+&lt;h1 id=&quot;修改layout&quot;&gt;修改Layout&lt;/h1&gt;
+&lt;p&gt;想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
+同樣一樣有Template, Page的概念，與WordPress雷同。&lt;/p&gt;
+
+&lt;p&gt;用 Wrapper 去包含程式碼，在用posts去製作全部的版型&lt;/p&gt;
+
+&lt;h3 id=&quot;reference-resource&quot;&gt;Reference&amp;amp; Resource&lt;/h3&gt;
+&lt;p&gt;-&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themee 佈景主題&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="update" /><summary type="html">研究方法 到 Jekyll Theme 尋找合適的主題，將下載佈景主題資料夾後研究其他開發者的設定檔案。</summary></entry></feed>

@@ -19,15 +19,15 @@ date:   2020-01-24 13:30:00 +0800
 ### 疑問
 -[] H1 的格式怪怪的
 
-======
+## 圖片放在主機內
 
-
-圖片放在主機內
-
+```rb
 {% for file in site.static_files %}
 	{{if file.path}} <br>
 	{{endif	}}
-{% endfor%}
+{% endfor %}
+```
+
 
 <img src="{{file.path}}" alt="file.name">
 
@@ -37,7 +37,7 @@ date:   2020-01-24 13:30:00 +0800
  3. 
 
 ### 原始代碼
-```
+```rb
 
 { % for file in site.static_files % }
 	{ {file.path} }
@@ -50,17 +50,14 @@ date:   2020-01-24 13:30:00 +0800
 
 
 3. 到 config.yml 寫一串代碼，告訴伺服器需要圖片
-```
+
+```rb
 defaults:
   - scope:
       path: "assets/img"
     values:
       image: true
 ```
-
-
-
- {{/assets/img/practiceMarkdown.gif}}
 
 語法
 { % for file in site.static_file % }

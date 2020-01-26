@@ -104,8 +104,10 @@ You can also use this tag to create a link to a post in Markdown as follows:
 
 
 ## 呼叫圖片與其他資源
-### [Including images and resources](https://jekyllrb.com/docs/posts/#the-posts-folder)
+###### [Including images and resources - Official](https://jekyllrb.com/docs/posts/#the-posts-folder)
+<div class="englishcontent">
 At some point, you’ll want to include images, downloads, or other digital assets along with your text content. One common solution is to create a folder in the root of the project directory called something like assets, into which any images, files or other resources are placed. Then, from within any post, they can be linked to using the site’s root as the path for the asset to include. The best way to do this depends on the way your site’s (sub)domain and path are configured, but here are some simple examples in Markdown:
+</div>
 
 Including an image asset in a post:
 
@@ -113,24 +115,21 @@ Including an image asset in a post:
     ... which is shown in the screenshot below:
 ![My helpful screenshot](/assets/screenshot.jpg)
 ```
-
-![My helpful screenshot](/assets/s9OfhzA.jpg)
-
-
-
-
-
+### 哪一種呼叫圖片的方式有效呢？
+1. ![My helpful screenshot](/Geek-log/assets/s9OfhzA.jpg)
+2. ![My helpful screenshot](/assets/img/s9OfhzA.jpg)
+3. ![My helpful screenshot](/assets/s9OfhzA.jpg)
+4. ![My helpful screenshot](/Geek-Log/assets/img/s9OfhzA.jpg)
 
 
+讓讀者自己索取PDF檔案的方法
+Linking to a PDF for readers to download:
 
-
-
-
-
-
-
-
-
+> ` [ 中括號用來顯示連結文字，小括號放置檔案路徑](/ 路徑 ) `
+```md
+        ... 歡迎在[這裡索取我的PDF教學](/assets/text.pdf) 
+```
+檔案連結：[Jekyll Termianl 指令 PDF檔案](/Geek-log/assets/pdf/text.pdf)
 
 
 

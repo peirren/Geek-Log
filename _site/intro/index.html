@@ -172,16 +172,33 @@ You can also use this tag to create a link to a post in Markdown as follows:
 <p><em>創造連結</em> 的方法:<a href="">馬上來一個</a></p>
 
 <h2 id="呼叫圖片與其他資源">呼叫圖片與其他資源</h2>
-<h3 id="including-images-and-resources"><a href="https://jekyllrb.com/docs/posts/#the-posts-folder">Including images and resources</a></h3>
-<p>At some point, you’ll want to include images, downloads, or other digital assets along with your text content. One common solution is to create a folder in the root of the project directory called something like assets, into which any images, files or other resources are placed. Then, from within any post, they can be linked to using the site’s root as the path for the asset to include. The best way to do this depends on the way your site’s (sub)domain and path are configured, but here are some simple examples in Markdown:</p>
+<h6 id="including-images-and-resources---official"><a href="https://jekyllrb.com/docs/posts/#the-posts-folder">Including images and resources - Official</a></h6>
+<div class="englishcontent">
+At some point, you’ll want to include images, downloads, or other digital assets along with your text content. One common solution is to create a folder in the root of the project directory called something like assets, into which any images, files or other resources are placed. Then, from within any post, they can be linked to using the site’s root as the path for the asset to include. The best way to do this depends on the way your site’s (sub)domain and path are configured, but here are some simple examples in Markdown:
+</div>
 
 <p>Including an image asset in a post:</p>
 
 <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ... which is shown in the screenshot below:
 <span class="p">![</span><span class="nv">My helpful screenshot</span><span class="p">](</span><span class="sx">/assets/screenshot.jpg</span><span class="p">)</span>
 </code></pre></div></div>
+<h3 id="哪一種呼叫圖片的方式有效呢">哪一種呼叫圖片的方式有效呢？</h3>
+<ol>
+  <li><img src="/Geek-log/assets/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
+  <li><img src="/assets/img/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
+  <li><img src="/assets/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
+  <li><img src="/Geek-Log/assets/img/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
+</ol>
 
-<p><img src="/assets/s9OfhzA.jpg" alt="My helpful screenshot" /></p>
+<p>讓讀者自己索取PDF檔案的方法
+Linking to a PDF for readers to download:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge"> [ 中括號用來顯示連結文字，小括號放置檔案路徑](/ 路徑 ) </code></p>
+  <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        ... 歡迎在<span class="p">[</span><span class="nv">這裡索取我的PDF教學</span><span class="p">](</span><span class="sx">/assets/text.pdf</span><span class="p">)</span> 
+</code></pre></div>  </div>
+  <p>檔案連結：<a href="/Geek-log/assets/pdf/text.pdf">Jekyll Termianl 指令 PDF檔案</a></p>
+</blockquote>
 
 <h2 id="修改-configyml-檔案">修改 config.yml 檔案</h2>
 <p>[疑問]baseurl 與 url 的差別，不是很熟練。

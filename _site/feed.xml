@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-26T17:43:28+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-26T18:29:47+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;再次遭遇SourceTree與Github 連接問題&lt;/li&gt;
@@ -36,17 +36,21 @@
 &lt;h3 id=&quot;疑問&quot;&gt;疑問&lt;/h3&gt;
 &lt;p&gt;-[] H1 的格式怪怪的&lt;/p&gt;
 
-&lt;p&gt;======&lt;/p&gt;
+&lt;h2 id=&quot;圖片放在主機內&quot;&gt;圖片放在主機內&lt;/h2&gt;
 
-&lt;p&gt;圖片放在主機內&lt;/p&gt;
+&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+	
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;br&amp;gt;
+	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+	
 
+	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+	
 
- &amp;lt;br&amp;gt;
+	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+	
 
-
- &amp;lt;br&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;file.name&quot; /&gt;&lt;/p&gt;
@@ -59,25 +63,25 @@
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;原始代碼&quot;&gt;原始代碼&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-{ % for file in site.static_files % }
-	{ {file.path} }
-{ % endfor % }
+&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;% for &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;static_files&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;% endfor &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-## %前後皆有空格
+&lt;span class=&quot;c1&quot;&gt;## %前後皆有空格&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;^^^^ for  列出所有檔案路徑(path)&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;到 config.yml 寫一串代碼，告訴伺服器需要圖片
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults:
-  - scope:
-   path: &quot;assets/img&quot;
- values:
-   image: true
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;到 config.yml 寫一串代碼，告訴伺服器需要圖片&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ss&quot;&gt;defaults:
+  &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;scope:
+      path: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;assets/img&quot;&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;values:
+      image: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;語法
 { % for file in site.static_file % }

@@ -53,17 +53,21 @@
 <h3 id="疑問">疑問</h3>
 <p>-[] H1 的格式怪怪的</p>
 
-<p>======</p>
+<h2 id="圖片放在主機內">圖片放在主機內</h2>
 
-<p>圖片放在主機內</p>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	 <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+	
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;br&gt;
+	 <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+	
 
+	 <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+	
 
- &lt;br&gt;
+	 <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+	
 
-
- &lt;br&gt;
 </code></pre></div></div>
 
 <p><img src="" alt="file.name" /></p>
@@ -76,25 +80,25 @@
 </ol>
 
 <h3 id="原始代碼">原始代碼</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-{ % for file in site.static_files % }
-	{ {file.path} }
-{ % endfor % }
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">{</span> <span class="sx">% for </span><span class="n">file</span> <span class="k">in</span> <span class="n">site</span><span class="p">.</span><span class="nf">static_files</span> <span class="o">%</span> <span class="p">}</span>
+	<span class="p">{</span> <span class="p">{</span><span class="n">file</span><span class="p">.</span><span class="nf">path</span><span class="p">}</span> <span class="p">}</span>
+<span class="p">{</span> <span class="sx">% endfor </span><span class="o">%</span> <span class="p">}</span>
 
-## %前後皆有空格
+<span class="c1">## %前後皆有空格</span>
 </code></pre></div></div>
 <p>^^^^ for  列出所有檔案路徑(path)</p>
 
 <ol>
-  <li>到 config.yml 寫一串代碼，告訴伺服器需要圖片
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults:
-  - scope:
-   path: "assets/img"
- values:
-   image: true
-</code></pre></div>    </div>
-  </li>
+  <li>到 config.yml 寫一串代碼，告訴伺服器需要圖片</li>
 </ol>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ss">defaults:
+  </span><span class="o">-</span> <span class="ss">scope:
+      path: </span><span class="s2">"assets/img"</span>
+    <span class="ss">values:
+      image: </span><span class="kp">true</span>
+</code></pre></div></div>
 
 <p>語法
 { % for file in site.static_file % }

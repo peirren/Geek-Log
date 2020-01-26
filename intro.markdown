@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Jekyll
+subtitle: "我的Jekyll目錄"
 permalink: /intro/
+tags: [Jekyll, tutorial]
 ---
 
 ## 之後要放到 `Jekyll語法的部分`
@@ -30,12 +32,77 @@ Folder include, adding a new file: ga_script, pretending some mock-up, nav bar o
 資料夾_includes >> 新增 ga_script 預先放程式碼，可以之後放GA的追蹤碼。
 
 
+#### Layout 
+
+|檔案名稱 | 用途       |說明
+|default | 預設       | 預設                                         |
+|page    | 獨立頁面    | 如果沒有可以新增，並且呼叫default，基本款互相引用。  |
+|psot    | 文章       |   |
+
+
+
 ## 修改 config.yml 檔案
 baseurl 與 url 的差別
+<img src="https://imgur.com/j7Qi1HM.jpg">
+
+### Content 內容
+<label class="mylabel">[資料來源官方網站](https://jekyllrb.com/docs/posts/)</label>
+
+<div class="englishcontent">
+Blogging is baked into Jekyll. You write blog posts as text files and Jekyll provides everything you need to turn it into a blog.
+</div>
+
+可以使用HTML與Markdown兩種語法混用，Jekyll會自動幫忙轉換成Blog形式。
+
+<div class="englishcontent">
+    The _posts folder is where your blog posts live. You typically write posts in Markdown, HTML is also supported.
+</div>
+
+`_post` 資料夾用來存放所有的文章。
+
+文章格式必須按照 `YEAR-MONTH-DAY-title.MARKUP` 這種格式。
+
+<div class="englishcontent">
+All blog post files must begin with front matter which is typically used to set a layout or other meta data. For a simple example this can just be empty:
+</div>
 
 
-## 圖片顯示不出來 VVV
-[Imgur](https://imgur.com/j7Qi1HM.jpg)
+---
+
+> ProTip™: Link to other posts
+Use the post_url tag to link to other posts without having to worry about the URLs breaking when the site permalink style changes.
+
+>> 進階技巧：連接到其他文章
+
+
+#### Linking to posts Permalink
+<div class="englishcontent">
+If you want to include a link to a post on your site, the post_url tag will generate the correct permalink URL for the post you specify.
+</div>
+
+```
+{ % post_url 2010-07-21-name-of-post % }
+```
+<div class="englishcontent">
+If you organize your posts in subdirectories, you need to include subdirectory path to the post:
+</div>
+
+如果妳posts資料夾中還有子資料夾，路徑必須同樣列出，如下：
+
+`{ % post_url /subdir/2010-07-21-name-of-post % }`
+
+<div class="englishcontent">
+There is no need to include the file extension when using the post_url tag.
+You can also use this tag to create a link to a post in Markdown as follows:
+</div>
+
+創造連結的方法
+`[ Name of Link ] ({ % post_url 2010-07-21-name-of-post %} )`
+
+
+馬上來一個： {{% post_url 2019-01-01-welcome-to-jekyll %}}
+
+```
 
 
 

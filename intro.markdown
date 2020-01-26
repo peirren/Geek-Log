@@ -86,7 +86,6 @@ If you want to include a link to a post on your site, the post_url tag will gene
     { % post_url 2010-07-21-name-of-post % }
 ```
 
-    { % post_url 2010-07-21-name-of-post % }
 
 <div class="englishcontent">
 If you organize your posts in subdirectories, you need to include subdirectory path to the post:
@@ -110,9 +109,12 @@ At some point, you’ll want to include images, downloads, or other digital asse
 
 Including an image asset in a post:
 
+```md 
+    ... which is shown in the screenshot below:
+![My helpful screenshot](/assets/screenshot.jpg)
+```
 
-
-
+![My helpful screenshot](/assets/s9OfhzA.jpg)
 
 
 

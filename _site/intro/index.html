@@ -156,9 +156,6 @@ If you want to include a link to a post on your site, the post_url tag will gene
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    { % post_url 2010-07-21-name-of-post % }
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ % post_url 2010-07-21-name-of-post % }
-</code></pre></div></div>
-
 <div class="englishcontent">
 If you organize your posts in subdirectories, you need to include subdirectory path to the post:
 </div>
@@ -179,6 +176,12 @@ You can also use this tag to create a link to a post in Markdown as follows:
 <p>At some point, you’ll want to include images, downloads, or other digital assets along with your text content. One common solution is to create a folder in the root of the project directory called something like assets, into which any images, files or other resources are placed. Then, from within any post, they can be linked to using the site’s root as the path for the asset to include. The best way to do this depends on the way your site’s (sub)domain and path are configured, but here are some simple examples in Markdown:</p>
 
 <p>Including an image asset in a post:</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ... which is shown in the screenshot below:
+<span class="p">![</span><span class="nv">My helpful screenshot</span><span class="p">](</span><span class="sx">/assets/screenshot.jpg</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/assets/s9OfhzA.jpg" alt="My helpful screenshot" /></p>
 
 <h2 id="修改-configyml-檔案">修改 config.yml 檔案</h2>
 <p>[疑問]baseurl 與 url 的差別，不是很熟練。

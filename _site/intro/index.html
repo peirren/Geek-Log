@@ -153,16 +153,17 @@ Use the post_url tag to link to other posts without having to worry about the UR
 If you want to include a link to a post on your site, the post_url tag will generate the correct permalink URL for the post you specify.
 </div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    { % post_url 2010-07-21-name-of-post % }
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="p">{</span> <span class="sx">% post_url </span><span class="mi">2010</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mi">21</span><span class="o">-</span><span class="nb">name</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">post</span> <span class="o">%</span> <span class="p">}</span>
 </code></pre></div></div>
+<p>"{ % post_url 2010-07-21-name-of-post % }</p>
 
 <div class="englishcontent">
 If you organize your posts in subdirectories, you need to include subdirectory path to the post:
 </div>
 
 <p>如果妳posts資料夾中還有 <em>子資料夾</em> ，路徑必須同樣列出，如下：</p>
-
-<p><code class="highlighter-rouge">{ % post_url /subdir/2010-07-21-name-of-post % }</code></p>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="sb">`{ % post_url /subdir/2010-07-21-name-of-post %}`</span>
+</code></pre></div></div>
 
 <div class="englishcontent">
 There is no need to include the file extension when using the post_url tag.
@@ -199,6 +200,51 @@ Linking to a PDF for readers to download:</p>
 </code></pre></div>  </div>
   <p>檔案連結：<a href="/Geek-log/assets/pdf/text.pdf">Jekyll Termianl 指令 PDF檔案</a></p>
 </blockquote>
+
+<h1 id="ruby-101"><a href="https://jekyllrb.com/docs/ruby-101/">Ruby 101</a></h1>
+<h2 id="jekyll-is-written-in-ruby-if-youre-new-to-ruby-this-page-is-to-help-you-get-up-to-speed-with-some-of-the-terminology">Jekyll is written in Ruby. If you’re new to Ruby, this page is to help you get up to speed with some of the terminology.</h2>
+<p>Jekyll用Ruby寫成，如果你和我一樣是Ruby新手，這章節可以幫助你更快暸解Ruby的用法。</p>
+<h1 id="gems">Gems</h1>
+<h2 id="a-gem-is-code-you-can-include-in-ruby-projects-it-allows-you-to-package-up-functionality-and-share-it-across-other-projects-or-with-other-people-gems-can-perform-functionality-such-as">A gem is code you can include in Ruby projects. It allows you to package up functionality and share it across other projects or with other people. Gems can perform functionality such as:</h2>
+
+<ul>
+  <li>Converting a Ruby object to JSON</li>
+  <li>Pagination</li>
+  <li>Interacting with APIs such as GitHub</li>
+  <li>Jekyll itself is a gem as well as many Jekyll plugins including jekyll-feed, jekyll-seo-tag and jekyll-archives.</li>
+</ul>
+
+<p>Gem寶石的意思，也就是Ruby的函式庫，已經幫使用者把一堆功能打包起來，並且分享給其他使用者，Gem的基本功能包括：</p>
+
+<ul>
+  <li>把 Ruby 物件轉換成 JSON <strong>因此Gemfile是JSON格式</strong></li>
+  <li>Pagination 把文檔分頁，如果少了這個網站就會是所謂的一頁式網站，文章延續下去。</li>
+  <li>Gem 還能幫助使用者處理 API，例如:Github</li>
+  <li>當然，Jekyll也有許多寫好的Plugin 像是 (jekyll-feed)[https://github.com/jekyll/jekyll-feed], (jekyll-seo-tag)[https://github.com/jekyll/jekyll-feed], (jekyll-archives)[https://github.com/jekyll/jekyll-archives]</li>
+</ul>
+
+<p><label class="mylabel">
+    參考資料：<a href="https://www.ruby-lang.org/zh_tw/libraries/">Ruby官方解釋</a>
+</label></p>
+
+<h1 id="gemfile">Gemfile</h1>
+<h2 id="gemfile-是ruby的套件設計者寫好一串ruby函式打包成一個檔案讓網站可以使用長得會像這樣">Gemfile 是Ruby的套件，設計者寫好一串Ruby函式打包成一個檔案，讓網站可以使用，長得會像這樣：</h2>
+<p>A <code class="highlighter-rouge">Gemfile</code> is a list of gems required for your site. For a simple Jekyll site it might look something like this:
+<img src="https://imgur.com/NpsD8Mq" alt="Gemfile" /></p>
+
+<h1 id="bundler">Bundler</h1>
+<p>管理 Ruby套件的程式。</p>
+
+<p><label class="mylabel">
+    參考資料：<a href="http://sayaku.github.io/blog/2016/05/05/rubyde-rvm-gem-bundler/">RVM,GEM,Bundler是什麼？</a>
+</label></p>
+
+<h1 id="configuration-調教">Configuration 調教</h1>
+<h2 id="jekyll-給予使用者許多客製化的彈性更動這兩個檔案-_configyml-_configtoml-可以更許多設定例如檔案位置圖檔存放位置網站編碼時區等等">Jekyll 給予使用者許多客製化的彈性，更動這兩個檔案 <code class="highlighter-rouge">_config.yml</code>, <code class="highlighter-rouge">_config.toml</code> 可以更許多設定，例如：檔案位置、圖檔存放位置、網站編碼、時區，等等⋯⋯</h2>
+
+<p>Jekyll gives you a lot of flexibility to customize how it builds your site. These options can either be specified in a <code class="highlighter-rouge">_config.yml</code> or <code class="highlighter-rouge">_config.toml</code> file placed in your site’s root directory, or can be specified as flags for the jekyll executable in the terminal.</p>
+
+<p><a href="https://jekyllrb.com/docs/configuration/">官方文件 Configuration-official</a></p>
 
 <h2 id="修改-configyml-檔案">修改 config.yml 檔案</h2>
 <p>[疑問]baseurl 與 url 的差別，不是很熟練。

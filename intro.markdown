@@ -82,18 +82,21 @@ Use the post_url tag to link to other posts without having to worry about the UR
 If you want to include a link to a post on your site, the post_url tag will generate the correct permalink URL for the post you specify.
 </div>
 
+```ruby
+    {% post_url 2010-07-21-name-of-post %}
 ```
-    { % post_url 2010-07-21-name-of-post % }
-```
-
+\"{ % post_url 2010-07-21-name-of-post % } 
 
 <div class="englishcontent">
 If you organize your posts in subdirectories, you need to include subdirectory path to the post:
 </div>
 
 如果妳posts資料夾中還有 _子資料夾_ ，路徑必須同樣列出，如下：
+```rb
+    `{ % post_url /subdir/2010-07-21-name-of-post %}`
+```
 
-`{ % post_url /subdir/2010-07-21-name-of-post % }`
+
 
 <div class="englishcontent">
 There is no need to include the file extension when using the post_url tag.
@@ -120,6 +123,7 @@ Including an image asset in a post:
 2. ![My helpful screenshot](/assets/img/s9OfhzA.jpg)
 3. ![My helpful screenshot](/assets/s9OfhzA.jpg)
 4. ![My helpful screenshot](/Geek-Log/assets/img/s9OfhzA.jpg)
+5. ![Ruby 101]((/Geek-Log/assets/img/ruby.png))
 
 
 讓讀者自己索取PDF檔案的方法
@@ -132,6 +136,46 @@ Linking to a PDF for readers to download:
 檔案連結：[Jekyll Termianl 指令 PDF檔案](/Geek-log/assets/pdf/text.pdf)
 
 
+# [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
+## Jekyll is written in Ruby. If you’re new to Ruby, this page is to help you get up to speed with some of the terminology.
+Jekyll用Ruby寫成，如果你和我一樣是Ruby新手，這章節可以幫助你更快暸解Ruby的用法。
+# Gems
+## A gem is code you can include in Ruby projects. It allows you to package up functionality and share it across other projects or with other people. Gems can perform functionality such as:
+
++ Converting a Ruby object to JSON
++ Pagination
++ Interacting with APIs such as GitHub
++ Jekyll itself is a gem as well as many Jekyll plugins including jekyll-feed, jekyll-seo-tag and jekyll-archives.
+
+Gem寶石的意思，也就是Ruby的函式庫，已經幫使用者把一堆功能打包起來，並且分享給其他使用者，Gem的基本功能包括：
+
++ 把 Ruby 物件轉換成 JSON **因此Gemfile是JSON格式**
++ Pagination 把文檔分頁，如果少了這個網站就會是所謂的一頁式網站，文章延續下去。
++ Gem 還能幫助使用者處理 API，例如:Github
++ 當然，Jekyll也有許多寫好的Plugin 像是 (jekyll-feed)[https://github.com/jekyll/jekyll-feed], (jekyll-seo-tag)[https://github.com/jekyll/jekyll-feed], (jekyll-archives)[https://github.com/jekyll/jekyll-archives]
+
+<label class="mylabel">
+    參考資料：[Ruby官方解釋](https://www.ruby-lang.org/zh_tw/libraries/)
+</label>
+
+# Gemfile
+## Gemfile 是Ruby的套件，設計者寫好一串Ruby函式打包成一個檔案，讓網站可以使用，長得會像這樣：
+A `Gemfile` is a list of gems required for your site. For a simple Jekyll site it might look something like this:
+<img src="https://imgur.com/NpsD8Mq" alt="Gemfile">
+
+# Bundler 
+管理 Ruby套件的程式。
+
+<label class="mylabel">
+    參考資料：[RVM,GEM,Bundler是什麼？](http://sayaku.github.io/blog/2016/05/05/rubyde-rvm-gem-bundler/)
+</label>
+
+# Configuration 調教
+## Jekyll 給予使用者許多客製化的彈性，更動這兩個檔案 `_config.yml`, `_config.toml` 可以更許多設定，例如：檔案位置、圖檔存放位置、網站編碼、時區，等等⋯⋯
+
+Jekyll gives you a lot of flexibility to customize how it builds your site. These options can either be specified in a `_config.yml` or `_config.toml` file placed in your site’s root directory, or can be specified as flags for the jekyll executable in the terminal.
+
+[官方文件 Configuration-official](https://jekyllrb.com/docs/configuration/)
 
 ## 修改 config.yml 檔案
 [疑問]baseurl 與 url 的差別，不是很熟練。

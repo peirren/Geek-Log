@@ -33,7 +33,7 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <style type="text/css">
+            <style type="text/css">
     .mylabel {
     font-size: 14px;
 }
@@ -49,14 +49,20 @@
 </style>
 
 <p style="font-size: 8px"> 之後要放入JS代碼的東東，請暫時忽略它 Y(.^ .)Y</p>	
-<h1>
-Jekyll
-</h1>
-<label>
     
-</label>
-
-<h2 id="之後要放到-jekyll語法的部分">之後要放到 <code class="highlighter-rouge">Jekyll語法的部分</code></h2>
+        <h1>Jekyll</h1>
+        <h2>我的Jekyll筆記</h2>
+        <hr>
+        <div class="post-tags">
+                
+                  
+                    <a href="/Geek-Log/tags.html#Jekyll" class="post-tag">Jekyll</a>
+                  
+                    <a href="/Geek-Log/tags.html#tutorial" class="post-tag">tutorial</a>
+                  
+                
+        </div>
+    <h2 id="之後要放到-jekyll語法的部分">之後要放到 <code class="highlighter-rouge">Jekyll語法的部分</code></h2>
 <ul>
   <li>為什麼我喜歡Jekyll</li>
   <li>Jekyll的優勢與缺點、前置條件需要什麼</li>
@@ -170,7 +176,10 @@ There is no need to include the file extension when using the post_url tag.
 You can also use this tag to create a link to a post in Markdown as follows:
 </div>
 
-<p><em>創造連結</em> 的方法:<a href="">馬上來一個</a></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* 有問題 VVV *
+
+*創造連結* 的方法:[馬上來一個]()
+</code></pre></div></div>
 
 <h2 id="呼叫圖片與其他資源">呼叫圖片與其他資源</h2>
 <h6 id="including-images-and-resources---official"><a href="https://jekyllrb.com/docs/posts/#the-posts-folder">Including images and resources - Official</a></h6>
@@ -189,6 +198,7 @@ At some point, you’ll want to include images, downloads, or other digital asse
   <li><img src="/assets/img/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
   <li><img src="/assets/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
   <li><img src="/Geek-Log/assets/img/s9OfhzA.jpg" alt="My helpful screenshot" /></li>
+  <li><img src="(/Geek-Log/assets/img/ruby.png)" alt="Ruby 101" /></li>
 </ol>
 
 <p>讓讀者自己索取PDF檔案的方法
@@ -249,10 +259,7 @@ Linking to a PDF for readers to download:</p>
 <h2 id="修改-configyml-檔案">修改 config.yml 檔案</h2>
 <p>[疑問]baseurl 與 url 的差別，不是很熟練。
 <img src="https://imgur.com/j7Qi1HM.jpg" /></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-
-
-### 階層格式
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 階層格式
 
 |Posts||
 |     |	Wrapper||
@@ -268,6 +275,16 @@ _layosts | post.html
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gemfil "jekyll", "~&gt; 3.6.0" 
 gemfil "minima", "~&gt; 2.0"
 </code></pre></div></div>
+
+<h1 id="front-matter">Front matter</h1>
+<p>Markdown 檔案最初用三個dash(-)，分隔的區域，用來指定檔案的變數，舉例來說：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: This Front matter example
+date: 2020/2/20 20:20:20
+---
+</code></pre></div></div>
+
+<p><a href="https://jekyllrb.com/docs/configuration/front-matter-defaults/">原廠說明</a>蠻多資料需要閱讀的T_T</p>
 
 <p>###Ref</p>
 <ul>

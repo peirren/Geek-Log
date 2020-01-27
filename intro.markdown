@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Jekyll
-subtitle: "我的Jekyll目錄"
+subtitle: "我的Jekyll筆記"
 permalink: /intro/
-tags: [Jekyll, tutorial]
+tags: ["Jekyll", "tutorial"]
 ---
+
+
 
 ## 之後要放到 `Jekyll語法的部分`
 - 為什麼我喜歡Jekyll
@@ -83,7 +85,7 @@ If you want to include a link to a post on your site, the post_url tag will gene
 </div>
 
 ```ruby
-    {% post_url 2010-07-21-name-of-post %}
+    { % post_url 2010-07-21-name-of-post % }
 ```
 \"{ % post_url 2010-07-21-name-of-post % } 
 
@@ -103,8 +105,12 @@ There is no need to include the file extension when using the post_url tag.
 You can also use this tag to create a link to a post in Markdown as follows:
 </div>
 
-*創造連結* 的方法:[馬上來一個]({{% post_url 2019-01-01-welcome-to-jekyll %}})
 
+```
+* 有問題 VVV *
+
+*創造連結* 的方法:[馬上來一個]({{% post_url _posts/2019-01-01-welcome-to-jekyll %}})
+```
 
 ## 呼叫圖片與其他資源
 ###### [Including images and resources - Official](https://jekyllrb.com/docs/posts/#the-posts-folder)
@@ -181,9 +187,6 @@ Jekyll gives you a lot of flexibility to customize how it builds your site. Thes
 [疑問]baseurl 與 url 的差別，不是很熟練。
 <img src="https://imgur.com/j7Qi1HM.jpg">
 ```
-
-
-
 ### 階層格式
 
 |Posts||
@@ -201,6 +204,17 @@ _layosts | post.html
 gemfil "jekyll", "~> 3.6.0" 
 gemfil "minima", "~> 2.0"
 ````
+
+# Front matter
+Markdown 檔案最初用三個dash(-)，分隔的區域，用來指定檔案的變數，舉例來說：
+```
+---
+title: This Front matter example
+date: 2020/2/20 20:20:20
+---
+```
+
+[原廠說明](https://jekyllrb.com/docs/configuration/front-matter-defaults/)蠻多資料需要閱讀的T_T
 
 
 ###Ref

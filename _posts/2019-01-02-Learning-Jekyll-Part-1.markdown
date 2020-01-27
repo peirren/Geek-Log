@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Jekyll, Part1"
 date:   2019-01-02 00:55:12 +0800
-categories: review
+tags: jekyll
 ---
 
 ### 安裝前準備確認

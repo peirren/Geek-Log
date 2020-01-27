@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Learning Markdown"
+title: "Markdown 表格練習"
 date:   2019-01-02 00:55:12 +0800
 categories: update
+tags: markdown
 ---
 
 
-### Markdown 表格練習
+# Markdown 表格練習
 
 | IC | 收入 | 直接銷售 |
 | IC | 收入 | 官網銷售 |

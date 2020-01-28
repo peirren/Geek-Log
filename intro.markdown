@@ -23,6 +23,12 @@ tags: ["Jekyll", "tutorial"]
 - Building your site locally
 
 
+### Read Me 檔案
+Jekyll 預設佈景主題是 Minima
+![Minima](/assets/img/basic-jekyll.png)
+01/28 嘗試啟動，失敗。Q_Q
+
+
 ## 修改Layout
 想要修改的原因是，Jekyll雖然是靜態部落格，但是有類似PHP模組化的概念，又不會像PHP這麼複雜，而Server的問題可以交給Github host。
 同樣一樣有Template, Page的概念，與WordPress雷同。
@@ -84,21 +90,20 @@ Use the post_url tag to link to other posts without having to worry about the UR
 If you want to include a link to a post on your site, the post_url tag will generate the correct permalink URL for the post you specify.
 </div>
 
-```ruby
+{% highlight ruby %}
     { % post_url 2010-07-21-name-of-post % }
-```
-\"{ % post_url 2010-07-21-name-of-post % } 
+{% endhighlight %}
 
 <div class="englishcontent">
 If you organize your posts in subdirectories, you need to include subdirectory path to the post:
 </div>
 
-如果妳posts資料夾中還有 _子資料夾_ ，路徑必須同樣列出，如下：
-```rb
-    `{ % post_url /subdir/2010-07-21-name-of-post %}`
-```
+如果妳 posts 資料夾中還有 _子資料夾_ ，路徑必須同樣列出，如下：
 
-
+{% highlight ruby %}
+    { % post_url /subdir/2010-07-21-name-of-post % }
+    { % post_url 2019-01-01-welcome-to-jekyll.md % }
+{% endhighlight %}
 
 <div class="englishcontent">
 There is no need to include the file extension when using the post_url tag.
@@ -109,7 +114,7 @@ You can also use this tag to create a link to a post in Markdown as follows:
 ```
 * 有問題 VVV *
 
-*創造連結* 的方法:[馬上來一個]({{% post_url _posts/2019-01-01-welcome-to-jekyll %}})
+*創造連結* 的方法:[馬上來一個]({{ % post_url posts/2019-01-01-welcome-to-jekyll % }})
 ```
 
 ## 呼叫圖片與其他資源

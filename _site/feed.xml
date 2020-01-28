@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T16:02:54+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T17:20:53+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
 
 &lt;p&gt;###Jekyll tag問題&lt;/p&gt;
 
@@ -21,13 +21,25 @@
 &lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="TBD" /><summary type="html">工作日誌 1/27@路易莎</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;新學到用&lt;a href=&quot;https://github.com/peirren/Geek-Log/issues&quot;&gt;Github issue&lt;/a&gt;紀錄開發問題囉，愈來愈覺得自己的思考方式像是個開發者(Programmer)了 :)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;建立了 Tag 模板，但是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/Geek-Log/tags.html' not found.&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;建立了 Tag 模板，但是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/Geek-Log/tags.html' not found.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;如果新增或亂改Head.html檔案，原本的設定就會不見！Jekyll預設的佈景主題叫做&lt;a href=&quot;https://github.com/jekyll/minima&quot;&gt;minima&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;新學到用&lt;a href=&quot;https://github.com/peirren/Geek-Log/issues&quot;&gt;Github issue&lt;/a&gt;紀錄開發問題囉，愈來愈覺得自己的思考方式像是個開發者(Programmer)了 :)&lt;/li&gt;
+  &lt;li&gt;favicon, 不只是把檔案放進去，還要在 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 中放 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;favicon.png&quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;link rel=&quot;icon&quot; 
+    type=&quot;image/png&quot; 
+    sizes=&quot;32x32&quot;
+    href=&quot;/Geek-Log/assets/favicon-32x32.png&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Step 3: Edit jekyll plugins.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Folder includes, then paste that head.html into it.
+Open config.yml file in your jekyll folder, under plugins: add in one more line: - jekyll-seo-tag.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@xiang_zhou/how-to-add-a-favicon-to-your-jekyll-site-2ac2179cc2ed&quot;&gt;製作Icon參考文件&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;evernote-vs-bear-vs-靜態部落格&quot;&gt;Evernote v.s Bear v.s 靜態部落格&lt;/h1&gt;
 
@@ -124,7 +136,12 @@
   &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install missing gems.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;會跑有點久，等他一下&lt;/p&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">新增一個靜態網站的時候，失敗了⋯⋯</summary></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/iK6HGtt.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;會跑有點久，等他一下&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{ % highlight ruby % }
+    Ruby強調的語法
+{ % endhighlight % }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">新增一個靜態網站的時候，失敗了⋯⋯</summary></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/iK6HGtt.gif&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;目前如果這個網站需要靜態只能&lt;a href=&quot;https://imgur.com/iK6HGtt.gif&quot;&gt;透過Imgur圖床&lt;/a&gt;而不能放在伺服器端。
 想要練習更多取用靜態檔案(Static file)的方法？請看&lt;a href=&quot;https://www.youtube.com/watch?v=knWjmVlVpso&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;amp;index=18&quot;&gt;這集Youtube&lt;/a&gt;&lt;/p&gt;
@@ -144,31 +161,30 @@
 
 &lt;h2 id=&quot;圖片放在主機內&quot;&gt;圖片放在主機內&lt;/h2&gt;
 
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-	
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
 
-	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-	
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
 
-	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-	
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
 
-	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-	
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
 
-	 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-	
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
+
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;file.name&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;真實圖片&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;img src=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;原始代碼&quot;&gt;原始代碼&lt;/h3&gt;

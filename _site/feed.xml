@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-27T17:58:25+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">工作日誌 1/27@路易莎</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="工作日誌 1/27@路易莎" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;今天問題&quot;&gt;今天問題&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T15:04:35+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
 
 &lt;p&gt;###Jekyll tag問題&lt;/p&gt;
 
@@ -18,7 +18,30 @@
   &lt;li&gt;翻譯了很多Jekyll官網很多資料，Configuration, 套件管理&lt;/li&gt;
   &lt;li&gt;從別人的模板主題中複製過來的，但是Ruby判斷式不熟⋯⋯&lt;/li&gt;
   &lt;li&gt;呼叫檔案還在摸索中。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="TBD" /><summary type="html">今天問題</summary></entry><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="TBD" /><summary type="html">工作日誌 1/27@路易莎</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
+
+&lt;p&gt;[] Wordpress 相簿，存放像是Flickr那樣的功能。 &lt;em&gt;需要參考範例&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
+&lt;p&gt;###Jekyll tag問題&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tags&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        
+          
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#update&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;update&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+          
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#Weekly%20Journal&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Weekly Journal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+          
+        
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;問題清單與心得&quot;&gt;問題清單與心得&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;翻譯了很多Jekyll官網很多資料，Configuration, 套件管理&lt;/li&gt;
+  &lt;li&gt;從別人的模板主題中複製過來的，但是Ruby判斷式不熟⋯⋯&lt;/li&gt;
+  &lt;li&gt;呼叫檔案還在摸索中。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="Weekly Journal" /><summary type="html">工作日誌 1/28@路易莎</summary></entry><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;再次遭遇SourceTree與Github 連接問題&lt;/li&gt;
@@ -431,8 +454,4 @@ Images with 20% text or more could increase chances of failed delivery.&lt;/p&gt
 建議的長寬比：
 動態和插播影片版位建議使用正方形（1:1）
 限時動態版位建議使用全螢幕直向（9:16）
-若要將廣告投遞最佳化，請使用文字比例低的圖像。&lt;/p&gt;</content><author><name></name></author><category term="facebook" /><summary type="html">Faceboook ads廣告圖片尺寸介紹 Tips:拆解成最小可執行的動作與目標 Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080 多元多目標，曝光度差，數位行銷人的想法與溝通能力很重要</summary></entry><entry><title type="html">工作日誌 2020-01-13</title><link href="http://localhost:4000/Geek-Log/Practing-Markdown-Language.html" rel="alternate" type="text/html" title="工作日誌 2020-01-13" /><published>2020-01-13T13:30:00+08:00</published><updated>2020-01-13T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Practing-Markdown-Language</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Practing-Markdown-Language.html">&lt;ol&gt;
-  &lt;li&gt;新增Markdown的Template&lt;/li&gt;
-  &lt;li&gt;新增WordPress文章一篇，Snippet的應用技巧&lt;/li&gt;
-  &lt;li&gt;整理Nas：相簿、切一個Randy24的Develop enviroment.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="diary" /><summary type="html">新增Markdown的Template 新增WordPress文章一篇，Snippet的應用技巧 整理Nas：相簿、切一個Randy24的Develop enviroment.</summary></entry></feed>
+若要將廣告投遞最佳化，請使用文字比例低的圖像。&lt;/p&gt;</content><author><name></name></author><category term="facebook" /><summary type="html">Faceboook ads廣告圖片尺寸介紹 Tips:拆解成最小可執行的動作與目標 Facebook ads 最常用的格式，三種: 1200x1200, 1200x628. 1920x1080 多元多目標，曝光度差，數位行銷人的想法與溝通能力很重要</summary></entry></feed>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T15:04:35+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T15:34:13+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
 
 &lt;p&gt;###Jekyll tag問題&lt;/p&gt;
 
@@ -20,7 +20,69 @@
   &lt;li&gt;呼叫檔案還在摸索中。&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="TBD" /><summary type="html">工作日誌 1/27@路易莎</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
 
-&lt;p&gt;[] Wordpress 相簿，存放像是Flickr那樣的功能。 &lt;em&gt;需要參考範例&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;新學到用&lt;a href=&quot;https://github.com/peirren/Geek-Log/issues&quot;&gt;Github issue&lt;/a&gt;紀錄開發問題囉，愈來愈覺得自己的思考方式像是個開發者(Programmer)了 :)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;1s&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;evernote-vs-bear-vs-靜態部落格&quot;&gt;Evernote v.s Bear v.s 靜態部落格&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;－－－－－&lt;/td&gt;
+      &lt;td&gt;Evernote&lt;/td&gt;
+      &lt;td&gt;Bear&lt;/td&gt;
+      &lt;td&gt;靜態部落格(Jekyll or Hexo)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;優缺點&lt;/td&gt;
+      &lt;td&gt;能搭建強大的資料庫，適合高度專業使用&lt;/td&gt;
+      &lt;td&gt;支援Markdown語法，&lt;/td&gt;
+      &lt;td&gt;靜態部落格&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;技能樹&lt;/td&gt;
+      &lt;td&gt;檔案命名&lt;/td&gt;
+      &lt;td&gt;Markdown “概念”&lt;/td&gt;
+      &lt;td&gt;多種語法&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;費用&lt;/td&gt;
+      &lt;td&gt;我使用免費版本&lt;/td&gt;
+      &lt;td&gt;付費(每月40元)&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;免費&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;為什麼需要思考這個&quot;&gt;為什麼需要思考這個？&lt;/h3&gt;
+&lt;p&gt;我的筆記已經愈來愈分散，知識太多、思考破碎，就很難內化成一個強大的知識脈絡，希望自己是藉由學習新技能，而獲得新體會，而不只是單純學習、獲得知識。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;Evernote 不用程式背景，但有裝置限制。&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;萬用檔案整理術-命名規則-草稿&quot;&gt;萬用檔案整理術-命名規則 （草稿）&lt;/h1&gt;
+
+&lt;h2 id=&quot;關於時間的用法&quot;&gt;關於時間的用法&lt;/h2&gt;
+&lt;p&gt;YYYY-MM-DD = 2020-01-01 OR YYMMDD = 200424 or 190324&lt;/p&gt;
+
+&lt;h2 id=&quot;設計圖片管理&quot;&gt;設計圖片管理&lt;/h2&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li&gt;原始檔案 (PSD, AI, Original file&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;輸出檔案 (Exported, JPG)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Wordpress 相簿，存放像是Flickr那樣的功能。 &lt;em&gt;需要參考範例&lt;/em&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Wordpress 文章清單，Excel表格。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
 &lt;p&gt;###Jekyll tag問題&lt;/p&gt;
@@ -28,7 +90,7 @@
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tags&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         
           
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#update&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;update&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#Update&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Update&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
           
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#Weekly%20Journal&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Weekly Journal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
           
@@ -41,7 +103,7 @@
   &lt;li&gt;翻譯了很多Jekyll官網很多資料，Configuration, 套件管理&lt;/li&gt;
   &lt;li&gt;從別人的模板主題中複製過來的，但是Ruby判斷式不熟⋯⋯&lt;/li&gt;
   &lt;li&gt;呼叫檔案還在摸索中。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="Weekly Journal" /><summary type="html">工作日誌 1/28@路易莎</summary></entry><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Update" /><category term="Weekly Journal" /><summary type="html">工作日誌 1/28@路易莎</summary></entry><entry><title type="html">安裝Jekyll補充資料</title><link href="http://localhost:4000/Geek-Log/jekyll.html" rel="alternate" type="text/html" title="安裝Jekyll補充資料" /><published>2020-01-24T20:30:00+08:00</published><updated>2020-01-24T20:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/jekyll</id><content type="html" xml:base="http://localhost:4000/Geek-Log/jekyll.html">&lt;h3 id=&quot;新增一個靜態網站的時候失敗了&quot;&gt;新增一個靜態網站的時候，失敗了⋯⋯&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;再次遭遇SourceTree與Github 連接問題&lt;/li&gt;
@@ -61,7 +123,7 @@
   &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install missing gems.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;會跑有點久，等他一下&lt;/p&gt;</content><author><name></name></author><summary type="html">新增一個靜態網站的時候，失敗了⋯⋯</summary></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/iK6HGtt.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;會跑有點久，等他一下&lt;/p&gt;</content><author><name></name></author><category term="Jekyll" /><summary type="html">新增一個靜態網站的時候，失敗了⋯⋯</summary></entry><entry><title type="html">練習Markdown語法</title><link href="http://localhost:4000/Geek-Log/practice.html" rel="alternate" type="text/html" title="練習Markdown語法" /><published>2020-01-24T13:30:00+08:00</published><updated>2020-01-24T13:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/practice</id><content type="html" xml:base="http://localhost:4000/Geek-Log/practice.html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/iK6HGtt.gif&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;目前如果這個網站需要靜態只能&lt;a href=&quot;https://imgur.com/iK6HGtt.gif&quot;&gt;透過Imgur圖床&lt;/a&gt;而不能放在伺服器端。
 想要練習更多取用靜態檔案(Static file)的方法？請看&lt;a href=&quot;https://www.youtube.com/watch?v=knWjmVlVpso&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&amp;amp;index=18&quot;&gt;這集Youtube&lt;/a&gt;&lt;/p&gt;

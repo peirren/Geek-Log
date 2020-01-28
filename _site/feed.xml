@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T15:34:13+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T16:02:54+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
 
 &lt;p&gt;###Jekyll tag問題&lt;/p&gt;
 
@@ -25,7 +25,7 @@
     &lt;p&gt;新學到用&lt;a href=&quot;https://github.com/peirren/Geek-Log/issues&quot;&gt;Github issue&lt;/a&gt;紀錄開發問題囉，愈來愈覺得自己的思考方式像是個開發者(Programmer)了 :)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;1s&lt;/p&gt;
+    &lt;p&gt;建立了 Tag 模板，但是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/Geek-Log/tags.html' not found.&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -64,9 +64,10 @@
 &lt;p&gt;我的筆記已經愈來愈分散，知識太多、思考破碎，就很難內化成一個強大的知識脈絡，希望自己是藉由學習新技能，而獲得新體會，而不只是單純學習、獲得知識。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;最主要是技術開發的時候，Sublime可以同步開啟，同時當草稿使用。&lt;/li&gt;
+  &lt;li&gt;現在最大的問題就是工作思考時的整合&lt;/li&gt;
   &lt;li&gt;Evernote 不用程式背景，但有裝置限制。&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;Bear 變得有點小雞肋XDD&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;萬用檔案整理術-命名規則-草稿&quot;&gt;萬用檔案整理術-命名規則 （草稿）&lt;/h1&gt;

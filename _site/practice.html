@@ -30,7 +30,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">使用手冊</a><a class="page-link" href="/Geek-Log/accounting/">Accounting</a><a class="page-link" href="/Geek-Log/markdown/">Markdown</a><a class="page-link" href="/Geek-Log/intro/">Jekyll</a><a class="page-link" href="/Geek-Log/update/">Update</a></div>
+        <div class="trigger"><a class="page-link" href="/Geek-Log/about/">使用手冊</a><a class="page-link" href="/Geek-Log/accounting/">Accounting</a><a class="page-link" href="/Geek-Log/markdown/">Markdown</a><a class="page-link" href="/Geek-Log/intro/">Jekyll</a><a class="page-link" href="/Geek-Log/testing">testing</a><a class="page-link" href="/Geek-Log/update/">Update</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -56,6 +56,9 @@
 <h2 id="圖片放在主機內">圖片放在主機內</h2>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	{ { if file.path }} &lt;br&gt;
+	{ {endif	}}
+
 	{ { if file.path }} &lt;br&gt;
 	{ {endif	}}
 

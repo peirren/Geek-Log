@@ -1,24 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-01-28T17:20:53+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week4 工作日誌(舊)</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="Week4 工作日誌(舊)" /><published>2020-01-27T17:30:00+08:00</published><updated>2020-01-27T17:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;工作日誌-127路易莎&quot;&gt;工作日誌 1/27@路易莎&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-02-10T22:41:21+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week6 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week6 工作日誌" /><published>2020-02-08T12:30:00+08:00</published><updated>2020-02-08T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;210-shopline模板大進展&quot;&gt;2/10 SHOPLINE模板大進展&lt;/h1&gt;
+&lt;p&gt;感謝愛禮物的前輩大神，截圖給我看，瞬間全懂了！爽到不行。目前施作的是&lt;a href=&quot;https://www.homiya.co/pages/randy-is-testing&quot;&gt;測試頁面&lt;/a&gt;。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;簡單原理暸解&quot;&gt;簡單原理暸解&lt;/h3&gt;
+&lt;p&gt;Liqiud 的 &lt;code class=&quot;highlighter-rouge&quot;&gt;{ % if %}&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;{ % endif %}&lt;/code&gt; 邏輯判斷式，第一步就是在主機判斷，page.url 是否為特定活動頁面，如果是的話，就要呼叫特定程式代碼，也就是讓消費者看到特定活動內容。 &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;###Jekyll tag問題&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;換句話說，Liquid的基本邏輯if, else很重要呀！！！&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;當然前端三劍客也是很重要。&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tags&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        
-          
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#update&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;update&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-          
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Geek-Log/tags.html#TBD&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-tag&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;TBD&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-          
-        
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;p&gt;另外，setting.json 必須設定，如下：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    &quot;root_path&quot;: &quot;/&quot;,
+    &quot;testing_path&quot;: &quot;/pages/randy-is-testing&quot;
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;問題清單與心得&quot;&gt;問題清單與心得&lt;/h2&gt;
+&lt;h4 id=&quot;測試中的代碼&quot;&gt;測試中的代碼&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://codepen.io/Cheesetoast/pen/KFAaq&quot;&gt;3 Column Responsive Layout&lt;/a&gt; Source.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;wrapper&quot;&amp;gt;
+
+    &amp;lt;header&amp;gt;
+        &amp;lt;h1&amp;gt;消費常見問題&amp;lt;/h1&amp;gt;
+    &amp;lt;/header&amp;gt;
+        
+&amp;lt;section class=&quot;columns&quot;&amp;gt;
+    
+    &amp;lt;div class=&quot;column&quot;&amp;gt;
+        &amp;lt;h2&amp;gt;你的問題一，哇哈哈哈哈&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;智慧圖書館是以自動化設備取代傳統人力資源，提供入館讀者以自助方式借閱或歸還書籍，因無人力查找及整理預約書，故智慧圖書館之館藏不提供讀者預約。&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&quot;column&quot;&amp;gt;
+        &amp;lt;h2&amp;gt;你的問題一，哇哈哈哈哈&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;目前僅有「社子島智慧圖書館」提供自助預約取書服務，讀者可於本館館藏查詢系統中預約圖書，並選擇於社子島智慧圖書館領取。
+其他智慧圖書館則無提供預約取書服務。&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  
+  &amp;lt;div class=&quot;column&quot;&amp;gt;
+        &amp;lt;h2&amp;gt;你的問題一，哇哈哈哈哈&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;慧圖書館是以自動化設備取代傳統人力資源，提供入館讀者以自助方式借閱或歸還書籍，因無人力查找及整理預約書，故智慧圖書館之館藏不提供讀者預約。&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+&amp;lt;/section&amp;gt;  
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2/9 Sat.&lt;/p&gt;
+
+&lt;p&gt;安裝 Bootstrap 本機端
+加入 Shopify Partner
+Shopline 404應用
+下一步，&lt;/p&gt;
+
+&lt;p&gt;年前熟悉Github, Jekyll模組化，今天又摸了框架、更能修改應用程式了&lt;/p&gt;
+
+&lt;p&gt;Bootstrap-4.4.1&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;翻譯了很多Jekyll官網很多資料，Configuration, 套件管理&lt;/li&gt;
-  &lt;li&gt;從別人的模板主題中複製過來的，但是Ruby判斷式不熟⋯⋯&lt;/li&gt;
-  &lt;li&gt;呼叫檔案還在摸索中。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="update" /><category term="TBD" /><summary type="html">工作日誌 1/27@路易莎</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
+  &lt;li&gt;install &lt;code class=&quot;highlighter-rouge&quot;&gt;public_suffix&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install missing gems.&lt;/li&gt;
+  &lt;li&gt;Installing public_suffix 4.0.1&lt;/li&gt;
+  &lt;li&gt;自動安裝需要的套件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&lt;a href=&quot;https://help.shopify.com/en/themes/development/theme-store-requirements/theme-file-requirements#recommendations&quot;&gt;Liquid file requirements for themes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Shopify Partner&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Development store&lt;/li&gt;
+  &lt;li&gt;Managed store&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有兩種選項，可以作為開發者或店主。&lt;/p&gt;
+
+&lt;p&gt;Shopify 積極打造開發、電商生態圈，Partner 內容持續更新中。&lt;/p&gt;</content><author><name></name></author><category term="Update" /><category term="Weekly Journal" /><summary type="html">2/10 SHOPLINE模板大進展 感謝愛禮物的前輩大神，截圖給我看，瞬間全懂了！爽到不行。目前施作的是測試頁面。 簡單原理暸解 Liqiud 的 { % if %} { % endif %} 邏輯判斷式，第一步就是在主機判斷，page.url 是否為特定活動頁面，如果是的話，就要呼叫特定程式代碼，也就是讓消費者看到特定活動內容。</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;建立了 Tag 模板，但是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/Geek-Log/tags.html' not found.&lt;/code&gt;&lt;/li&gt;
@@ -180,6 +240,9 @@ Open config.yml file in your jekyll folder, under plugins: add in one more line:
 	{ { if file.path }} &amp;lt;br&amp;gt;
 	{ {endif	}}
 
+	{ { if file.path }} &amp;lt;br&amp;gt;
+	{ {endif	}}
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;真實圖片&lt;/p&gt;
@@ -229,7 +292,7 @@ A static file is a file that does not contain any front matter. These include im
       &lt;td&gt;The relative path to the file, e.g. /assets/img/image.jpg&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">WordPrrss 籌辦流程</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="WordPrrss 籌辦流程" /><published>2020-01-19T12:30:00+08:00</published><updated>2020-01-19T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;wordprrss-籌辦流程筆記&quot;&gt;WordPrrss 籌辦流程筆記&lt;/h1&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">WordPrrss 籌辦流程</title><link href="http://localhost:4000/Geek-Log/diary.html" rel="alternate" type="text/html" title="WordPrrss 籌辦流程" /><published>2020-01-19T12:30:00+08:00</published><updated>2020-01-19T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/diary</id><content type="html" xml:base="http://localhost:4000/Geek-Log/diary.html">&lt;h1 id=&quot;wordpress-籌辦流程筆記&quot;&gt;WordPress 籌辦流程筆記&lt;/h1&gt;
 &lt;ol&gt;
   &lt;li&gt;社團公告&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;7天&lt;/code&gt;前發成功報名活動信件&lt;/li&gt;
@@ -244,14 +307,15 @@ A static file is a file that does not contain any front matter. These include im
   &lt;li&gt;群組Line@小卡&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##[社團發完公告]&lt;/p&gt;
+&lt;p&gt;##[社團發公告]&lt;/p&gt;
 
 &lt;p&gt;【新莊/一月】 WordPress 小聚 #3
 以WORDPRESS為名的寫作小聚｜台北新莊場
 主題：內容經營，如何堅持寫作？
 對你來說當一個站長、寫文的動力是什麼？
-對我來說，經營WordPress是一種自我挑戰，同時參與開源社群會讓人更有動力，所以別悶在家裡敲電腦了！出來聊聊吧！
-雖說寫文章是一種很好的自我修煉，過程中不但理性且容易聚焦，可惜就是有點不容易堅持，所以這次的主題延續網站經營，讓聚會前半段希望你能分享自身的經驗與選題方式，後半段鼓勵大家分享自己堅持的方法與技巧。
+對我來說，經營WordPress是一種自我挑戰，同時參與開源社群會讓人更有動力，所以別悶在家裡敲電腦了！出來聊聊吧！&lt;/p&gt;
+
+&lt;p&gt;雖說寫文章是一種很好的自我修煉，過程中不但理性且容易聚焦，可惜就是有點不容易堅持，所以這次的主題延續網站經營，讓聚會前半段希望你能分享自身的經驗與選題方式，後半段鼓勵大家分享自己堅持的方法與技巧。
 你喜歡寫作嗎？你想要提升寫文的效率嗎？歡迎來暢談！&lt;/p&gt;
 
 &lt;p&gt;時間：1/21 (二) 19:00 ~ 21:00
@@ -288,7 +352,7 @@ A static file is a file that does not contain any front matter. These include im
 &lt;p&gt;你喜歡寫作嗎？你想要提升寫文的效率嗎？歡迎來暢談！&lt;/p&gt;
 
 &lt;p&gt;新莊場小聚 主辦人 Randy
-聯絡電話：0966-024-058&lt;/p&gt;</content><author><name></name></author><category term="WordPress" /><summary type="html">WordPrrss 籌辦流程筆記 社團公告 7天前發成功報名活動信件 1天前發成功記得來唷 設定Google日曆，提醒參與者 感謝通知</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
+聯絡電話：0966-024-058&lt;/p&gt;</content><author><name></name></author><category term="WordPress" /><summary type="html">WordPress 籌辦流程筆記 社團公告 7天前發成功報名活動信件 1天前發成功記得來唷 設定Google日曆，提醒參與者 感謝通知</summary></entry><entry><title type="html">勞保、勞退、健保資料建檔</title><link href="http://localhost:4000/Geek-Log/labor-insurance.html" rel="alternate" type="text/html" title="勞保、勞退、健保資料建檔" /><published>2020-01-16T16:10:00+08:00</published><updated>2020-01-16T16:10:00+08:00</updated><id>http://localhost:4000/Geek-Log/labor-insurance</id><content type="html" xml:base="http://localhost:4000/Geek-Log/labor-insurance.html">&lt;ul&gt;
   &lt;li&gt;勞工保險&lt;/li&gt;
   &lt;li&gt;勞工退休金 （雇主提撥/自提）&lt;/li&gt;
   &lt;li&gt;

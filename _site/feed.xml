@@ -1,84 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-02-10T22:41:21+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">Week6 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week6 工作日誌" /><published>2020-02-08T12:30:00+08:00</published><updated>2020-02-08T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;210-shopline模板大進展&quot;&gt;2/10 SHOPLINE模板大進展&lt;/h1&gt;
-&lt;p&gt;感謝愛禮物的前輩大神，截圖給我看，瞬間全懂了！爽到不行。目前施作的是&lt;a href=&quot;https://www.homiya.co/pages/randy-is-testing&quot;&gt;測試頁面&lt;/a&gt;。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id=&quot;簡單原理暸解&quot;&gt;簡單原理暸解&lt;/h3&gt;
-&lt;p&gt;Liqiud 的 &lt;code class=&quot;highlighter-rouge&quot;&gt;{ % if %}&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;{ % endif %}&lt;/code&gt; 邏輯判斷式，第一步就是在主機判斷，page.url 是否為特定活動頁面，如果是的話，就要呼叫特定程式代碼，也就是讓消費者看到特定活動內容。 &lt;br /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/Geek-Log/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Geek-Log/" rel="alternate" type="text/html" /><updated>2020-02-22T12:31:17+08:00</updated><id>http://localhost:4000/Geek-Log/feed.xml</id><title type="html">Randy’s programming note.</title><subtitle>這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得</subtitle><entry><title type="html">draft</title><link href="http://localhost:4000/Geek-Log/Draft.html" rel="alternate" type="text/html" title="draft" /><published>2020-02-11T10:30:00+08:00</published><updated>2020-02-11T10:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Draft</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Draft.html">&lt;h2 id=&quot;theme-templateshttpshelpshopifycomenthemesdevelopmenttemplates&quot;&gt;(Theme templates)[https://help.shopify.com/en/themes/development/templates]&lt;/h2&gt;
+&lt;p&gt;Shopify themes are made up of Liquid template files, each serving their own unique purpose. For example, collection.liquid is used to display multiple products, and product.liquid is used to show the details of a single product. Shopify themes also include a settings_schema.json file, which is a form that makes it easy for the user to customize the look-and-feel of the theme.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;換句話說，Liquid的基本邏輯if, else很重要呀！！！&lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;當然前端三劍客也是很重要。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;theme-structure&quot;&gt;Theme structure&lt;/h3&gt;
+&lt;p&gt;A Shopify theme includes the following directories:&lt;/p&gt;
 
-&lt;p&gt;另外，setting.json 必須設定，如下：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;root_path&quot;: &quot;/&quot;,
-    &quot;testing_path&quot;: &quot;/pages/randy-is-testing&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;測試中的代碼&quot;&gt;測試中的代碼&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://codepen.io/Cheesetoast/pen/KFAaq&quot;&gt;3 Column Responsive Layout&lt;/a&gt; Source.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;wrapper&quot;&amp;gt;
-
-    &amp;lt;header&amp;gt;
-        &amp;lt;h1&amp;gt;消費常見問題&amp;lt;/h1&amp;gt;
-    &amp;lt;/header&amp;gt;
-        
-&amp;lt;section class=&quot;columns&quot;&amp;gt;
-    
-    &amp;lt;div class=&quot;column&quot;&amp;gt;
-        &amp;lt;h2&amp;gt;你的問題一，哇哈哈哈哈&amp;lt;/h2&amp;gt;
-        &amp;lt;p&amp;gt;智慧圖書館是以自動化設備取代傳統人力資源，提供入館讀者以自助方式借閱或歸還書籍，因無人力查找及整理預約書，故智慧圖書館之館藏不提供讀者預約。&amp;lt;/p&amp;gt;
-    &amp;lt;/div&amp;gt;
-    
-    &amp;lt;div class=&quot;column&quot;&amp;gt;
-        &amp;lt;h2&amp;gt;你的問題一，哇哈哈哈哈&amp;lt;/h2&amp;gt;
-        &amp;lt;p&amp;gt;目前僅有「社子島智慧圖書館」提供自助預約取書服務，讀者可於本館館藏查詢系統中預約圖書，並選擇於社子島智慧圖書館領取。
-其他智慧圖書館則無提供預約取書服務。&amp;lt;/p&amp;gt;
-    &amp;lt;/div&amp;gt;
-  
-  &amp;lt;div class=&quot;column&quot;&amp;gt;
-        &amp;lt;h2&amp;gt;你的問題一，哇哈哈哈哈&amp;lt;/h2&amp;gt;
-        &amp;lt;p&amp;gt;慧圖書館是以自動化設備取代傳統人力資源，提供入館讀者以自助方式借閱或歸還書籍，因無人力查找及整理預約書，故智慧圖書館之館藏不提供讀者預約。&amp;lt;/p&amp;gt;
-    &amp;lt;/div&amp;gt;
-    
-&amp;lt;/section&amp;gt;  
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;2/9 Sat.&lt;/p&gt;
-
-&lt;p&gt;安裝 Bootstrap 本機端
-加入 Shopify Partner
-Shopline 404應用
-下一步，&lt;/p&gt;
-
-&lt;p&gt;年前熟悉Github, Jekyll模組化，今天又摸了框架、更能修改應用程式了&lt;/p&gt;
-
-&lt;p&gt;Bootstrap-4.4.1&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;install &lt;code class=&quot;highlighter-rouge&quot;&gt;public_suffix&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install missing gems.&lt;/li&gt;
-  &lt;li&gt;Installing public_suffix 4.0.1&lt;/li&gt;
-  &lt;li&gt;自動安裝需要的套件&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;-&lt;a href=&quot;https://help.shopify.com/en/themes/development/theme-store-requirements/theme-file-requirements#recommendations&quot;&gt;Liquid file requirements for themes&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Shopify Partner&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Development store&lt;/li&gt;
-  &lt;li&gt;Managed store&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;有兩種選項，可以作為開發者或店主。&lt;/p&gt;
-
-&lt;p&gt;Shopify 積極打造開發、電商生態圈，Partner 內容持續更新中。&lt;/p&gt;</content><author><name></name></author><category term="Update" /><category term="Weekly Journal" /><summary type="html">2/10 SHOPLINE模板大進展 感謝愛禮物的前輩大神，截圖給我看，瞬間全懂了！爽到不行。目前施作的是測試頁面。 簡單原理暸解 Liqiud 的 { % if %} { % endif %} 邏輯判斷式，第一步就是在主機判斷，page.url 是否為特定活動頁面，如果是的話，就要呼叫特定程式代碼，也就是讓消費者看到特定活動內容。</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
+&lt;p&gt;assets
+config
+layout
+locales
+sections
+snippets
+templates&lt;/p&gt;</content><author><name></name></author><summary type="html">(Theme templates)[https://help.shopify.com/en/themes/development/templates] Shopify themes are made up of Liquid template files, each serving their own unique purpose. For example, collection.liquid is used to display multiple products, and product.liquid is used to show the details of a single product. Shopify themes also include a settings_schema.json file, which is a form that makes it easy for the user to customize the look-and-feel of the theme.</summary></entry><entry><title type="html">Week4 工作日誌</title><link href="http://localhost:4000/Geek-Log/Weekly-Journal.html" rel="alternate" type="text/html" title="Week4 工作日誌" /><published>2020-01-27T12:30:00+08:00</published><updated>2020-01-27T12:30:00+08:00</updated><id>http://localhost:4000/Geek-Log/Weekly-Journal</id><content type="html" xml:base="http://localhost:4000/Geek-Log/Weekly-Journal.html">&lt;h1 id=&quot;工作日誌-128路易莎&quot;&gt;工作日誌 1/28@路易莎&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;建立了 Tag 模板，但是 &lt;code class=&quot;highlighter-rouge&quot;&gt;/Geek-Log/tags.html' not found.&lt;/code&gt;&lt;/li&gt;
@@ -222,15 +154,6 @@ Open config.yml file in your jekyll folder, under plugins: add in one more line:
 &lt;h2 id=&quot;圖片放在主機內&quot;&gt;圖片放在主機內&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-	{ { if file.path }} &amp;lt;br&amp;gt;
-	{ {endif	}}
-
-	{ { if file.path }} &amp;lt;br&amp;gt;
-	{ {endif	}}
-
-	{ { if file.path }} &amp;lt;br&amp;gt;
-	{ {endif	}}
-
 	{ { if file.path }} &amp;lt;br&amp;gt;
 	{ {endif	}}
 

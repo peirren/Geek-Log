@@ -9,14 +9,14 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     35px !default;
+$spacing-unit:     32px !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    1000px !default;
 
-$on-palm:          600px !default;
+$on-palm:          480px !default;
 $on-laptop:        800px !default;
 
 $on-medium:        $on-palm !default;

@@ -1,8 +1,0 @@
-I"�<h3 id="安裝前準備確認">安裝前準備確認</h3>
-<ul>
-  <li>ruby -v (至少高於2.4)</li>
-  <li>gem -v (至少高於2.6.13)</li>
-  <li>gem install jekyll bundler (啟用Gem安裝Jekyll)</li>
-  <li>jekyll -v (我的是 4.0)</li>
-</ul>
-:ET

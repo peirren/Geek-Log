@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: GEEK LOG
+title: Randy's programming note.
 email: peir.ren@gmail.com
 description: '這是我的開發日誌，用來記錄每天的工作內容，開發目標與心得'
 baseurl: "/Geek-Log" # the subpath of your site, e.g. /blog

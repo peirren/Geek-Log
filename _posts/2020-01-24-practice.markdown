@@ -22,15 +22,15 @@ date:   2020-01-24 13:30:00 +0800
 ## 圖片放在主機內
 
 ```
-{% for file in site.static_files %}
+{ % for file in site.static_files % }
 	{ { if file.path }} <br>
 	{ {endif	}}
-{% endfor %}
+{ % endfor % }
 ```
 
 
 真實圖片
- 1. <img src="{{https://peirren.github.io/Geek-Log/assets/img/practiceMarkdown.gif}}">
+ 1. <img src="{ { https://peirren.github.io/Geek-Log/assets/img/practiceMarkdown.gif } }">
  
 
 ### 原始代碼

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Week4 工作日誌"
 date:   2020-01-27 12:30:00 +0800
 tags: [Update, Weekly Journal]

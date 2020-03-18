@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Week10 工作日誌"
+date:   2020-03-03 23:30:00 +0800
+tags: [Update, Weekly Journal]
+---
+
+
+### [Reading Data](https://developers.google.com/apps-script/guides/sheets#reading_data)
+現在我們有一個試算表檔案，包含產品名稱和產品編號的列表，如下圖所示。
+
